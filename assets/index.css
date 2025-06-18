@@ -78,6 +78,12 @@ a {
   grid-row: 2;
 }
 
+.gear-men-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
 .learn-more {
   display: grid;
   gap: 2rem;
