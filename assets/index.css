@@ -104,6 +104,6 @@ a {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 2rem;
-  background: rgba(128, 128, 128, 0.5);
+  background: rgba(128, 128, 128, 0.8);
   padding: 2rem;
 }
