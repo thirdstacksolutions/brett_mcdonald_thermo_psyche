@@ -94,3 +94,16 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+
+.brett-bio-container {
+  background-image: url('./images/bret-info-bg_cr.png');
+  padding: 2rem;
+}
+
+.brett-bio-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+  background: rgba(128, 128, 128, 0.5);
+  padding: 2rem;
+}
