@@ -130,3 +130,14 @@ a {
   width: 100%;
   height: auto;
 }
+
+.book-corner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+}
+
+.book-corner-callout {
+  grid-column: 1 / 3;
+}
