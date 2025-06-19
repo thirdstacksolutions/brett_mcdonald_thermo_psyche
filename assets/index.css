@@ -113,3 +113,9 @@ a {
   grid-template-columns: 5fr 1fr;
   gap: 2rem;
 }
+
+.blocks-toy-grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 2rem;
+}
