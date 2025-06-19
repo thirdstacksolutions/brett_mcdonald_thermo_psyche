@@ -107,3 +107,21 @@ a {
   background: rgba(128, 128, 128, 0.8);
   padding: 2rem;
 }
+
+.good-alice-grid {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 2rem;
+}
+
+.blocks-toy-grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 2rem;
+}
+
+.mouse-therapy-grid {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  gap: 2rem;
+}
