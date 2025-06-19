@@ -107,3 +107,9 @@ a {
   background: rgba(128, 128, 128, 0.8);
   padding: 2rem;
 }
+
+.good-alice-grid {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 2rem;
+}
