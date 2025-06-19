@@ -129,4 +129,90 @@ h1 {
 
 .navbar-links a:hover {
     color: #0b5050;
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* Introduction Section */
+.steampunk-button {
+    cursor: pointer;
+    background-image: url('./images/book_button_cr.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    aspect-ratio: 3 / 1;
+    width: 200px;
+}
+
+.introduction-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+}
+
+.introduction-video {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.introduction-text {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.introduction-call-out {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.gear-men-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+}
+
+.learn-more {
+    display: grid;
+    gap: 2rem;
+}
+
+.learn-more-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.brett-bio-container {
+    background-image: url('./images/bret-info-bg_cr.png');
+    padding: 2rem;
+}
+
+.brett-bio-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+    background: rgba(128, 128, 128, 0.8);
+    padding: 2rem;
+}
+
+.good-alice-grid {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 2rem;
+}
+
+.blocks-toy-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 2rem;
+}
+
+.mouse-therapy-grid {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    gap: 2rem;
 }
