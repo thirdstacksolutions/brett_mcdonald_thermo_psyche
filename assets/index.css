@@ -119,3 +119,9 @@ a {
   grid-template-columns: 1fr 5fr;
   gap: 2rem;
 }
+
+.mouse-therapy-grid {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  gap: 2rem;
+}
