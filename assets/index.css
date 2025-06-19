@@ -125,3 +125,8 @@ a {
   grid-template-columns: 3fr 1.5fr;
   gap: 2rem;
 }
+
+.footer-image {
+  width: 100%;
+  height: auto;
+}
