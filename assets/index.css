@@ -212,11 +212,26 @@ h1 {
   gap: 2rem;
 }
 
-.engine-grid {
+.engine-intro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   gap: 2rem;
+}
+
+.engine-intro-text-top {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.engine-intro-callout {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.engine-intro-text-bottom {
+  grid-column: 1 / 3;
+  grid-row: 3;
 }
 
 .book-corner-grid {
@@ -224,21 +239,6 @@ h1 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   gap: 2rem;
-}
-
-.engine-text-top {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.engine-text-mid {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.engine-text-bottom {
-  grid-column: 1 / 3;
-  grid-row: 3;
 }
 
 .book-corner-callout {
