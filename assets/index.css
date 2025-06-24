@@ -2,22 +2,22 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    background-color: #f4f2e7;
-    line-height: 1.5;
-    font-family: sans-serif;
-    color: #000;
+  background-color: #f4f2e7;
+  line-height: 1.5;
+  font-family: sans-serif;
+  color: #000;
 }
 
 img,
@@ -25,196 +25,213 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button,
 input,
 textarea,
 select {
-    font: inherit;
-    color: inherit;
-    background: none;
-    border: none;
-    outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 p {
-    font-size: 16px;
-    color: #0b5050;
+  font-size: 16px;
+  color: #0b5050;
 }
 
 h1 {
-    font-size: 24px;
-    color: #934925;
+  font-size: 24px;
+  color: #934925;
 }
 
 /* Navbar Grid: 1 column, 2 rows */
 .navbar {
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    gap: 1rem;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
 }
 
 /* First Row: Title and Copyright w/ Flexbox */
 .navbar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    border-bottom: 2px solid #934925;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid #934925;
 }
 
 .navbar-title {
-    font-size: 3rem;
-    color: #934925;
-    margin: 0;
+  font-size: 3rem;
+  color: #934925;
+  margin: 0;
 }
 
 .navbar-copyright {
-    font-size: 1rem;
-    color: #934925;
+  font-size: 1rem;
+  color: #934925;
 }
 
 /* Second Row: Gear/Text and Nav Links w/ Flexbox */
 .navbar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-info {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .gear-icon {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .navbar-info p {
-    color: #934925;
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: bold;
+  color: #934925;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
 }
 
 .navbar-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
 }
 
 .navbar-links li {
-    margin: 0;
+  margin: 0;
 }
 
 .navbar-links a {
-    text-decoration: none;
-    color: #934925;
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: #934925;
+  font-size: 1.5rem;
 }
 
 .navbar-links a:hover {
-    color: #0b5050;
+  color: #0b5050;
 }
 
 /* Introduction Section */
 .steampunk-button {
-    cursor: pointer;
-    background-image: url('./images/book_button_cr.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    aspect-ratio: 3 / 1;
-    width: 200px;
+  cursor: pointer;
+  background-image: url('./images/book_button_cr.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  aspect-ratio: 3 / 1;
+  width: 200px;
 }
 
 .introduction-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
 }
 
 .introduction-video {
-    grid-column: 1;
-    grid-row: 1;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .introduction-text {
-    grid-column: 2;
-    grid-row: 1;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .introduction-call-out {
-    grid-column: 1 / 3;
-    grid-row: 2;
+  grid-column: 1 / 3;
+  grid-row: 2;
 }
 
 .gear-men-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
 }
 
 .learn-more {
-    display: grid;
-    gap: 2rem;
+  display: grid;
+  gap: 2rem;
 }
 
 .learn-more-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 .brett-bio-container {
-    background-image: url('./images/bret-info-bg_cr.png');
-    padding: 2rem;
+  background-image: url('./images/bret-info-bg_cr.png');
+  padding: 2rem;
 }
 
 .brett-bio-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 2rem;
-    background: rgba(128, 128, 128, 0.8);
-    padding: 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+  background: rgba(128, 128, 128, 0.8);
+  padding: 2rem;
 }
 
 .good-alice-grid {
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 2rem;
 }
 
 .blocks-toy-grid {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 2rem;
 }
 
 .mouse-therapy-grid {
-    display: grid;
-    grid-template-columns: 3fr 1.5fr;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  gap: 2rem;
 }
 
-.footer-image {
-  width: 100%;
-  height: auto;
+.engine-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+}
+
+.engine-intro-text-top {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.engine-intro-callout {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.engine-intro-text-bottom {
+  grid-column: 1 / 3;
+  grid-row: 3;
 }
 
 .book-corner-grid {
@@ -226,4 +243,9 @@ h1 {
 
 .book-corner-callout {
   grid-column: 1 / 3;
+}
+
+.footer-image {
+  width: 100%;
+  height: auto;
 }
