@@ -261,7 +261,7 @@ h1 {
 
 .game-grid {
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 1fr;
+  grid-template-columns: 0.25fr 0.25fr 1.5fr;
   grid-template-rows: auto auto auto;
   gap: 2rem;
 }
@@ -279,7 +279,21 @@ h1 {
   grid-column: 2;
   grid-row: 2;
 }
-
+.game-buttons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  aspect-ratio: 1 / 1;
+  width: 200px;
+  background-image: url(./images/game-button-placeholder.png);
+}
+.game-buttons-right {
+  margin-top: 6rem;
+}
 .book-corner-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
