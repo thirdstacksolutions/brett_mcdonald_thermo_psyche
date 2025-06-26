@@ -234,6 +234,66 @@ h1 {
     grid-row: 3;
 }
 
+.mental-combustion-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+}
+.mental-combustion-title {
+  grid-column: 1 / 3;
+}
+
+.mental-combustion-image {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.mental-combustion-video {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.mental-combustion-text {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: 0.25fr 0.25fr 1.5fr;
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+}
+
+.game-grid-callout {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+.game-buttons-left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.game-buttons-right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.game-buttons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  aspect-ratio: 1 / 1;
+  width: 200px;
+  background-image: url(./images/game-button-placeholder.png);
+}
+.game-buttons-right {
+  margin-top: 6rem;
+}
 .book-corner-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
