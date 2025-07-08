@@ -175,10 +175,10 @@ h2 {
   grid-row: 1;
 }
 
-/* .introduction-video img {
-  width: 800px;
-  height: auto;
-} */
+.introduction-video img {
+  width: 850px;
+  height: 600px;
+}
 
 .introduction-text {
   grid-column: 2;
@@ -204,8 +204,9 @@ h2 {
 }
 
 .gear-men-image img {
-  height: 450px;
+  height: 25rem;
   width: auto;
+  margin: 0 auto;
 }
 
 .learn-more {
@@ -227,7 +228,15 @@ h2 {
   background-image: url('./images/bret-info-bg_cr.png');
   padding: 2rem;
 }
+.brett-bio-image {
+  margin: 0 auto;
 
+  text-align: center;
+}
+.brett-img {
+  height: 29rem;
+  width: auto;
+}
 .brett-bio-grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -243,6 +252,7 @@ h2 {
 }
 
 .good-alice-image img {
+  margin: 0 auto;
   height: 300px;
   width: auto;
 }
@@ -254,6 +264,7 @@ h2 {
 }
 
 .blocks-toy-image img {
+  margin: 0 auto;
   height: 200px;
   width: auto;
 }
@@ -265,10 +276,41 @@ h2 {
 }
 
 .mouse-therapy-image img {
+  margin: 0 auto;
   height: 250px;
   width: auto;
 }
 
+.book-corner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+}
+
+.thermo-psych-cover {
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 4px solid #0B5050;
+  height: 25rem;
+}
+
+.e-book-cover {
+  margin: 0 auto;
+  height: 25rem;
+  width: auto;
+}
+
+.book-corner-callout {
+  grid-column: 1 / 3;
+}
+
+.footer-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Engine Page*/
 .engine-intro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -282,13 +324,13 @@ h2 {
 }
 
 .engine-intro-callout {
-  min-height: 6rem;
+  min-height: 5rem;
   padding-top: 5rem;
 }
 
 .engine-intro-image img {
   margin: 0 auto;
-  height: 31rem;
+  height: 28rem;
   width: auto;
 }
 
@@ -380,32 +422,6 @@ h4 {
   margin-top: 6rem;
 }
 
-.book-corner-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 2rem;
-}
-
-.thermo-psych-cover {
-  border-radius: 15px;
-  border: 4px solid #0B5050;
-  height: 30rem;
-}
-
-.e-book-cover {
-  height: 30rem;
-}
-
-.book-corner-callout {
-  grid-column: 1 / 3;
-}
-
-.footer-image {
-  width: 100%;
-  height: auto;
-}
-
 /* Axia Page*/
 .axia-intro-grid {
   display: grid;
@@ -434,9 +450,6 @@ h4 {
 .what-do-we-need-title {
   grid-column: 1 / 4;
   grid-row: 1;
-  font-size: 2rem;
-  color: #934925;
-  border-bottom: 2px solid #934925;
 }
 
 .survival {
@@ -464,9 +477,7 @@ h4 {
 .internal-external-title {
   grid-column: 1 / 3;
   grid-row: 1;
-  font-size: 2rem;
-  color: #934925;
-  border-bottom: 2px solid #934925;
+ 
 }
 
 .internal-external-text {
@@ -479,9 +490,10 @@ h4 {
   grid-row: 2;
 }
 
-.image-content img {
-  max-width: 100%;
-  height: auto;
+.internal-external-image img {
+height: 22rem;
+width: auto;
+margin: 0 auto;
 }
 
 .internal-external-under-text {
@@ -506,6 +518,11 @@ h4 {
   grid-row: 2;
 }
 
+.balancing-image img {
+  height: 25rem;
+  width: auto;
+  margin: 0 auto;
+}
 .energy-gravity-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -516,9 +533,6 @@ h4 {
 .energy-gravity-title {
   grid-column: 1 / 3;
   grid-row: 1;
-  font-size: 2rem;
-  color: #934925;
-  border-bottom: 2px solid #934925;
 }
 
 .energy-gravity-intro-text {
@@ -530,7 +544,10 @@ h4 {
   grid-column: 1;
   grid-row: 3;
 }
-
+.energy-gravity-image img {
+  height: 20rem;
+  width: auto;
+}
 .energy-gravity-middle-text {
   grid-column: 2;
   grid-row: 3;
