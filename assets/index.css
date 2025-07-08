@@ -19,7 +19,6 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 1.5rem;
   color: #000;
-
 }
 
 img,
@@ -57,7 +56,6 @@ h1 {
   font-size: 3rem;
   color: #934925;
   font-family: 'Cinzel', serif;
-
 }
 
 .content-container {
@@ -78,19 +76,18 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  border-bottom: 2px solid #67351C;
+  border-bottom: 2px solid #67351c;
 }
 
 .navbar-title {
   font-size: 3rem;
-  color: #67351C;
+  color: #67351c;
   margin: 0;
 }
 
 .navbar-copyright {
   font-size: 1rem;
-  color: #67351C;
-
+  color: #67351c;
 }
 
 /* Second Row: Gear/Text and Nav Links w/ Flexbox */
@@ -112,7 +109,7 @@ h1 {
 }
 
 .navbar-info p {
-  color: #67351C;
+  color: #67351c;
   font-size: 2rem;
   margin: 0;
   font-weight: bold;
@@ -132,7 +129,7 @@ h1 {
 
 .navbar-links a {
   text-decoration: none;
-  color: #67351C;
+  color: #67351c;
   font-size: 1.5rem;
 }
 
@@ -142,9 +139,9 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: #67351C;
+  color: #67351c;
   font-size: 3rem;
-  border-bottom: 2px solid #67351C;
+  border-bottom: 2px solid #67351c;
 }
 
 .banner {
@@ -194,7 +191,7 @@ h2 {
 
 .introduction-call-out p {
   font-size: 2rem;
-  color: #67351C;
+  color: #67351c;
 }
 
 .gear-men-grid {
@@ -291,7 +288,7 @@ h2 {
 .thermo-psych-cover {
   margin: 0 auto;
   border-radius: 15px;
-  border: 4px solid #0B5050;
+  border: 4px solid #0b5050;
   height: 25rem;
 }
 
@@ -364,7 +361,7 @@ h2 {
 
 .engine-intro-callout p {
   font-size: 2rem;
-  color: #67351C;
+  color: #67351c;
 }
 
 .mental-combustion-text {
@@ -381,12 +378,12 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  color: #67351C;
+  color: #67351c;
 }
 
 h4 {
   font-size: 1.5rem;
-  color: #67351C;
+  color: #67351c;
 }
 
 .game-grid-callout {
@@ -415,7 +412,7 @@ h4 {
   aspect-ratio: 1 / 1;
   width: 200px;
   background-image: url(./images/gear_button_transparent.png);
-  color: #F4F2E7;
+  color: #f4f2e7;
 }
 
 .game-buttons-right {
@@ -477,7 +474,6 @@ h4 {
 .internal-external-title {
   grid-column: 1 / 3;
   grid-row: 1;
- 
 }
 
 .internal-external-text {
@@ -491,9 +487,9 @@ h4 {
 }
 
 .internal-external-image img {
-height: 22rem;
-width: auto;
-margin: 0 auto;
+  height: 22rem;
+  width: auto;
+  margin: 0 auto;
 }
 
 .internal-external-under-text {
