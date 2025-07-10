@@ -21,6 +21,58 @@ body {
   color: #000;
 }
 
+h1 {
+  font-size: 3rem;
+  color: #934925;
+  font-family: 'Cinzel', serif;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #67351c;
+  /* font-size: 3rem; */
+  border-bottom: 2px solid #67351c;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #67351c;
+}
+
+.cta-label {
+  font-size: 1.5rem;
+  color: #67351c;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  color: #0b5050;
+  font-family: 'Noto Sans', san-serif;
+  text-align: justify;
+}
+
+.content-container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.steampunk-button {
+  cursor: pointer;
+  background-image: url('./images/book_button_cr.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  aspect-ratio: 3 / 1;
+  width: 200px;
+}
+
 img,
 picture,
 video,
@@ -40,38 +92,6 @@ select {
   background: none;
   border: none;
   outline: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-p {
-  color: #0b5050;
-  font-family: 'Noto Sans', san-serif;
-  text-align: justify;
-}
-
-h1 {
-  font-size: 3rem;
-  color: #934925;
-  font-family: 'Cinzel', serif;
-}
-
-.content-container {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.steampunk-button {
-  cursor: pointer;
-  background-image: url('./images/book_button_cr.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  aspect-ratio: 3 / 1;
-  width: 200px;
 }
 
 /* Navbar Grid: 1 column, 2 rows */
@@ -149,13 +169,6 @@ h1 {
 
 .navbar-links a:hover {
   color: #0b5050;
-}
-
-h2 {
-  font-size: 2rem;
-  color: #67351c;
-  font-size: 3rem;
-  border-bottom: 2px solid #67351c;
 }
 
 .banner {
@@ -379,16 +392,6 @@ h2 {
   grid-template-columns: 0.25fr 0.25fr 1.5fr;
   grid-template-rows: auto auto auto;
   gap: 2rem;
-}
-
-h3 {
-  font-size: 2rem;
-  color: #67351c;
-}
-
-h4 {
-  font-size: 1.5rem;
-  color: #67351c;
 }
 
 .game-grid-callout {
