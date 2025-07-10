@@ -23,7 +23,7 @@ body {
 
 h1 {
   font-size: 3rem;
-  color: #934925;
+  color: #67351c;
   font-family: 'Cinzel', serif;
 }
 
@@ -39,14 +39,6 @@ h3 {
   color: #67351c;
 }
 
-.cta-label {
-  font-size: 1.5rem;
-  color: #67351c;
-  font-weight: bold;
-  text-align: center;
-  margin: 1rem;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -56,21 +48,6 @@ p {
   color: #0b5050;
   font-family: 'Noto Sans', san-serif;
   text-align: justify;
-}
-
-.content-container {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.steampunk-button {
-  cursor: pointer;
-  background-image: url('./images/book_button_cr.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  aspect-ratio: 3 / 1;
-  width: 200px;
 }
 
 img,
@@ -94,18 +71,44 @@ select {
   outline: none;
 }
 
-/* Navbar Grid: 1 column, 2 rows */
+/* Specialized classes */
+
+.content-container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.cta-label {
+  font-size: 1.5rem;
+  color: #67351c;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem;
+}
+
+.steampunk-button {
+  cursor: pointer;
+  background-image: url('./images/book_button_cr.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  aspect-ratio: 3 / 1;
+  width: 200px;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------------------- Navbar---------------------- */
 
 .navbar {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  gap: 1rem;
 }
 
-/* First Row: Title and Copyright w/ Flexbox */
 .navbar-header {
   display: flex;
   justify-content: space-between;
@@ -113,33 +116,24 @@ select {
   border-bottom: 2px solid #67351c;
 }
 
-.navbar-title {
-  font-size: 3rem;
-  color: #67351c;
-  margin: 0;
-}
-
 .navbar-copyright {
   font-size: 1rem;
   color: #67351c;
 }
 
-/* Second Row: Gear/Text and Nav Links w/ Flexbox */
 .navbar-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+.gear-icon {
+  width: 30px;
+  height: 30px;
+}
 .navbar-info {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.gear-icon {
-  width: 30px;
-  height: 30px;
 }
 
 .navbar-info p {
@@ -155,25 +149,15 @@ select {
   padding: 0;
   display: flex;
   gap: 1rem;
-}
-
-.navbar-links li {
-  margin: 0;
-}
-
-.navbar-links a {
-  text-decoration: none;
-  color: #67351c;
   font-size: 1.5rem;
+  color: #67351c;
 }
-
 .navbar-links a:hover {
   color: #0b5050;
 }
 
-.banner {
-  display: block;
-  width: 100%;
+.current {
+  font-weight: bold;
 }
 
 /* ---------------------- Introduction Section ---------------------- */
