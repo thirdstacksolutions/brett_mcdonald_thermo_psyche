@@ -99,6 +99,7 @@ a {
 /* -------------------------------------------------- */
 
 .cta-label {
+  font-size: 1.25rem;
   color: #67351c;
   font-weight: bold;
   text-align: center;
@@ -116,7 +117,7 @@ a {
   font-family: 'Cinzel', serif;
   font-weight: bold;
   color: #67351c;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .banner,
@@ -185,7 +186,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .introduction-video {
@@ -211,6 +212,7 @@ a {
 .introduction-callout p {
   color: #67351c;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 /* -------------------------------------------------- */
@@ -219,8 +221,8 @@ a {
 
 .gear-men-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
 
 .gear-men-image img {
@@ -236,7 +238,7 @@ a {
 .learn-more-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .learn-more-item {
@@ -255,11 +257,15 @@ a {
 
 .brett-bio-container {
   background-image: url('./images/bret-info-bg_cr.png');
-  padding: 2rem;
+  padding: 3rem;
 }
-.brett-bio-image {
-  display: flex;
-  align-items: stretch;
+
+.brett-bio-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  background: rgba(247, 239, 239, 0.8);
+  padding: 3rem 2rem 3rem 3rem;
 }
 
 .brett-bio-text,
@@ -267,19 +273,16 @@ a {
   height: 100%;
 }
 
+.brett-bio-image {
+  display: flex;
+  align-items: stretch;
+}
+
 .brett-img {
   height: 100%;
   width: auto;
   object-fit: cover;
   margin: auto;
-}
-
-.brett-bio-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 2rem;
-  background: rgba(128, 128, 128, 0.8);
-  padding: 2rem;
 }
 
 /* -------------------------------------------------- */
