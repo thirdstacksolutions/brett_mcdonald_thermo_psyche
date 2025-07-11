@@ -284,35 +284,6 @@ select {
   width: auto;
 }
 
-.book-corner-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 2rem;
-}
-
-.thermo-psych-cover {
-  margin: 0 auto;
-  border-radius: 15px;
-  border: 4px solid #0b5050;
-  height: 25rem;
-}
-
-.e-book-cover {
-  margin: 0 auto;
-  height: 25rem;
-  width: auto;
-}
-
-.book-corner-callout {
-  grid-column: 1 / 3;
-}
-
-.footer-image {
-  width: 100%;
-  height: auto;
-}
-
 /* Engine Page*/
 .engine-intro-grid {
   display: grid;
@@ -320,11 +291,13 @@ select {
   grid-template-rows: auto auto;
   gap: 2rem;
 }
+
 .engine-intro-text-top {
   display: grid;
   grid-template-rows: auto 1fr;
   height: 100%;
 }
+
 .engine-intro-callout {
   display: flex;
   align-items: center;
@@ -543,4 +516,33 @@ select {
 .energy-gravity-bottom-text {
   grid-column: 1 / 3;
   grid-row: 4;
+}
+
+.book-corner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+}
+
+.thermo-psych-cover {
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 4px solid #0b5050;
+  height: 25rem;
+}
+
+.e-book-cover {
+  margin: 0 auto;
+  height: 25rem;
+  width: auto;
+}
+
+.book-corner-callout {
+  grid-column: 1 / 3;
+}
+
+.footer-image {
+  width: 100%;
+  height: auto;
 }
