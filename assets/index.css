@@ -76,8 +76,8 @@ h3 {
 p,
 li,
 blockquote {
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
+  /* margin-bottom: 1rem; */
+  font-size: clamp(1rem, -0.405rem + 2.196vw, 1.35rem);
   text-align: justify;
 }
 
@@ -86,12 +86,29 @@ a {
   color: inherit;
 }
 
+.where-is-this-going p,
+.biography p,
+.message-container p {
+  margin-bottom: 1rem;
+}
+
 /* -------------------------------------------------- */
 /* LAYOUT + CONTAINERS */
 /* -------------------------------------------------- */
+
 .content-container {
   margin: 3rem 0;
   padding: 0 5rem;
+}
+
+.gear-men-image,
+.gear-men-text,
+.good-alice-image,
+.blocks-toy-image,
+.mouse-therapy-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* -------------------------------------------------- */
@@ -197,7 +214,7 @@ a {
   align-items: center;
 }
 .introduction-video img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .introduction-text {
@@ -227,8 +244,8 @@ a {
 }
 
 .gear-men-image img {
-  margin: 0 auto;
   width: auto;
+  height: clamp(18.75rem, -10.113rem + 45.098vw, 25.938rem);
 }
 
 /* -------------------------------------------------- */
@@ -280,7 +297,7 @@ a {
 }
 
 .brett-img {
-  max-height: 100%;
+  height: clamp(25rem, 12.451rem + 19.608vw, 28.125rem);
   width: auto;
   object-fit: contain;
 }
@@ -300,38 +317,35 @@ a {
 
 .good-alice-grid {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: auto auto;
   gap: 2rem;
 }
 
 .good-alice-image img {
-  margin: 0 auto;
   width: auto;
-  height: 300px;
+  height: clamp(11.875rem, -3.184rem + 23.529vw, 15.625rem);
 }
 
 .blocks-toy-grid {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: auto auto;
   gap: 2rem;
 }
 
 .blocks-toy-image img {
-  margin: 0 auto;
   width: auto;
-  height: 200px;
+  height: clamp(9.375rem, -3.174rem + 19.608vw, 12.5rem);
 }
 
 .mouse-therapy-grid {
   display: grid;
-  grid-template-columns: 3fr 1.5fr;
+  grid-template-columns: auto auto;
   gap: 2rem;
 }
 
 .mouse-therapy-image img {
   margin: 0 auto;
   width: auto;
-  height: 250px;
 }
 
 /* -------------------------------------------------- */
