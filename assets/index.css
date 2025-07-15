@@ -506,21 +506,18 @@ a {
 
 .axia-intro-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-template-rows: auto;
   gap: 2rem;
 }
 
-.axia-intro-text {
-  grid-column: 1;
-  grid-row: 1;
+.axia-intro-text p {
+  margin-bottom: 1rem;
 }
 
-.axia-intro-video {
-  grid-column: 2;
-  grid-row: 1;
+.axia-intro-video img {
+  height: clamp(13.75rem, -6.328rem + 31.373vw, 18.75rem);
 }
-
 /* -------------------------------------------------- */
 /* WHAT DO WE NEED */
 /* -------------------------------------------------- */
@@ -532,14 +529,29 @@ a {
   gap: 2rem;
 }
 
+.need-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.need-text h2 {
+  margin-bottom: 1rem;
+}
+.need-text h2,
+.need-text p {
+  text-align: center;
+}
 /* -------------------------------------------------- */
 /* INTERNAL & EXTERNAL NEEDS */
 /* -------------------------------------------------- */
 
 .internal-external-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   gap: 2rem;
 }
 
