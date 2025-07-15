@@ -111,6 +111,7 @@ a {
 .mental-combustion-video,
 .game-grid-image,
 .internal-external-image,
+.balancing-image,
 .book-corner-image {
   display: flex;
   justify-content: center;
@@ -558,16 +559,6 @@ a {
 .internal-external-text p {
   margin-bottom: 1rem;
 }
-/* 
-.internal-external-text {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.internal-external-image {
-  grid-column: 2;
-  grid-row: 2;
-} */
 
 .internal-external-image img {
   height: clamp(25rem, -9.133rem + 53.333vw, 33.5rem);
@@ -582,14 +573,11 @@ a {
 .balancing-grid {
   display: grid;
   grid-template-columns: auto auto;
-
   gap: 2rem;
 }
 
 .balancing-image img {
-  margin: 0 auto;
-  width: auto;
-  height: 25rem;
+  height: clamp(18.75rem, -6.348rem + 39.216vw, 25rem);
 }
 
 /* -------------------------------------------------- */
