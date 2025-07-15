@@ -100,12 +100,15 @@ a {
   margin: 3rem 0;
   padding: 0 5rem;
 }
-
+.introduction-video,
 .gear-men-image,
 .gear-men-text,
 .good-alice-image,
 .blocks-toy-image,
 .mouse-therapy-image,
+.engine-intro-image,
+.mental-combustion-image,
+.mental-combustion-video,
 .book-corner-image {
   display: flex;
   justify-content: center;
@@ -210,9 +213,6 @@ a {
 .introduction-video {
   grid-column: 1;
   grid-row: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .introduction-video img {
   width: 100%;
@@ -362,24 +362,23 @@ a {
 
 .engine-intro-text-top {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto;
   height: 100%;
 }
 
 .engine-intro-callout {
   display: flex;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   align-items: center;
 }
 
 .engine-intro-callout p {
   color: #67351c;
+  font-weight: bold;
 }
 
 .engine-intro-image img {
-  margin: 0 auto;
-  width: auto;
-  height: 28rem;
+  height: clamp(18.75rem, -13.877rem + 50.98vw, 26.875rem);
 }
 
 .engine-intro-text-bottom {
@@ -394,29 +393,30 @@ a {
 .mental-combustion-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto;
   gap: 2rem;
-}
-
-.mental-combustion-title {
-  grid-column: 1 / 3;
 }
 
 .mental-combustion-image {
   grid-column: 1;
-  grid-row: 2;
-  border: 2px solid #0b5050;
-  padding: 0 4rem;
+  grid-row: 1;
 }
 
+.mental-combustion-image img {
+  border: 3px solid #0b5050;
+}
 .mental-combustion-video {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 1;
 }
 
+.mental-combustion-image img,
+.mental-combustion-video img {
+  height: clamp(15.938rem, -4.141rem + 31.373vw, 20.938rem);
+}
 .mental-combustion-text {
   grid-column: 1 / 3;
-  grid-row: 3;
+  grid-row: 2;
 }
 
 /* -------------------------------------------------- */
