@@ -105,7 +105,8 @@ a {
 .gear-men-text,
 .good-alice-image,
 .blocks-toy-image,
-.mouse-therapy-image {
+.mouse-therapy-image,
+.book-corner-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,7 +345,7 @@ a {
 }
 
 .mouse-therapy-image img {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   width: auto;
 }
 
@@ -605,7 +606,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .book-corner-text {
@@ -616,20 +617,26 @@ a {
   padding: 0 1rem;
 }
 
+.book-corner-text .steampunk-button {
+  margin-top: 1rem;
+}
+
 .thermo-psych-cover {
-  margin: 0 auto;
   border: 4px solid #0b5050;
   border-radius: 15px;
-  height: 25rem;
+  height: clamp(25rem, 16.216rem + 13.725vw, 27.188rem);
 }
 
 .e-book-cover {
-  margin: 0 auto;
-  width: auto;
-  height: 25rem;
+  height: clamp(20.625rem, 10.586rem + 15.686vw, 23.125rem);
+}
+
+.cta-label {
+  margin-top: 1rem;
 }
 
 .book-corner-callout p {
+  padding-top: 2rem;
   text-align: center;
 }
 
