@@ -109,6 +109,7 @@ a {
 .engine-intro-image,
 .mental-combustion-image,
 .mental-combustion-video,
+.game-grid-image,
 .book-corner-image {
   display: flex;
   justify-content: center;
@@ -425,31 +426,47 @@ a {
 
 .game-grid {
   display: grid;
-  grid-template-columns: 0.25fr 0.25fr 1.5fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  /* grid-template-rows: auto auto; */
   gap: 2rem;
 }
 
-.game-grid-callout {
-  grid-column: 1 / 4;
-  grid-row: 1;
+.game-buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.game-buttons-grid button {
+  width: 70px;
+  font-size: 0.7rem;
 }
 
 .game-buttons-left {
   grid-column: 1;
-  grid-row: 2;
+  margin-bottom: 4rem;
+  /* grid-row: 1; */
 }
 
 .game-buttons-right {
   grid-column: 2;
-  grid-row: 2;
+  margin-top: 4rem;
+  /* grid-row: 1; */
+}
+
+.game-buttons-left,
+.game-buttons-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .game-buttons li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 130px;
   background-image: url(./images/gear_button_transparent.png);
   aspect-ratio: 1 / 1;
   background-position: center;
@@ -459,10 +476,30 @@ a {
   color: #f4f2e7;
 }
 
-.game-buttons-right {
-  margin-top: 6rem;
+.game-grid-content {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #0b5050;
+  padding: 2rem;
+  border-radius: 8px;
+  height: clamp(55rem, 37.431rem + 27.451vw, 59.375rem);
 }
 
+.gamification-title {
+  text-align: center;
+  margin: 1rem 5rem 1.25rem;
+}
+
+.gamification-text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-undertext {
+  margin-top: 3rem;
+}
 /* -------------------------------------------------- */
 /* AXIA INTRO */
 /* -------------------------------------------------- */
