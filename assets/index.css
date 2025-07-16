@@ -92,6 +92,11 @@ a {
   color: inherit;
 }
 
+hr {
+  margin: 3rem 0;
+  border-top: 2px solid #67351c;
+}
+
 .where-is-this-going p,
 .biography p,
 .message-container p {
@@ -643,7 +648,7 @@ a {
 .book-corner-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
   gap: 2rem;
 }
 
