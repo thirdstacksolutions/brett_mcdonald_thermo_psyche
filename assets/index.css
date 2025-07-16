@@ -13,6 +13,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 img,
@@ -48,8 +49,13 @@ body {
   line-height: 1.5;
   font-family: 'Noto Sans', sans-serif;
   color: #0b5050;
+  margin-top: 1px;
 }
 
+main,
+.navbar {
+  max-width: 1279px;
+}
 /* -------------------------------------------------- */
 /* TYPOGRAPHY */
 /* -------------------------------------------------- */
@@ -96,10 +102,12 @@ a {
 /* LAYOUT + CONTAINERS */
 /* -------------------------------------------------- */
 
-.content-container {
+.content-container,
+.navbar {
   margin: 3rem 0;
   padding: 0 5rem;
 }
+
 .introduction-video,
 .gear-men-image,
 .gear-men-text,
@@ -145,18 +153,24 @@ a {
   color: #67351c;
 }
 
-.banner,
-.footer-image {
+.banner {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+  left: 0;
+}
+
+.banner img {
   width: 100%;
   height: auto;
 }
-
 /* -------------------------------------------------- */
 /* NAVBAR */
 /* -------------------------------------------------- */
 
 .navbar {
   color: #67351c;
+  max-width: 1279px;
 }
 
 .navbar-header {
@@ -172,8 +186,8 @@ a {
   align-items: center;
 }
 .gear-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 .navbar-info {
   display: flex;
@@ -484,7 +498,7 @@ a {
   border: 4px solid #0b5050;
   padding: 2rem;
   border-radius: 8px;
-  height: clamp(55rem, 37.431rem + 27.451vw, 59.375rem);
+  height: clamp(55rem, 29.902rem + 39.216vw, 61.25rem);
 }
 
 .gamification-title {
@@ -499,6 +513,9 @@ a {
   justify-content: center;
 }
 
+.gamification-text {
+  padding: 0 0.5rem;
+}
 .game-undertext {
   margin-top: 3rem;
 }
@@ -665,11 +682,32 @@ a {
 /* FOOTER */
 /* -------------------------------------------------- */
 
-footer {
-  width: 100%;
+.footer-image {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+  left: 0;
 }
 
-.footer-image {
+.footer-image img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .navbar {
+    max-width: 1279px;
+    margin-inline: auto;
+  }
+
+  main {
+    max-width: 1279px;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h2 {
+    font-size: 37px;
+  }
 }
