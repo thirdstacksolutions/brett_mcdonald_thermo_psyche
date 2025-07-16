@@ -170,9 +170,8 @@ a {
 }
 
 .banner img {
-  width: 95%;
+  width: 100%;
   height: auto;
-  margin: auto;
 }
 /* -------------------------------------------------- */
 /* NAVBAR */
@@ -713,6 +712,16 @@ a {
   main {
     max-width: 1279px;
     margin-inline: auto;
+  }
+
+  .banner {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .banner img {
+    width: 95%;
+    height: auto;
+    margin: auto;
   }
 
   .brett-bio-container {
