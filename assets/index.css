@@ -166,12 +166,14 @@ a {
   margin-left: calc(-50vw + 50%);
   position: relative;
   left: 0;
-  /* padding: 0 3rem; */
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .banner img {
   width: 100%;
   height: auto;
+  margin: auto;
 }
 /* -------------------------------------------------- */
 /* NAVBAR */
