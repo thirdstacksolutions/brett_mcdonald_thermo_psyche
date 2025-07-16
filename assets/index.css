@@ -50,6 +50,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
   color: #0b5050;
   margin-top: 1px;
+  overflow-x: hidden;
 }
 
 main,
@@ -165,11 +166,13 @@ a {
   margin-left: calc(-50vw + 50%);
   position: relative;
   left: 0;
+  /* padding: 0 3rem; */
 }
 
 .banner img {
-  width: 100%;
+  width: 95%;
   height: auto;
+  margin: auto;
 }
 /* -------------------------------------------------- */
 /* NAVBAR */
