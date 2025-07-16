@@ -709,6 +709,10 @@ hr {
     max-width: 1279px;
     margin-inline: auto;
   }
+
+  .brett-bio-container {
+    margin: 0 5rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
