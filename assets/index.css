@@ -13,6 +13,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 img,
@@ -48,8 +49,13 @@ body {
   line-height: 1.5;
   font-family: 'Noto Sans', sans-serif;
   color: #0b5050;
+  margin-top: 1px;
 }
 
+main,
+.navbar {
+  max-width: 1279px;
+}
 /* -------------------------------------------------- */
 /* TYPOGRAPHY */
 /* -------------------------------------------------- */
@@ -69,8 +75,10 @@ h2 {
 
 h3 {
   margin-bottom: 1rem;
-  font-size: clamp(1.125rem, 1vw + 0.5rem, 1.5rem);
+  font-size: clamp(1.4rem, -0.206rem + 2.51vw, 1.8rem);
   color: #67351c;
+  font-family: 'Cinzel', serif;
+  border-bottom: 1px solid #67351c;
 }
 
 p,
@@ -86,6 +94,11 @@ a {
   color: inherit;
 }
 
+.book-corner hr {
+  margin: 3rem 0;
+  border-top: 2px solid #67351c;
+}
+
 .where-is-this-going p,
 .biography p,
 .message-container p {
@@ -96,10 +109,12 @@ a {
 /* LAYOUT + CONTAINERS */
 /* -------------------------------------------------- */
 
-.content-container {
+.content-container,
+.navbar {
   margin: 3rem 0;
   padding: 0 5rem;
 }
+
 .introduction-video,
 .gear-men-image,
 .gear-men-text,
@@ -145,18 +160,24 @@ a {
   color: #67351c;
 }
 
-.banner,
-.footer-image {
+.banner {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+  left: 0;
+}
+
+.banner img {
   width: 100%;
   height: auto;
 }
-
 /* -------------------------------------------------- */
 /* NAVBAR */
 /* -------------------------------------------------- */
 
 .navbar {
   color: #67351c;
+  max-width: 1279px;
 }
 
 .navbar-header {
@@ -172,8 +193,8 @@ a {
   align-items: center;
 }
 .gear-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 .navbar-info {
   display: flex;
@@ -484,7 +505,7 @@ a {
   border: 4px solid #0b5050;
   padding: 2rem;
   border-radius: 8px;
-  height: clamp(55rem, 37.431rem + 27.451vw, 59.375rem);
+  height: clamp(55rem, 29.902rem + 39.216vw, 61.25rem);
 }
 
 .gamification-title {
@@ -499,6 +520,9 @@ a {
   justify-content: center;
 }
 
+.gamification-text {
+  padding: 0 0.5rem;
+}
 .game-undertext {
   margin-top: 3rem;
 }
@@ -626,7 +650,7 @@ a {
 .book-corner-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
   gap: 2rem;
 }
 
@@ -665,11 +689,42 @@ a {
 /* FOOTER */
 /* -------------------------------------------------- */
 
-footer {
-  width: 100%;
+.footer-image {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+  left: 0;
 }
 
-.footer-image {
+.footer-image img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .navbar {
+    max-width: 1279px;
+    margin-inline: auto;
+  }
+
+  main {
+    max-width: 1279px;
+    margin-inline: auto;
+  }
+
+  .brett-bio-container {
+    margin: 0 5rem;
+    padding: 1rem;
+  }
+
+  .brett-bio-grid {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h2 {
+    font-size: 37px;
+  }
 }
