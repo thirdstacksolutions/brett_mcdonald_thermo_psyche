@@ -219,13 +219,19 @@ a {
 
 .navbar-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.3rem;
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
+.navbar-links a,
+.current {
+  padding: 0.7rem;
+}
 .navbar-links a:hover {
   color: #0b5050;
+  cursor: pointer;
 }
 
 .current {
@@ -830,5 +836,5 @@ a {
   margin: clamp(1.5rem, -5.87rem + 13.873vw, 3rem) 0;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 768px) {
 }
