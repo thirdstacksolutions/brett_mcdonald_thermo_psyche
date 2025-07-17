@@ -1,24 +1,19 @@
-/* Basic CSS Reset */
+/* -------------------------------------------------- */
+/* RESET — only resets, no styles here */
+/* -------------------------------------------------- */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   margin: 0;
+  box-sizing: border-box;
   padding: 0;
 }
 
 html,
 body {
-  height: 100%;
   width: 100%;
-}
-
-body {
-  background-color: #f4f2e7;
-  line-height: 1.5;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 1.5rem;
-  color: #000;
+  height: 100%;
+  margin: 0;
 }
 
 img,
@@ -35,43 +30,160 @@ button,
 input,
 textarea,
 select {
-  font: inherit;
-  color: inherit;
-  background: none;
   border: none;
   outline: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
+/* -------------------------------------------------- */
+/* BASE STYLES */
+/* -------------------------------------------------- */
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #f4f2e7 url('./images/tpsy_bg.png') repeat top left;
+  line-height: 1.5;
+  font-family: 'Noto Sans', sans-serif;
+  color: #0b5050;
+  margin-top: 1px;
+  overflow-x: hidden;
+}
+
+main,
+.navbar {
+  max-width: 1279px;
+}
+/* -------------------------------------------------- */
+/* TYPOGRAPHY */
+/* -------------------------------------------------- */
+h1 {
+  font-size: clamp(1.75rem, 2.5vw + 0.5rem, 2.5rem);
+  font-family: 'Cinzel', serif;
+  color: #67351c;
+}
+
+h2 {
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #67351c;
+  font-size: clamp(1.625rem, 2.25vw + 0.25rem, 2.5rem);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #67351c;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.4rem, -0.206rem + 2.51vw, 1.8rem);
+  color: #67351c;
+  font-family: 'Cinzel', serif;
+  border-bottom: 1px solid #67351c;
+}
+
+p,
+li,
+blockquote {
+  /* margin-bottom: 1rem; */
+  font-size: clamp(1rem, -0.405rem + 2.196vw, 1.35rem);
+  text-align: justify;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
-p {
-  color: #0b5050;
-  font-family: 'Noto Sans', san-serif;
+.book-corner hr {
+  margin: 3rem 0;
+  border-top: 2px solid #67351c;
 }
 
-h1 {
-  font-size: 3rem;
-  color: #934925;
-  font-family: 'Cinzel', serif;
+.where-is-this-going p,
+.biography p,
+.message-container p {
+  margin-bottom: 1rem;
 }
 
-.content-container {
+/* -------------------------------------------------- */
+/* LAYOUT + CONTAINERS */
+/* -------------------------------------------------- */
+
+.content-container,
+.navbar {
+  margin: 3rem 0;
   padding: 0 5rem;
 }
 
-/* Navbar Grid: 1 column, 2 rows */
-.navbar {
-  padding: 5rem 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  gap: 1rem;
+.introduction-video,
+.gear-men-image,
+.gear-men-text,
+.good-alice-image,
+.blocks-toy-image,
+.mouse-therapy-image,
+.engine-intro-image,
+.mental-combustion-image,
+.mental-combustion-video,
+.game-grid-image,
+.internal-external-image,
+.balancing-image,
+.energy-gravity-image,
+.book-corner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* First Row: Title and Copyright w/ Flexbox */
+/* -------------------------------------------------- */
+/* BUTTONS, COMPONENTS, ETC. */
+/* -------------------------------------------------- */
+
+.cta-label {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #67351c;
+}
+
+.steampunk-button {
+  margin-top: 3rem;
+  width: 200px;
+  background-image: url('./images/book_button_cr.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  aspect-ratio: 3 / 1;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  color: #67351c;
+}
+
+.banner {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+  left: 0;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+/* -------------------------------------------------- */
+/* NAVBAR */
+/* -------------------------------------------------- */
+
+.navbar {
+  color: #67351c;
+  max-width: 1279px;
+}
+
 .navbar-header {
   display: flex;
   justify-content: space-between;
@@ -79,235 +191,196 @@ h1 {
   border-bottom: 2px solid #67351c;
 }
 
-.navbar-title {
-  font-size: 3rem;
-  color: #67351c;
-  margin: 0;
-}
-
-.navbar-copyright {
-  font-size: 1rem;
-  color: #67351c;
-}
-
-/* Second Row: Gear/Text and Nav Links w/ Flexbox */
 .navbar-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+.gear-icon {
+  width: 40px;
+  height: 40px;
+}
 .navbar-info {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.gear-icon {
-  width: 30px;
-  height: 30px;
-}
-
 .navbar-info p {
-  color: #67351c;
-  font-size: 2rem;
   margin: 0;
   font-weight: bold;
+  color: #67351c;
 }
 
 .navbar-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 1rem;
-}
-
-.navbar-links li {
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.navbar-links a {
-  text-decoration: none;
-  color: #67351c;
-  font-size: 1.5rem;
-}
-
 .navbar-links a:hover {
   color: #0b5050;
 }
 
-h2 {
-  font-size: 2rem;
-  color: #67351c;
-  font-size: 3rem;
-  border-bottom: 2px solid #67351c;
+.current {
+  color: #0b5050;
 }
 
-.banner {
-  display: block;
-  width: 100%;
-}
-
-/* Introduction Section */
-.steampunk-button {
-  cursor: pointer;
-  background-image: url('./images/book_button_cr.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  aspect-ratio: 3 / 1;
-  width: 200px;
-}
+/* -------------------------------------------------- */
+/* INTRODUCTION */
+/* -------------------------------------------------- */
 
 .introduction-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .introduction-video {
   grid-column: 1;
   grid-row: 1;
 }
-
 .introduction-video img {
-  width: 850px;
-  height: 600px;
+  width: 100%;
+  height: auto;
 }
-
 .introduction-text {
+  display: flex;
   grid-column: 2;
   grid-row: 1;
 }
 
-.introduction-call-out {
+.introduction-callout {
   grid-column: 1 / 3;
-  grid-row: 2;
-  font-size: 1.75rem;
-  font-weight: 700;
 }
 
-.introduction-call-out p {
-  font-size: 2rem;
+.introduction-callout p {
+  margin-bottom: 0;
+  font-weight: bold;
   color: #67351c;
 }
 
+/* -------------------------------------------------- */
+/* GEAR MEN */
+/* -------------------------------------------------- */
+
 .gear-men-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
 
 .gear-men-image img {
-  height: 25rem;
   width: auto;
-  margin: 0 auto;
+  height: clamp(18.75rem, -10.113rem + 45.098vw, 25.938rem);
 }
 
-.learn-more {
-  display: grid;
-  gap: 2rem;
-}
+/* -------------------------------------------------- */
+/* LEARN MORE GRID */
+/* -------------------------------------------------- */
 
 .learn-more-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
+}
+
+.learn-more-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .learn-more-item img {
-  border: 2px solid #0b5050;
+  border: 3px solid #0b5050;
 }
+
+/* -------------------------------------------------- */
+/* BRETT BIO */
+/* -------------------------------------------------- */
 
 .brett-bio-container {
+  padding: 3rem;
   background-image: url('./images/bret-info-bg_cr.png');
-  padding: 2rem;
 }
-.brett-bio-image {
-  margin: 0 auto;
 
-  text-align: center;
-}
-.brett-img {
-  height: 29rem;
-  width: auto;
-}
 .brett-bio-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 2rem;
-  background: rgba(128, 128, 128, 0.8);
-  padding: 2rem;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+  padding: 2.5rem 3rem;
+  background: rgba(247, 239, 239, 0.8);
+}
+
+.brett-bio-text,
+.brett-bio-image {
+  height: 100%;
+}
+
+.brett-bio-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brett-img {
+  height: clamp(25rem, 12.451rem + 19.608vw, 28.125rem);
+  width: auto;
+  object-fit: contain;
+}
+
+/* -------------------------------------------------- */
+/* MESSAGE */
+/* -------------------------------------------------- */
+
+.message-container h2 {
+  margin-bottom: 0.3rem;
+}
+.message-callout p {
+  padding-left: 0.5rem;
+  font-weight: bold;
+  color: #67351c;
 }
 
 .good-alice-grid {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: auto auto;
   gap: 2rem;
 }
 
 .good-alice-image img {
-  margin: 0 auto;
-  height: 300px;
   width: auto;
+  height: clamp(11.875rem, -3.184rem + 23.529vw, 15.625rem);
 }
 
 .blocks-toy-grid {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: auto auto;
   gap: 2rem;
 }
 
 .blocks-toy-image img {
-  margin: 0 auto;
-  height: 200px;
   width: auto;
+  height: clamp(9.375rem, -3.174rem + 19.608vw, 12.5rem);
 }
 
 .mouse-therapy-grid {
   display: grid;
-  grid-template-columns: 3fr 1.5fr;
+  grid-template-columns: auto auto;
   gap: 2rem;
 }
 
 .mouse-therapy-image img {
-  margin: 0 auto;
-  height: 250px;
+  /* margin: 0 auto; */
   width: auto;
 }
 
-.book-corner-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 2rem;
-}
+/* -------------------------------------------------- */
+/* ENGINE INTRO */
+/* -------------------------------------------------- */
 
-.thermo-psych-cover {
-  margin: 0 auto;
-  border-radius: 15px;
-  border: 4px solid #0b5050;
-  height: 25rem;
-}
-
-.e-book-cover {
-  margin: 0 auto;
-  height: 25rem;
-  width: auto;
-}
-
-.book-corner-callout {
-  grid-column: 1 / 3;
-}
-
-.footer-image {
-  width: 100%;
-  height: auto;
-}
-
-/* Engine Page*/
 .engine-intro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -316,19 +389,24 @@ h2 {
 }
 
 .engine-intro-text-top {
-  grid-column: 1;
-  grid-row: 1;
+  display: grid;
+  grid-template-rows: auto auto;
+  height: 100%;
 }
 
 .engine-intro-callout {
-  min-height: 5rem;
-  padding-top: 5rem;
+  display: flex;
+  /* padding-top: 2rem; */
+  align-items: center;
+}
+
+.engine-intro-callout p {
+  color: #67351c;
+  font-weight: bold;
 }
 
 .engine-intro-image img {
-  margin: 0 auto;
-  height: 28rem;
-  width: auto;
+  height: clamp(18.75rem, -13.877rem + 50.98vw, 26.875rem);
 }
 
 .engine-intro-text-bottom {
@@ -336,105 +414,143 @@ h2 {
   grid-row: 2;
 }
 
+/* -------------------------------------------------- */
+/* MENTAL COMBUSTION */
+/* -------------------------------------------------- */
+
 .mental-combustion-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 2rem;
-}
-
-.mental-combustion-title {
-  grid-column: 1 / 3;
-}
-
-.mental-combustion-image {
-  grid-column: 1;
-  grid-row: 2;
-  border: 2px solid #0b5050;
-}
-
-.mental-combustion-video {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.engine-intro-callout p {
-  font-size: 2rem;
-  color: #67351c;
-}
-
-.mental-combustion-text {
-  grid-column: 1 / 3;
-  grid-row: 3;
-}
-
-.game-grid {
-  display: grid;
-  grid-template-columns: 0.25fr 0.25fr 1.5fr;
-  grid-template-rows: auto auto auto;
-  gap: 2rem;
-}
-
-h3 {
-  font-size: 2rem;
-  color: #67351c;
-}
-
-h4 {
-  font-size: 1.5rem;
-  color: #67351c;
-}
-
-.game-grid-callout {
-  grid-column: 1 / 4;
-  grid-row: 1;
-}
-
-.game-buttons-left {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.game-buttons-right {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.game-buttons li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  aspect-ratio: 1 / 1;
-  width: 200px;
-  background-image: url(./images/gear_button_texture.png);
-  color: #f4f2e7;
-}
-
-.game-buttons-right {
-  margin-top: 6rem;
-}
-
-/* Axia Page*/
-.axia-intro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 2rem;
 }
 
-.axia-intro-text {
+.mental-combustion-image {
   grid-column: 1;
   grid-row: 1;
 }
 
-.axia-intro-video {
+.mental-combustion-image img {
+  border: 3px solid #0b5050;
+}
+.mental-combustion-video {
   grid-column: 2;
   grid-row: 1;
 }
+
+.mental-combustion-image img,
+.mental-combustion-video img {
+  height: clamp(15.938rem, -4.141rem + 31.373vw, 20.938rem);
+}
+.mental-combustion-text {
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+
+/* -------------------------------------------------- */
+/* GAME */
+/* -------------------------------------------------- */
+
+.game-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* grid-template-rows: auto auto; */
+  gap: 2rem;
+}
+
+.game-buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.game-buttons-grid button {
+  width: 70px;
+  font-size: 0.7rem;
+}
+
+.game-buttons-left {
+  grid-column: 1;
+  margin-bottom: 4rem;
+  /* grid-row: 1; */
+}
+
+.game-buttons-right {
+  grid-column: 2;
+  margin-top: 4rem;
+  /* grid-row: 1; */
+}
+
+.game-buttons-left,
+.game-buttons-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-buttons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  background-image: url(./images/gear_button_texture.png);
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  list-style: none;
+  color: #f4f2e7;
+}
+
+.game-grid-content {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #0b5050;
+  padding: 2rem;
+  border-radius: 8px;
+  height: clamp(55rem, 29.902rem + 39.216vw, 61.25rem);
+}
+
+.gamification-title {
+  text-align: center;
+  margin: 1rem 5rem 1.25rem;
+}
+
+.gamification-text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gamification-text {
+  padding: 0 0.5rem;
+}
+.game-undertext {
+  margin-top: 3rem;
+}
+/* -------------------------------------------------- */
+/* AXIA INTRO */
+/* -------------------------------------------------- */
+
+.axia-intro-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+.axia-intro-text p {
+  margin-bottom: 1rem;
+}
+
+.axia-intro-video img {
+  height: clamp(13.75rem, -6.328rem + 31.373vw, 18.75rem);
+}
+/* -------------------------------------------------- */
+/* WHAT DO WE NEED */
+/* -------------------------------------------------- */
 
 .what-do-we-need-grid {
   display: grid;
@@ -443,112 +559,181 @@ h4 {
   gap: 2rem;
 }
 
-.what-do-we-need-title {
-  grid-column: 1 / 4;
-  grid-row: 1;
+.need-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
 }
 
-.survival {
-  grid-column: 1;
-  grid-row: 2;
+.need-text h2 {
+  margin-bottom: 1rem;
 }
-
-.achievement {
-  grid-column: 2;
-  grid-row: 2;
+.need-text h2,
+.need-text p {
+  text-align: center;
 }
-
-.experiential {
-  grid-column: 3;
-  grid-row: 2;
-}
+/* -------------------------------------------------- */
+/* INTERNAL & EXTERNAL NEEDS */
+/* -------------------------------------------------- */
 
 .internal-external-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 2rem;
+  gap: 3rem;
 }
 
-.internal-external-title {
-  grid-column: 1 / 3;
-  grid-row: 1;
-}
-
-.internal-external-text {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.internal-external-image {
-  grid-column: 2;
-  grid-row: 2;
+.internal-external-text p {
+  margin-bottom: 1rem;
 }
 
 .internal-external-image img {
-  height: 22rem;
-  width: auto;
-  margin: 0 auto;
+  height: clamp(25rem, -9.133rem + 53.333vw, 33.5rem);
+  border: 3px solid #0b5050;
+  margin-bottom: 1rem;
 }
 
-.internal-external-under-text {
-  grid-column: 1 / 3;
-  grid-row: 3;
-}
+/* -------------------------------------------------- */
+/* BALANCE */
+/* -------------------------------------------------- */
 
 .balancing-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
   gap: 2rem;
-}
-
-.balancing-text {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.balancing-image {
-  grid-column: 2;
-  grid-row: 2;
 }
 
 .balancing-image img {
-  height: 25rem;
-  width: auto;
-  margin: 0 auto;
-}
-.energy-gravity-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
-  gap: 2rem;
+  height: clamp(18.75rem, -6.348rem + 39.216vw, 25rem);
 }
 
-.energy-gravity-title {
-  grid-column: 1 / 3;
-  grid-row: 1;
+/* -------------------------------------------------- */
+/* ENERGY & GRAVITY */
+/* -------------------------------------------------- */
+
+.energy-gravity-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
 }
 
 .energy-gravity-intro-text {
   grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.energy-gravity-middle-text {
+  grid-column: 1;
   grid-row: 2;
 }
 
 .energy-gravity-image {
-  grid-column: 1;
-  grid-row: 3;
-}
-.energy-gravity-image img {
-  height: 20rem;
-  width: auto;
-}
-.energy-gravity-middle-text {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 2;
+}
+
+.energy-gravity-image img {
+  height: clamp(17.5rem, -5.088rem + 35.294vw, 23.125rem);
+}
+
+.energy-gravity-middle-text p:first-of-type {
+  margin-bottom: 1rem;
 }
 
 .energy-gravity-bottom-text {
   grid-column: 1 / 3;
-  grid-row: 4;
+  grid-row: 3;
+}
+
+/* -------------------------------------------------- */
+/* BOOK CORNER */
+/* -------------------------------------------------- */
+
+.book-corner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+.book-corner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.book-corner-text .steampunk-button {
+  margin-top: 1rem;
+}
+
+.thermo-psych-cover {
+  border: 4px solid #0b5050;
+  border-radius: 15px;
+  height: clamp(25rem, 16.216rem + 13.725vw, 27.188rem);
+}
+
+.e-book-cover {
+  height: clamp(20.625rem, 10.586rem + 15.686vw, 23.125rem);
+}
+
+.cta-label {
+  margin-top: 1rem;
+}
+
+.book-corner-callout p {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+/* -------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------- */
+
+.footer-image {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+  left: 0;
+}
+
+.footer-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .navbar {
+    max-width: 1279px;
+    margin-inline: auto;
+  }
+
+  main {
+    max-width: 1279px;
+    margin-inline: auto;
+  }
+
+  .banner {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .brett-bio-container {
+    margin: 0 5rem;
+    padding: 1rem;
+  }
+
+  .brett-bio-grid {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h2 {
+    font-size: 37px;
+  }
 }

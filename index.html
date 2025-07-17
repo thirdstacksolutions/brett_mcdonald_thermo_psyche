@@ -2,45 +2,57 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Noto+Sans&display=swap"
-      rel="stylesheet"
-    />
     <title>Home</title>
+    <link
+      rel="preload"
+      href="./assets/fonts/Cinzel-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/NotoSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
+    <link rel="preload" href="./assets/index.css" as="style" />
     <link rel="stylesheet" href="./assets/index.css" />
   </head>
 
   <body>
-    <div class="content-container">
-      <nav class="navbar">
-        <div class="navbar-header">
-          <h1 class="navbar-title">Thermodynamic Psychology</h1>
-          <span class="navbar-copyright">©2025</span>
+    <!-- <div class="content-container"> -->
+    <nav class="navbar">
+      <div class="navbar-header">
+        <h1 class="navbar-title">Thermodynamic Psychology</h1>
+        <span class="navbar-copyright">©2025</span>
+      </div>
+      <div class="navbar-content">
+        <div class="navbar-info">
+          <img
+            src="./assets/images/gear_icon.png"
+            alt="3 gear icon"
+            class="gear-icon"
+          />
+          <p>How the mind works.</p>
         </div>
-        <div class="navbar-content">
-          <div class="navbar-info">
-            <img
-              src="./assets/images/gear_icon.png"
-              alt="3 gear icon"
-              class="gear-icon"
-            />
-            <p>How the mind works.</p>
-          </div>
-          <ul class="navbar-links">
-            <li>
-              <p class="current">Home</p>
-            </li>
-            <li>
-              <a href="engine.html">Engine</a>
-            </li>
-            <li>
-              <a href="axia.html">Axia</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <section class="introduction-grid">
+        <ul class="navbar-links">
+          <li>
+            <span class="current">Home</span>
+          </li>
+          <li>
+            <a href="engine.html">Engine</a>
+          </li>
+          <li>
+            <a href="axia.html">Axia</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="introduction-grid content-container">
         <section class="introduction-video">
           <img
             src="./assets/images/video_placeholder.png"
@@ -61,7 +73,7 @@
           </p>
         </article>
 
-        <aside class="introduction-call-out">
+        <aside class="introduction-callout">
           <p>
             If you are tired of being in the dark about yourself, if you'd like
             to see what hard science has to say about our softest science
@@ -69,15 +81,10 @@
           </p>
         </aside>
       </section>
-    </div>
-    <section class="banner">
-      <img
-        src="./assets/images/mind_machine_banner.png"
-        alt="An image with text on the left and a steampunk-style silhouette of a human head filled with gears and pipes on the right. The text reads: 'Your mind is a machine. You just weren’t given the manual. I spent ten years studying psychology, waiting for someone to explain how the mind works. No one did—so I decided to build the model myself. It’s mechanical. It’s functional. It’s driven by need, runs on fuel, and is affected by gravity. Now? I’m writing the owner’s manual.'"
-      />
-    </section>
-    <div class="content-container">
-      <section class="gear-men-grid">
+      <!-- </div> -->
+
+      <!-- <div class="content-container"> -->
+      <section class="gear-men-grid content-container">
         <article class="gear-men-text">
           <p>
             All of our needs are met with energy that flows through us, and
@@ -99,7 +106,7 @@
           />
         </section>
       </section>
-      <section class="where-is-this-going">
+      <section class="where-is-this-going content-container">
         <h2>Where is this going?</h2>
         <article>
           <p>
@@ -123,7 +130,8 @@
           </p>
         </article>
       </section>
-      <section class="learn-more">
+
+      <section class="learn-more content-container">
         <h2>Learn more about each piece</h2>
 
         <div class="learn-more-grid">
@@ -138,9 +146,7 @@
             <img src="./assets/images/axia_bronze_wide_cr.png" alt="The AXIA" />
             <button class="steampunk-button">The AXIA</button>
           </div>
-        </div>
 
-        <div class="learn-more-grid">
           <div class="learn-more-item">
             <p>
               Mental combustion, just like physical and mechanical combustion,
@@ -161,8 +167,16 @@
           </div>
         </div>
       </section>
+      <section class="banner">
+        <img
+          src="./assets/images/mind_machine_banner.png"
+          alt="An image with text on the left and a steampunk-style silhouette of a human head filled with gears and pipes on the right. The text reads: 'Your mind is a machine. You just weren’t given the manual. I spent ten years studying psychology, waiting for someone to explain how the mind works. No one did—so I decided to build the model myself. It’s mechanical. It’s functional. It’s driven by need, runs on fuel, and is affected by gravity. Now? I’m writing the owner’s manual.'"
+        />
+      </section>
       <section class="biography">
-        <h2>Dr. Brett McDonald</h2>
+        <header class="content-container">
+          <h2>Dr. Brett McDonald</h2>
+        </header>
         <section class="brett-bio-container">
           <section class="brett-bio-inner-container">
             <section class="brett-bio-grid">
@@ -201,9 +215,9 @@
           </section>
         </section>
       </section>
-      <section class="message-container">
+      <section class="message-container content-container">
         <h2>A message from Brett</h2>
-        <aside class="message-call-out">
+        <aside class="message-callout">
           <p>
             There's nothing new under the sun, unless you’re in the rabbit hole.
           </p>
@@ -306,7 +320,7 @@
           </p>
         </article>
       </section>
-      <section class="book-corner">
+      <section class="book-corner content-container">
         <h2>Brett's book corner</h2>
         <section class="book-corner-grid">
           <section class="book-corner-text">
@@ -319,7 +333,7 @@
               others? To solve these mysteries and more, we must understand that
               the mind is a machine, operating under the laws of physics.
             </p>
-            <h4>Buy it on</h4>
+            <p class="cta-label">Buy it on</p>
             <button class="steampunk-button">Amazon</button>
           </section>
           <section class="book-corner-image">
@@ -329,6 +343,9 @@
               alt="an image of the cover of Thermodynamic Psychology"
             />
           </section>
+        </section>
+        <hr />
+        <section class="book-corner-grid">
           <section class="book-corner-image">
             <img
               class="e-book-cover"
@@ -345,7 +362,7 @@
               physical phenomena—offering a path to well-being grounded in
               science.
             </p>
-            <h4>Start Reading</h4>
+            <p class="cta-label">Start Reading</p>
             <button class="steampunk-button">Download</button>
           </section>
         </section>
@@ -356,7 +373,8 @@
           </p>
         </aside>
       </section>
-    </div>
+    </main>
+    <!-- </div> -->
     <footer class="footer-image">
       <img src="./assets/images/footer_opacity_cr.png" alt="" />
     </footer>
