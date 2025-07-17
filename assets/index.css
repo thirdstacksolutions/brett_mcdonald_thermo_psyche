@@ -105,6 +105,11 @@ a {
 .message-container p {
   margin-bottom: 1rem;
 }
+.where-is-this-going p:last-of-type,
+.biography p:last-of-type,
+.internal-external-text p:last-of-type {
+  margin-bottom: 0;
+}
 
 /* -------------------------------------------------- */
 /* LAYOUT + CONTAINERS */
@@ -248,8 +253,13 @@ a {
 }
 .introduction-text {
   display: flex;
+  flex-direction: column;
   grid-column: 2;
   grid-row: 1;
+}
+
+.introduction-text p:first-child {
+  margin-bottom: 1rem;
 }
 
 .introduction-callout {
@@ -270,6 +280,17 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+}
+
+.gear-men-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gear-men-text p:first-child {
+  margin-bottom: 1rem;
 }
 
 .gear-men-image img {
@@ -304,6 +325,7 @@ a {
 .brett-bio-container {
   padding: 3rem;
   background-image: url('./images/bret-info-bg_cr.png');
+  margin-bottom: 4rem;
 }
 
 .brett-bio-grid {
@@ -535,8 +557,6 @@ a {
 
 .gamification-text-container {
   flex: 1;
-
-  font-size: clamp(0.875rem, 0.518rem + 0.952vw, 1.375rem);
 }
 
 .game-undertext {
@@ -548,8 +568,8 @@ a {
 
 .axia-intro-grid {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: auto; */
   gap: 2rem;
 }
 
@@ -557,8 +577,15 @@ a {
   margin-bottom: 1rem;
 }
 
+.axia-intro-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .axia-intro-video img {
   height: clamp(13.75rem, -6.328rem + 31.373vw, 18.75rem);
+  width: auto;
 }
 /* -------------------------------------------------- */
 /* WHAT DO WE NEED */
@@ -602,8 +629,9 @@ a {
 
 .internal-external-image img {
   height: clamp(25rem, -9.133rem + 53.333vw, 33.5rem);
+  width: auto;
   border: 3px solid #0b5050;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 /* -------------------------------------------------- */
@@ -790,8 +818,12 @@ a {
 .engine-intro-grid,
 .mental-combustion-grid,
 .game-grid,
-.book-corner-grid {
-  gap: clamp(1.5rem, 1.143rem + 0.952vw, 2rem);
+.book-corner-grid,
+.axia-intro-grid,
+.what-do-we-need-grid,
+.internal-external-grid,
+.balancing-grid {
+  gap: clamp(1rem, 0.286rem + 1.905vw, 2rem);
 }
 
 .book-corner hr {
