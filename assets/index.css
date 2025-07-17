@@ -840,8 +840,8 @@ a {
   .content-container,
   .navbar {
     padding: 0 4rem;
-    margin: 2rem 0;
   }
+
   .introduction-grid {
     display: flex;
     flex-direction: column;
