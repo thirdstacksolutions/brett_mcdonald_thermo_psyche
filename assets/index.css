@@ -512,6 +512,11 @@ a {
   height: clamp(55rem, 29.902rem + 39.216vw, 61.25rem);
 }
 
+.game-grid-image img {
+  width: auto;
+  max-height: 500px;
+}
+
 .gamification-title {
   text-align: center;
   margin: 1rem 5rem 1.25rem;
