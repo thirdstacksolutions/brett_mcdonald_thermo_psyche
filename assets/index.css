@@ -940,6 +940,18 @@ a {
     height: 820px;
   }
 
+  .axia-intro-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .axia-intro-video img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
   .internal-external-grid {
     display: flex;
     flex-direction: column;
