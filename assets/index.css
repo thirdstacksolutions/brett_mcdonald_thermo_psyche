@@ -939,4 +939,34 @@ a {
   .game-grid-content {
     height: 820px;
   }
+
+  .internal-external-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .internal-external-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .balancing-image {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .balancing-text {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .balancing-image img {
+    width: clamp(9.375rem, -49.884rem + 123.457vw, 15.625rem);
+    height: auto;
+  }
+
+  .energy-gravity-image img {
+    margin-bottom: 1.5rem;
+  }
 }
