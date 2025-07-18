@@ -80,6 +80,7 @@ h3 {
   color: #67351c;
   font-family: 'Cinzel', serif;
   border-bottom: 1px solid #67351c;
+  text-align: center;
 }
 
 p,
@@ -448,7 +449,7 @@ a {
 
 .mental-combustion-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   gap: 2rem;
 }
@@ -563,6 +564,15 @@ a {
 
 .gamification-text-container {
   flex: 1;
+}
+.gamification-text-highlight {
+  display: block;
+  margin-top: 2rem;
+  font-family: cinzel, serif;
+  font-weight: bold;
+  color: #67351c;
+  font-size: clamp(1.35rem, -0.072rem + 2.963vw, 1.5rem);
+  text-align: center;
 }
 
 .game-undertext {
@@ -892,5 +902,41 @@ a {
   }
   .lm-text-axia {
     order: 4;
+  }
+
+  .engine-intro-callout {
+    margin-top: 1rem;
+  }
+
+  .mental-combustion-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mental-combustion-video {
+    order: 1;
+    border-bottom: 2px solid #67351c;
+    padding: 1rem 0 2rem;
+  }
+
+  .mental-combustion-text {
+    order: 3;
+  }
+
+  .mental-combustion-image {
+    order: 2;
+    margin-top: 1rem;
+  }
+
+  .mental-combustion-video img,
+  .mental-combustion-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .game-grid-content {
+    height: 820px;
   }
 }
