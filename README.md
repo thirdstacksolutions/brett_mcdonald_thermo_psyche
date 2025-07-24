@@ -44,3 +44,16 @@ assets/images/
 *.min.js
 *.log
 ```
+
+### CMS Integration
+
+A scaffold for Netlify CMS has been added to allow future content management integration. This includes:
+
+- `/admin/index.html` – placeholder CMS entry point
+- `/admin/config.yml` – placeholder configuration
+- `/content/` – future location for editable content
+- a backend-ready structure and placeholder configuration using Netlify CMS.
+
+While no fields are currently editable, the setup allows seamless activation if content management needs arise.
+
+Note: `/admin` is currently disabled via redirect (see `vercel.json`). CMS scaffolding exists but is not active.

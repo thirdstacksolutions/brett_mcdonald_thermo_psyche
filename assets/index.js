@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log(buttons);
 
   // Fetch JSON data
-  fetch('assets/gamification.json')
+  fetch('../assets/gamification.json')
     .then((response) => response.json())
     .then((data) => {
       // Store JSON data for easy access
