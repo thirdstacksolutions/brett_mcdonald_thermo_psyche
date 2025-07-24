@@ -562,6 +562,7 @@ a {
 
 .gamification-title {
   text-align: center;
+  flex-grow: 1;
   margin: 0.9rem 0;
 }
 
@@ -844,6 +845,36 @@ a {
   margin: clamp(1.5rem, -5.87rem + 13.873vw, 3rem) 0;
 }
 
+/* Mobile styles */
+.mobile-button-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-buttons {
+  display: none;
+  flex-grow: 0;
+  background: none;
+  color: #f4f2e7;
+  cursor: pointer;
+  background-image: url(./images/gear_button_texture.png);
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: clamp(0.8rem, 0.657rem + 0.381vw, 1rem);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.mobile-buttons:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 @media screen and (max-width: 849px) {
   /* .content-container,
   .navbar {
@@ -1054,6 +1085,18 @@ a {
   .game-undertext {
     margin-top: 1rem;
   }
+
+  .gamification-title {
+    margin: 0.5rem 0.5rem;
+  }
+
+  .game-grid-content {
+    margin-top: 0;
+  }
+
+  .mobile-buttons {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -1183,5 +1226,9 @@ a {
     max-width: 175px;
     height: auto;
     margin-bottom: 0;
+  }
+
+  .gamification-title {
+    margin: 0.5rem 0.5rem;
   }
 }
