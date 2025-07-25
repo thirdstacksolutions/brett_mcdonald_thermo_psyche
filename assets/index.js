@@ -129,3 +129,29 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileUpdateItems();
   };
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navbarContent = document.querySelector('.navbar-content');
+  if (!navbarContent) return;
+
+  const stickyOffset = navbarContent.offsetTop;
+  let spacerAdded = false;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= stickyOffset) {
+      if (!spacerAdded) {
+        const spacer = document.createElement('div');
+        spacer.id = 'navbar-spacer';
+        spacer.style.height = `${navbarContent.offsetHeight}px`;
+        navbarContent.parentNode.insertBefore(spacer, navbarContent);
+        spacerAdded = true;
+      }
+      navbarContent.classList.add('is-stuck');
+    } else {
+      const spacer = document.querySelector('#navbar-spacer');
+      if (spacer) spacer.remove();
+      spacerAdded = false;
+      navbarContent.classList.remove('is-stuck');
+    }
+  });
+});
