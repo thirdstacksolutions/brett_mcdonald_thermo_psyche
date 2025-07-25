@@ -538,7 +538,7 @@ a {
   background: none;
   color: #f4f2e7;
   cursor: pointer;
-  background-image: url(./images/gear_button_texture.png);
+  background-image: url(./images/gear_dark.png);
   aspect-ratio: 1 / 1;
   background-position: center;
   background-size: contain;
