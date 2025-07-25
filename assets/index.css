@@ -201,7 +201,21 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
+
+.is-stuck {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 clamp(1rem, -0.82rem + 7.281vw, 5rem);
+  margin: 0;
+  background: #cfc1a9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .gear-icon {
   width: 40px;
   height: 40px;
@@ -538,7 +552,7 @@ a {
   background: none;
   color: #f4f2e7;
   cursor: pointer;
-  background-image: url(./images/gear_dark.png);
+  background-image: url(./images/g_1.png);
   aspect-ratio: 1 / 1;
   background-position: center;
   background-size: contain;
@@ -562,6 +576,7 @@ a {
 
 .gamification-title {
   text-align: center;
+  flex-grow: 1;
   margin: 0.9rem 0;
 }
 
@@ -844,6 +859,36 @@ a {
   margin: clamp(1.5rem, -5.87rem + 13.873vw, 3rem) 0;
 }
 
+/* Mobile styles */
+.mobile-button-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-buttons {
+  display: none;
+  flex-grow: 0;
+  background: none;
+  color: #f4f2e7;
+  cursor: pointer;
+  background-image: url(./images/gear_button_texture.png);
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: clamp(0.8rem, 0.657rem + 0.381vw, 1rem);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.mobile-buttons:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 @media screen and (max-width: 849px) {
   /* .content-container,
   .navbar {
@@ -1054,6 +1099,18 @@ a {
   .game-undertext {
     margin-top: 1rem;
   }
+
+  .gamification-title {
+    margin: 0.5rem 0.5rem;
+  }
+
+  .game-grid-content {
+    margin-top: 0;
+  }
+
+  .mobile-buttons {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -1083,7 +1140,6 @@ a {
 
   .navbar-content {
     justify-content: center;
-    margin-top: 0.5rem;
   }
   .gear-icon,
   .navbar-info p {
@@ -1183,5 +1239,9 @@ a {
     max-width: 175px;
     height: auto;
     margin-bottom: 0;
+  }
+
+  .gamification-title {
+    margin: 0.5rem 0.5rem;
   }
 }

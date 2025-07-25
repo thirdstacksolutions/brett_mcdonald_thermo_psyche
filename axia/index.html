@@ -15,22 +15,22 @@
     <title>Axia</title>
     <link
       rel="preload"
-      href="./assets/fonts/Cinzel-Regular.woff2"
+      href="../assets/fonts/Cinzel-Regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="./assets/fonts/NotoSans-Regular.woff2"
+      href="../assets/fonts/NotoSans-Regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./assets/fonts/fonts.css" />
-    <link rel="preload" href="./assets/index.css" as="style" />
-    <link rel="stylesheet" href="./assets/index.css" />
+    <link rel="stylesheet" href="../assets/fonts/fonts.css" />
+    <link rel="preload" href="../assets/index.css" as="style" />
+    <link rel="stylesheet" href="../assets/index.css" />
   </head>
 
   <body>
@@ -43,7 +43,7 @@
       <div class="navbar-content">
         <div class="navbar-info">
           <img
-            src="./assets/images/gear_icon.png"
+            src="../assets/images/gear_icon.png"
             alt="3 gear icon"
             class="gear-icon"
           />
@@ -51,10 +51,10 @@
         </div>
         <ul class="navbar-links">
           <li>
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
           </li>
           <li>
-            <a href="engine.html">Engine</a>
+            <a href="../engine/index.html">Engine</a>
           </li>
           <li>
             <span class="current">Axia</span>
@@ -80,7 +80,7 @@
         <section class="axia-intro-video">
           <img
             class="introduction-video"
-            src="./assets/images/video_placeholder.png"
+            src="../assets/images/video_placeholder.png"
             alt="Video placeholder"
           />
         </section>
@@ -89,13 +89,13 @@
       <section class="content-container">
         <h2 class="what-do-we-need-title">What Do We Need?</h2>
         <section class="what-do-we-need-grid">
-          <section class="need-image">
+          <section class="need-image survival-image">
             <img
-              src="./assets/images/survival_icon_cr.png"
+              src="../assets/images/survival_icon_cr.png"
               alt="water, shield, and a loaf of bread"
             />
           </section>
-          <article class="need-text">
+          <article class="need-text achievement-text">
             <h2>Achievement</h2>
             <p>
               Things we do for the product they yield, the end result, the
@@ -103,13 +103,13 @@
             </p>
           </article>
 
-          <section class="need-image">
+          <section class="need-image experiential-image">
             <img
-              src="./assets/images/experiential_icon_cr.png"
+              src="../assets/images/experiential_icon_cr.png"
               alt="person enjoying an activity"
             />
           </section>
-          <article class="need-text">
+          <article class="need-text survival-text">
             <h2>Survival</h2>
             <p>
               The need for food, water, breathing, temperature control, safety,
@@ -117,14 +117,14 @@
             </p>
           </article>
 
-          <section class="need-image">
+          <section class="need-image achievement-image">
             <img
-              src="./assets/images/achievement_icon_cr.png"
+              src="../assets/images/achievement_icon_cr.png"
               alt="trophy and checklist"
             />
           </section>
 
-          <article class="need-text">
+          <article class="need-text experiential-text">
             <h2>Experiential</h2>
             <p>
               The things we do for the process of doing them, not for the
@@ -137,7 +137,7 @@
       <!-- Banner -->
       <section class="banner">
         <img
-          src="./assets/images/need_banner.png"
+          src="../assets/images/need_banner.png"
           alt="A color palet, farris wheel, and the word EXPERIENTIAL"
         />
       </section>
@@ -170,7 +170,7 @@
           </article>
           <section class="internal-external-image">
             <img
-              src="./assets/images/axia_1_cr.png"
+              src="../assets/images/axia_1_cr.png"
               alt="A color palet, farris wheel, and the word EXPERIENTIAL"
             />
           </section>
@@ -184,7 +184,7 @@
         <section class="balancing-grid">
           <section class="balancing-image">
             <img
-              src="./assets/images/flowy_dudes_cr.png"
+              src="../assets/images/flowy_dudes_cr.png"
               alt="Two individuals being balanced with themselves"
             />
           </section>
@@ -221,7 +221,7 @@
           </article>
           <section class="energy-gravity-image">
             <img
-              src="./assets/images/light_and_dark_gravity_cr.png"
+              src="../assets/images/light_and_dark_gravity_cr.png"
               alt="A person jumping from the dark to light side'"
             />
           </section>
@@ -268,12 +268,18 @@
               the mind is a machine, operating under the laws of physics.
             </p>
             <p class="cta-label">Buy it on</p>
-            <button class="steampunk-button">Amazon</button>
+            <a
+              href="https://a.co/d/6t77t7W"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="steampunk-button">Amazon</button>
+            </a>
           </section>
           <section class="book-corner-image">
             <img
               class="thermo-psych-cover"
-              src="./assets/images/brett_book.jpg"
+              src="../assets/images/brett_book.jpg"
               alt="an image of the cover of Thermodynamic Psychology"
             />
           </section>
@@ -283,7 +289,7 @@
           <section class="book-corner-image">
             <img
               class="e-book-cover"
-              src="./assets//images/ebook.png"
+              src="../assets/images/ebook.png"
               alt="an image of a phone and tablet showing the cover of Unlocking the Mind"
             />
           </section>
@@ -297,7 +303,9 @@
               science.
             </p>
             <p class="cta-label">Start Reading</p>
-            <button class="steampunk-button">Download</button>
+            <a href="../assets/Unlocking_The_Mind.pdf" download>
+              <button class="steampunk-button">Download</button>
+            </a>
           </section>
         </section>
         <aside class="book-corner-callout">
@@ -310,7 +318,8 @@
     </main>
     <!-- </div> -->
     <footer class="footer-image">
-      <img src="./assets/images/footer_opacity_cr.png" alt="" />
+      <img src="../assets/images/footer_opacity_cr.png" alt="" />
     </footer>
+    <script src="../assets/index.js"></script>
   </body>
 </html>

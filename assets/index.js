@@ -6,18 +6,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const titleElement = document.querySelector('.gamification-title');
   const textElement = document.querySelector('.gamification-text');
   const imageElement = document.querySelector('.game-grid-image img');
+  const textHighlightElement = document.querySelector(
+    '.gamification-text-highlight'
+  );
+  const containerElement = document.querySelector('.game-grid-content');
+
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  let touchStartX = 0;
+  let touchEndX = 0;
+  let currentIndex = -1;
+  let gamificationData = {};
 
   console.log(buttons);
 
   // Fetch JSON data
-  fetch('assets/gamification.json')
+  fetch('../assets/gamification.json')
     .then((response) => response.json())
     .then((data) => {
       // Store JSON data for easy access
-      const gamificationData = data.reduce((acc, item) => {
+      gamificationData = data.reduce((acc, item) => {
         acc[item.id] = item;
         return acc;
       }, {});
+
+      initializeMobileItems();
 
       buttons.forEach((button) => {
         button.addEventListener('click', () => {
@@ -48,4 +62,96 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch((error) => {
       console.error('Error fetching gamification data:', error);
     });
+
+  const initializeMobileItems = () => {
+    setUpMobileListeners();
+    mobileUpdateItems();
+  };
+
+  const mobileUpdateItems = () => {
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled =
+      currentIndex === Object.keys(gamificationData).length - 1;
+
+    if (currentIndex >= 0) {
+      textHighlightElement.style.display = 'none';
+    }
+
+    const currentItem =
+      gamificationData[Object.keys(gamificationData)[currentIndex]];
+    if (currentItem) {
+      titleElement.textContent = currentItem.title;
+      textElement.textContent = currentItem.description;
+      imageElement.src = currentItem.image_location;
+      imageElement.alt = currentItem.title;
+    }
+  };
+
+  const setUpMobileListeners = () => {
+    // Navigation buttons
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        mobileUpdateItems();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < Object.keys(gamificationData).length - 1) {
+        currentIndex++;
+        mobileUpdateItems();
+      }
+    });
+
+    // Swipe functionality
+    containerElement.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+
+    containerElement.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+  };
+
+  const handleSwipe = () => {
+    const swipeDistance = touchEndX - touchStartX;
+    const minSwipeDistance = 50;
+
+    if (swipeDistance > minSwipeDistance && currentIndex > 0) {
+      currentIndex--;
+    } else if (
+      swipeDistance < -minSwipeDistance &&
+      currentIndex < Object.keys(gamificationData).length - 1
+    ) {
+      currentIndex++;
+    }
+    mobileUpdateItems();
+  };
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navbarContent = document.querySelector('.navbar-content');
+  if (!navbarContent) return;
+
+  const stickyOffset = navbarContent.offsetTop;
+  let spacerAdded = false;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= stickyOffset) {
+      if (!spacerAdded) {
+        const spacer = document.createElement('div');
+        spacer.id = 'navbar-spacer';
+        spacer.style.height = `${navbarContent.offsetHeight}px`;
+        navbarContent.parentNode.insertBefore(spacer, navbarContent);
+        spacerAdded = true;
+      }
+      navbarContent.classList.add('is-stuck');
+    } else {
+      const spacer = document.querySelector('#navbar-spacer');
+      if (spacer) spacer.remove();
+      spacerAdded = false;
+      navbarContent.classList.remove('is-stuck');
+    }
+  });
 });
