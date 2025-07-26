@@ -196,6 +196,13 @@ a {
   border-bottom: 2px solid #67351c;
 }
 
+.navbar-copyright-img {
+  width: 100%;
+  height: auto;
+  max-width: 50px;
+  padding-bottom: 2px;
+}
+
 .navbar-content {
   display: flex;
   flex-wrap: wrap;
