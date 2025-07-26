@@ -596,8 +596,8 @@ a {
 .gamification-text-highlight {
   display: block;
   margin-top: 2rem;
-  font-family: cinzel, serif;
-  font-weight: bold;
+  font-family: playfair display, serif;
+  font-weight: bolder;
   color: #67351c;
   font-size: clamp(1.35rem, -0.072rem + 2.963vw, 1.5rem);
   text-align: center;
