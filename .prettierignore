@@ -1,0 +1,11 @@
+
+assets/images/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+
+
+.DS_Store
