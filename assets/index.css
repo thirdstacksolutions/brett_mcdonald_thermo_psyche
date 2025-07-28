@@ -583,7 +583,7 @@ a {
   border: 4px solid #0b5050;
   padding: 1.8rem;
   border-radius: 4px;
-  height: clamp(55rem, 29.902rem + 39.216vw, 61.25rem);
+  min-height: clamp(18.75rem, 6.964rem + 58.929vw, 60rem);
   background-color: rgba(237, 234, 234, 0.5);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -607,7 +607,7 @@ a {
 }
 .gamification-text-highlight {
   display: block;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-family: playfair display, serif;
   font-weight: bolder;
   color: #67351c;
@@ -1001,9 +1001,9 @@ a {
     height: auto;
   }
 
-  .game-grid-content {
+  /* .game-grid-content {
     height: 820px;
-  }
+  } */
 
   .axia-intro-grid {
     display: flex;
