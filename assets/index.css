@@ -57,6 +57,14 @@ main,
 .navbar {
   max-width: 1279px;
 }
+
+img,
+video,
+button {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 /* -------------------------------------------------- */
 /* TYPOGRAPHY */
 /* -------------------------------------------------- */
@@ -562,7 +570,7 @@ a {
   background: none;
   color: #f4f2e7;
   cursor: pointer;
-  background-image: url(./images/gear_button.webp);
+  background-image: url(./images/gear_button_shadow.webp);
   aspect-ratio: 1 / 1;
   background-position: center;
   background-size: contain;
