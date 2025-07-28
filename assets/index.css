@@ -65,6 +65,19 @@ button {
   -webkit-user-drag: none;
 }
 
+.introduction-video,
+.introduction-video img,
+.lm-img-engine img,
+.lm-img-axia img,
+.brett-img video,
+.mental-combustion-image img,
+.game-grid-image img,
+.internal-external-image img {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 /* -------------------------------------------------- */
 /* TYPOGRAPHY */
 /* -------------------------------------------------- */
@@ -654,6 +667,18 @@ a {
   gap: 2rem;
 }
 
+.need-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.need-image img {
+  width: 100%;
+  height: auto;
+}
+
 .need-text {
   display: flex;
   flex-direction: column;
@@ -1198,17 +1223,6 @@ a {
     grid-template-rows: auto auto auto;
   }
 
-  .need-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .need-image img {
-    width: 100%;
-    height: auto;
-    max-width: 150px;
-  }
   .survival-image {
     grid-column: 1;
     grid-row: 1;
