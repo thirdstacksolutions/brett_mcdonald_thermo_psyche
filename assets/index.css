@@ -597,7 +597,7 @@ a {
   border: 4px solid #0b5050;
   padding: 1.8rem;
   border-radius: 4px;
-  min-height: clamp(18.75rem, 6.964rem + 58.929vw, 60rem);
+  height: clamp(50rem, 39.286rem + 28.571vw, 56.25rem);
   background-color: rgba(237, 234, 234, 0.5);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -616,9 +616,19 @@ a {
   margin: 0.9rem 0;
 }
 
+#prevBtn,
+#nextBtn {
+  background-image: url(./images/gear_button_shadow.webp);
+  width: 50px;
+  height: auto;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
 .gamification-text-container {
   flex: 1;
 }
+
 .gamification-text-highlight {
   display: block;
   margin-top: 1rem;
@@ -1279,6 +1289,6 @@ a {
   }
 
   .gamification-title {
-    margin: 0.5rem 0.5rem;
+    margin: 0.5rem 0;
   }
 }
