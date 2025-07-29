@@ -1,0 +1,18 @@
+{
+    "components": "assets/data/components.json",
+    "copyright": "assets/data/copyright.json",
+    "sitemap": "assets/data/sitemap-images.xml",
+  
+    "gamification": "assets/images/gamification.json",
+  
+    "home": {
+      "images": "assets/data/home_images.json"
+    },
+    "engine": {
+      "images": "assets/data/engine_images.json"
+    },
+    "axia": {
+      "images": "assets/data/axia_images.json"
+    }
+  }
+  

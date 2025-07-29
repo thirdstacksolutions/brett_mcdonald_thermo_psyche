@@ -1,0 +1,26 @@
+{
+  "siteName": "Thermodynamic Psychology",
+  "author": "ThirdStack Solutions",
+  "copyright": "© 2025 ThirdStack Solutions LLC. All rights reserved.",
+  "licenseURL": "https://yourdomain.com/copyright",
+  "by_author": {
+    "ThirdStack Solutions": [
+      "copyright_gear.png",
+      "gear_icon.png",
+      "blocks_toy_cr.png",
+      "cogs_cr.png",
+      "footer_opacity_cr.png",
+      "good_alice_cr_sm.png",
+      "mind_machine_banner.png",
+      "mouse_therapy_cr.png",
+      "video_placeholder.png"
+    ],
+    "Brett McDonald": [
+      "BrettMcDonald2023-27.avif",
+      "brett_book.jpg",
+      "ebook.png",
+      "axia_gold_wide_cr.png",
+      "mental_combustion_home.png"
+    ]
+  }
+}

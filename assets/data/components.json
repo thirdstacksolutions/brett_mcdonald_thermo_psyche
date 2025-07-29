@@ -1,0 +1,33 @@
+{
+    "navbar": {
+      "logo": {
+        "image_location": "../assets/images/copyright_gear.png",
+        "alt": "Cog copyright 2025"
+      },
+      "gear_icon": {
+        "image_location": "../assets/images/gear_icon.png",
+        "alt": "Three gear icon"
+      }
+    },
+    "book_corner": {
+      "main_book": {
+        "title": "Thermodynamic Psychology",
+        "image_location": "../assets/images/brett_book.jpg",
+        "alt": "Cover of Thermodynamic Psychology",
+        "link": "https://a.co/d/6t77t7W"
+      },
+      "ebook": {
+        "title": "Unlocking the Mind",
+        "image_location": "../assets/images/ebook.png",
+        "alt": "eBook cover shown on tablet and phone",
+        "file_download": "../assets/Unlocking_The_Mind.pdf"
+      }
+    },
+    "footer": {
+      "image": {
+        "image_location": "../assets/images/footer_opacity_cr.png",
+        "alt": ""
+      }
+    }
+  }
+  
