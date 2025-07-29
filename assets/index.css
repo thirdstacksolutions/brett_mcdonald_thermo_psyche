@@ -635,7 +635,6 @@ a {
   font-family: playfair display, serif;
   font-weight: bolder;
   color: #67351c;
-  font-size: clamp(1.25rem, 0.962rem + 1.154vw, 2rem);
   text-align: center;
 }
 
