@@ -589,6 +589,7 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   font-size: clamp(0.8rem, 0.657rem + 0.381vw, 1rem);
+  font-size: 3rem;
 }
 .game-grid-content {
   display: flex;
