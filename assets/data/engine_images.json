@@ -2,32 +2,32 @@
     {
       "id": "engine-hero",
       "image_location": "../assets/images/mental_combustion_engine.png",
-      "alt": "Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output.",
+      "alt": "Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output."
     },
     {
       "id": "engine-video-placeholder",
       "image_location": "../assets/images/video_placeholder.png",
-      "alt": "Video placeholder for mental combustion video",
+      "alt": "Video placeholder for mental combustion video"
     },
     {
       "id": "engine-banner",
       "image_location": "../assets/images/gears_banner_cr.png",
-      "alt": "An open door reveals glowing, bronze-colored steampunk gears turning in the darkness. On the left side, large serif text reads: This is where the gears start turning.",
+      "alt": "An open door reveals glowing, bronze-colored steampunk gears turning in the darkness. On the left side, large serif text reads: This is where the gears start turning."
     },
     {
       "id": "engine-mower",
       "image_location": "../assets/images/steampunk_lawn_mower_cr.png",
-      "alt": "A steampunk lawn mower with gears and pipes",
+      "alt": "A steampunk lawn mower with gears and pipes"
     },
     {
       "id": "engine-book",
       "image_location": "../assets/images/brett_book.jpg",
-      "alt": "Book cover of Thermodynamic Psychology",
+      "alt": "Book cover of Thermodynamic Psychology"
     },
     {
       "id": "engine-ebook",
       "image_location": "../assets/images/ebook.png",
-      "alt": "A phone and tablet showing the cover of Unlocking the Mind",
+      "alt": "A phone and tablet showing the cover of Unlocking the Mind"
     }
   ]
   
