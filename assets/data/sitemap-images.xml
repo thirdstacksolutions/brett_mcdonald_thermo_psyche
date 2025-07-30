@@ -1,5 +1,11 @@
-<?xml version="1.0" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+>
+
+  <!-- Home Page -->
   <url>
     <loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/index.html</loc>
     <image:image>
@@ -44,16 +50,9 @@
     <image:image>
       <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/gear_icon.png</image:loc>
     </image:image>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/brett_book.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/ebook.png</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/footer_opacity_cr.png</image:loc>
-    </image:image>
   </url>
+
+  <!-- Engine Page -->
   <url>
     <loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/engine/index.html</loc>
     <image:image>
@@ -67,12 +66,6 @@
     </image:image>
     <image:image>
       <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/steampunk_lawn_mower_cr.png</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/brett_book.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/ebook.png</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/1_fuel.png</image:loc>
@@ -116,18 +109,17 @@
     <image:image>
       <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/gear_icon.png</image:loc>
     </image:image>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/brett_book.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/ebook.png</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/footer_opacity_cr.png</image:loc>
-    </image:image>
   </url>
+
+  <!-- AXIA Page (with video) -->
   <url>
     <loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/axia/index.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/video_placeholder.png</video:thumbnail_loc>
+      <video:title>AXIA Framework Introduction Video</video:title>
+      <video:description>An animated overview of the AXIA framework for human needs in Thermodynamic Psychology.</video:description>
+      <video:content_loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/video/Axia_1920x1080.mp4</video:content_loc>
+    </video:video>
     <image:image>
       <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/video_placeholder.png</image:loc>
     </image:image>
@@ -158,14 +150,6 @@
     <image:image>
       <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/gear_icon.png</image:loc>
     </image:image>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/brett_book.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/ebook.png</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/footer_opacity_cr.png</image:loc>
-    </image:image>
   </url>
+
 </urlset>
