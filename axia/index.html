@@ -35,7 +35,6 @@
   </head>
 
   <body>
-    <!-- <div class="content-container"> -->
     <nav class="navbar content-container">
       <div class="navbar-header">
         <h1 class="navbar-title">Thermodynamic Psychology</h1>
@@ -89,7 +88,6 @@
             <video
               id="axiaVideo"
               class="introduction-video"
-              autoplay
               playsinline
               loading="lazy"
               preload="metadata"
@@ -103,25 +101,31 @@
               />
               Your browser does not support the video tag.
             </video>
-            <div class="video-controls">
-              <div class="video-controls">
-                <button
-                  id="muteToggle"
-                  class="mute-button"
-                  aria-label="Mute video"
-                  aria-pressed="false"
-                >
-                  🔈
-                </button>
-                <button
-                  id="playPauseToggle"
-                  class="pause-button"
-                  aria-label="Pause video"
-                  aria-pressed="false"
-                >
-                  ⏸
-                </button>
-              </div>
+            <div class="video-overlay" id="videoOverlay">
+              <button id="videoPlayBtn" class="video-play-btn">▶ Play</button>
+            </div>
+            <div class="video-replay-overlay" id="videoReplay" hidden>
+              <button id="videoReplayBtn" class="video-replay-btn">
+                🔁 Replay
+              </button>
+            </div>
+            <div class="video-controls" hidden>
+              <button
+                id="muteToggle"
+                class="mute-button"
+                aria-label="Mute video"
+                aria-pressed="false"
+              >
+                🔈
+              </button>
+              <button
+                id="playPauseToggle"
+                class="pause-button"
+                aria-label="Pause video"
+                aria-pressed="false"
+              >
+                ⏸
+              </button>
             </div>
           </div>
         </section>
@@ -174,7 +178,6 @@
           </article>
         </section>
       </section>
-      <!-- </div> -->
       <!-- Banner -->
       <section class="banner">
         <img
@@ -182,7 +185,6 @@
           alt="Steampunk dragonfly beside the text: 'You are what you need. Let’s map out your personal blueprint.'"
         />
       </section>
-      <!-- <div class="content-container"> -->
       <!-- Needs Are Internal And External -->
       <section class="needs content-container">
         <h2 class="internal-external-title">Needs are Internal and External</h2>
@@ -357,40 +359,11 @@
         </aside>
       </section>
     </main>
-    <!-- </div> -->
     <footer class="footer-image">
       <img src="../assets/images/footer_opacity_cr.png" alt="" />
     </footer>
     <script src="../assets/page_functions.js"></script>
     <script src="../assets/index.js"></script>
-    <script>
-      const video = document.getElementById('axiaVideo');
-      const muteToggle = document.getElementById('muteToggle');
-      const playPauseToggle = document.getElementById('playPauseToggle');
-
-      muteToggle.addEventListener('click', () => {
-        video.muted = !video.muted;
-        muteToggle.textContent = video.muted ? '🔇' : '🔈';
-        muteToggle.setAttribute('aria-pressed', String(!video.muted));
-        muteToggle.setAttribute(
-          'aria-label',
-          video.muted ? 'Unmute video' : 'Mute video'
-        );
-      });
-
-      playPauseToggle.addEventListener('click', () => {
-        if (video.paused) {
-          video.play();
-          playPauseToggle.textContent = '⏸';
-          playPauseToggle.setAttribute('aria-label', 'Pause video');
-          playPauseToggle.setAttribute('aria-pressed', 'false');
-        } else {
-          video.pause();
-          playPauseToggle.textContent = '▶️';
-          playPauseToggle.setAttribute('aria-label', 'Play video');
-          playPauseToggle.setAttribute('aria-pressed', 'true');
-        }
-      });
-    </script>
+    <script src="../assets/video.js"></script>
   </body>
 </html>
