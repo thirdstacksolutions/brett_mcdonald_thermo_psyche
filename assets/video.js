@@ -25,14 +25,14 @@ window.addEventListener('DOMContentLoaded', () => {
 playBtn.addEventListener('click', () => {
   video.play();
   overlay.hidden = true;
-  controls.hidden = false; // 👈 Add this line
+  controls.hidden = false;
 });
 
 replayBtn.addEventListener('click', () => {
   video.currentTime = 0;
   video.play();
   replayOverlay.hidden = true;
-  controls.hidden = false; // 👈 And this
+  controls.hidden = true;
 });
 
 muteToggle.addEventListener('click', () => {
