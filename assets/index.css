@@ -590,7 +590,17 @@ a {
   background-repeat: no-repeat;
   font-size: clamp(0.8rem, 0.657rem + 0.381vw, 1rem);
   font-size: 3rem;
+  transition: transform 0.2s ease-in-out;
 }
+
+.game-buttons-left .game-buttons li button:hover {
+  transform: rotate(20deg);
+}
+
+.game-buttons-right .game-buttons li button:hover {
+  transform: rotate(-20deg);
+}
+
 .game-grid-content {
   display: flex;
   flex-direction: column;
