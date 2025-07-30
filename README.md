@@ -49,7 +49,7 @@ assets/images/
 
 A scaffold for Netlify CMS has been added to allow future content management integration. This includes:
 
-- `/admin/index.html` – placeholder CMS entry point
+- `/admin/` – placeholder CMS entry point
 - `/admin/config.yml` – placeholder configuration
 - `/content/` – future location for editable content
 - a backend-ready structure and placeholder configuration using Netlify CMS.
