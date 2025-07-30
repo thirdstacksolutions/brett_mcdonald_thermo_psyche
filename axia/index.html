@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Thermodynamic Psychology - How the mind works."
+      content="Explore AXIA, the blueprint of human needs in Thermodynamic Psychology. Learn how the mind uses energy to fulfill survival, achievement, and experiential needs through internal and external systems."
     />
     <meta
       name="keywords"
-      content="Thermodynamic Psychology, mind, psychology, thermodynamics, human needs, mental health, Brett McDonald"
+      content="AXIA, human needs, Thermodynamic Psychology, psychological blueprint, internal needs, external needs, mental health, self-esteem, cognitive balance, energy and behavior, psychological energy, Brett McDonald"
     />
     <meta name="author" content="Brett McDonald" />
-    <title>Axia</title>
+    <title>Axia: Blueprint of Human Needs | Thermodynamic Psychology</title>
     <link
       rel="preload"
       href="../assets/fonts/Cinzel-Regular.woff2"
@@ -31,6 +31,13 @@
     <link rel="stylesheet" href="../assets/fonts/fonts.css" />
     <link rel="preload" href="../assets/index.css" as="style" />
     <link rel="stylesheet" href="../assets/index.css" />
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="../assets/data/sitemap-images.xml"
+    />
+    <link rel="icon" type="image/png" href="../assets/images/gear_icon.png" />
   </head>
 
   <body>
@@ -84,11 +91,33 @@
           </p>
         </article>
         <section class="axia-intro-video">
-          <img
-            class="introduction-video"
-            src="../assets/images/video_placeholder.png"
-            alt="Video placeholder"
-          />
+          <div class="video-wrapper">
+            <video
+              id="axiaVideo"
+              class="introduction-video"
+              autoplay
+              muted
+              playsinline
+              preload="none"
+              width="100%"
+              poster="../assets/images/video_placeholder.png"
+              aria-label="An animated overview of the AXIA framework for human needs"
+            >
+              <source
+                src="../assets/video/Axia_1920x1080.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <button
+              id="muteToggle"
+              class="mute-button"
+              aria-label="Mute video"
+              aria-pressed="false"
+            >
+              🔈
+            </button>
+          </div>
         </section>
       </section>
       <!-- What Do We Need? Section -->
@@ -328,5 +357,19 @@
     </footer>
     <script src="../assets/page_functions.js"></script>
     <script src="../assets/index.js"></script>
+    <script>
+      const video = document.getElementById('axiaVideo');
+      const toggle = document.getElementById('muteToggle');
+
+      toggle.addEventListener('click', () => {
+        video.muted = !video.muted;
+        toggle.textContent = video.muted ? '🔇' : '🔈';
+        toggle.setAttribute('aria-pressed', String(!video.muted));
+        toggle.setAttribute(
+          'aria-label',
+          video.muted ? 'Unmute video' : 'Mute video'
+        );
+      });
+    </script>
   </body>
 </html>

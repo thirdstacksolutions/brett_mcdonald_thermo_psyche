@@ -1281,3 +1281,23 @@ a {
     margin: 0.5rem 0.5rem;
   }
 }
+/* -------------------------------------------------- */
+/* VIDEO ELEMENTS */
+/* -------------------------------------------------- */
+
+.mute-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgb(102, 83, 83);
+  border: none;
+  border-radius: 20%;
+  font-size: 1.5rem;
+  padding: 0.4rem;
+  color: white;
+  cursor: pointer;
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
