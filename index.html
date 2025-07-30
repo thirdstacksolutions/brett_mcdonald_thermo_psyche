@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Thermodynamic Psychology - How the mind works."
+      content="Discover Thermodynamic Psychology—an innovative model that applies the laws of physics to explain mental processes, human behavior, and emotional well-being. Developed by Dr. Brett McDonald."
     />
     <meta
       name="keywords"
-      content="Thermodynamic Psychology, mind, psychology, thermodynamics, human needs, mental health, Brett McDonald"
+      content="Thermodynamic Psychology, how the mind works, mental combustion, human needs psychology, four stroke mind model, mental energy, Brett McDonald, psychological blueprint, thermodynamics in psychology, mental health science"
     />
     <meta name="author" content="Brett McDonald" />
-    <title>Home</title>
+    <title>How the Mind Works | Thermodynamic Pscyhology</title>
     <link
       rel="preload"
       href="./assets/fonts/Cinzel-Regular.woff2"
@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="./assets/fonts/fonts.css" />
     <link rel="preload" href="./assets/index.css" as="style" />
     <link rel="stylesheet" href="./assets/index.css" />
+    <link rel="icon" type="image/png" href="./assets/images/gear_icon.png" />
   </head>
 
   <body>
@@ -59,10 +60,10 @@
             <a href="#top" class="current">Home</a>
           </li>
           <li>
-            <a href="/engine/">Engine</a>
+            <a href="./engine/index.html">Engine</a>
           </li>
           <li>
-            <a href="/axia/">Axia</a>
+            <a href="./axia/index.html">Axia</a>
           </li>
         </ul>
       </div>
@@ -70,10 +71,77 @@
     <main>
       <section class="introduction-grid content-container">
         <section class="introduction-video">
-          <img
-            src="./assets/images/video_placeholder.png"
-            alt="Video placeholder"
-          />
+          <div class="video-wrapper">
+            <video
+              id="axiaVideo"
+              class="introduction-video"
+              playsinline
+              loading="lazy"
+              preload="metadata"
+              width="100%"
+              aria-label="An animated overview of the AXIA framework for human needs"
+              title="AXIA Framework Introduction Video"
+            >
+              <source
+                src="./assets/video/Axia_1920x1080.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay" id="videoOverlay">
+              <button
+                id="videoPlayBtn"
+                class="video-play-btn"
+                aria-label="Play video"
+              >
+                <img
+                  src="/assets/images/icons/play.svg"
+                  alt="Play"
+                  class="icon-svg"
+                />
+              </button>
+            </div>
+
+            <div class="video-replay-overlay" id="videoReplay" hidden>
+              <button
+                id="videoReplayBtn"
+                class="video-replay-btn"
+                aria-label="Replay video"
+              >
+                <img
+                  src="/assets/images/icons/replay.svg"
+                  alt="Replay"
+                  class="icon-svg"
+                />
+              </button>
+            </div>
+            <div class="video-controls" hidden>
+              <button
+                id="muteToggle"
+                class="mute-button"
+                aria-label="Mute video"
+                aria-pressed="false"
+              >
+                <img
+                  src="/assets/images/icons/speaker-on.svg"
+                  alt="Mute"
+                  class="icon-svg"
+                />
+              </button>
+              <button
+                id="playPauseToggle"
+                class="pause-button"
+                aria-label="Pause video"
+                aria-pressed="false"
+              >
+                <img
+                  src="/assets/images/icons/pause.svg"
+                  alt="Pause"
+                  class="icon-svg"
+                />
+              </button>
+            </div>
+          </div>
         </section>
 
         <article class="introduction-text">
@@ -123,7 +191,7 @@
         <section class="gear-men-image">
           <img
             src="./assets/images/cogs_cr.png"
-            alt="a square image with four men standing on each side of the inner sides of the square. The men are reaching out turning gears that are connected in gear chains to a large inner gear in the center of the image."
+            alt="A square image with four men standing on each side of the inner sides of the square. The men are reaching out turning gears that are connected in gear chains to a large inner gear in the center of the image."
           />
         </section>
       </section>
@@ -159,16 +227,19 @@
           <div class="learn-more-item lm-img-engine">
             <img
               src="./assets/images/mental_combustion_home.png"
-              alt="The Engine"
+              alt="Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output."
             />
-            <a href="./engine/">
+            <a href="./engine/index.html">
               <button class="steampunk-button">The Engine</button>
             </a>
           </div>
           <div class="learn-more-item lm-img-axia">
-            <img src="./assets/images/axia_gold_wide_cr.png" alt="The AXIA" />
+            <img
+              src="./assets/images/axia_gold_wide_cr.png"
+              alt="A diagram of a steampunk propeller labeled with six human need categories"
+            />
 
-            <a href="./axia/">
+            <a href="./axia/index.html">
               <button class="steampunk-button">The AXIA</button>
             </a>
           </div>
@@ -408,6 +479,9 @@
     <footer class="footer-image">
       <img src="./assets/images/footer_opacity_cr.png" alt="" />
     </footer>
+    <script src="./assets/page_functions.js"></script>
     <script src="./assets/index.js"></script>
+    <script src="./assets/video.js"></script>
+    `
   </body>
 </html>

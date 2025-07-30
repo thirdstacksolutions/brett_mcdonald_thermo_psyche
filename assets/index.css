@@ -1,3 +1,16 @@
+/* ===========================
+   Post-Launch Shame Pile 👇
+   =========================== */
+
+/* 
+  NOTE: 'introduction-video' used on both section and video elements.
+  Not ideal — functional for now. Needs cleanup post-launch.
+   
+  TODO: repetitive rulesets refactored
+  TODO: clamp functions reviewed site wide and refined
+  TODO: Replace repeated IDs with classes + scoped JS
+*/
+
 /* -------------------------------------------------- */
 /* RESET — only resets, no styles here */
 /* -------------------------------------------------- */
@@ -60,13 +73,14 @@ main,
 
 img,
 video,
+.video-overlay,
+.video-replay-overlay,
 button {
   user-select: none;
   -webkit-user-drag: none;
 }
 
-.introduction-video,
-.introduction-video img,
+video,
 .lm-img-engine img,
 .lm-img-axia img,
 .brett-img,
@@ -882,11 +896,32 @@ a {
   h3 {
     font-size: clamp(1.2rem, 0.217rem + 1.85vw, 1.4rem);
   }
-  /* .content-container,
-  .navbar {
-    margin: clamp(1.5rem, -5.87rem + 13.873vw, 3rem) 0;
-    padding: 0 clamp(1.5rem, -15.697rem + 32.37vw, 5rem);
-  } */
+
+  .introduction-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introduction-video video {
+    width: clamp(31.25rem, 17.952rem + 35.461vw, 40.625rem);
+    height: auto;
+    display: block;
+  }
+
+  .introduction-video {
+    order: 2;
+  }
+
+  .introduction-text {
+    order: 1;
+  }
+
+  .introduction-callout {
+    order: 3;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #67351c;
+  }
 
   .introduction-grid,
   .gear-men-grid,
@@ -961,33 +996,6 @@ a {
   .navbar {
     padding: 0 4rem;
   } */
-
-  .introduction-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .introduction-video img {
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .introduction-video {
-    order: 2;
-  }
-
-  .introduction-text {
-    order: 1;
-  }
-
-  .introduction-callout {
-    order: 3;
-    padding-bottom: 2rem;
-    border-bottom: 2px solid #67351c;
-  }
 
   .learn-more-grid {
     display: flex;
@@ -1300,4 +1308,80 @@ a {
   .gamification-title {
     margin: 0.5rem 0;
   }
+}
+/* -------------------------------------------------- */
+/* VIDEO ELEMENTS */
+/* -------------------------------------------------- */
+
+.video-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+}
+.video-controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 2rem;
+  width: 2rem;
+}
+
+.video-controls button .icon-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.video-play-btn,
+.video-replay-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.video-play-btn .icon-svg,
+.video-replay-btn .icon-svg {
+  width: 7rem;
+  height: auto;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.video-wrapper video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.video-overlay,
+.video-replay-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.video-overlay[hidden],
+.video-replay-overlay[hidden],
+.video-controls[hidden] {
+  display: none;
 }

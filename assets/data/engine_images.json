@@ -1,0 +1,80 @@
+[
+  {
+    "id": "engine-hero",
+    "image_location": "../assets/images/mental_combustion_engine.png",
+    "alt": "Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output.",
+    "keywords": [
+      "mental combustion",
+      "psychological engine diagram",
+      "input process output",
+      "mind mechanics",
+      "four-stroke model",
+      "thermodynamic psychology"
+    ]
+  },
+  {
+    "id": "engine-video-placeholder",
+    "image_location": "../assets/images/video_placeholder.png",
+    "alt": "Video placeholder for mental combustion video",
+    "keywords": [
+      "mental combustion video",
+      "thermodynamic psychology",
+      "placeholder image",
+      "pyschology explainer preview"
+    ]
+  },
+  {
+    "id": "engine-banner",
+    "image_location": "../assets/images/gears_banner_cr.png",
+    "alt": "An open door reveals glowing, bronze-colored steampunk gears turning in the darkness. On the left side, large serif text reads: This is where the gears start turning.",
+    "keywords": [
+      "steampunk gears",
+      "psychological mechanics",
+      "engine metaphor",
+      "mental gears",
+      "banner image",
+      "thermodynamic psychology",
+      "motivational psychology"
+    ]
+  },
+  {
+    "id": "engine-mower",
+    "image_location": "../assets/images/steampunk_lawn_mower_cr.png",
+    "alt": "A steampunk lawn mower with gears and pipes",
+    "keywords": [
+      "steampunk lawn mower",
+      "psychology metaphor",
+      "mental engine humor",
+      "mechanical mind",
+      "thermodynamic psychology"
+    ]
+  },
+  {
+    "id": "engine-book",
+    "image_location": "../assets/images/brett_book.jpg",
+    "alt": "Book cover of Thermodynamic Psychology",
+    "keywords": [
+      "Thermodynamic Psychology book",
+      "book cover",
+      "Brett McDonald",
+      "psychology and physics",
+      "mental combustion", 
+      "self-help psychology",
+      "cognitive model"
+    ]
+  },
+  {
+    "id": "engine-ebook",
+    "image_location": "../assets/images/ebook.png",
+    "alt": "A phone and tablet showing the cover of Unlocking the Mind",
+    "keywords": [
+      "Unlocking the Mind ebook",
+      "psychology PDF",
+      "mental health resource",
+      "digital book cover",
+      "Brett McDonald", 
+      "self-help psychology",
+      "cognitive model"
+    ]
+  }
+]

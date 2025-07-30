@@ -1,0 +1,90 @@
+[
+  {
+    "id": "axia-video-placeholder",
+    "image_location": "../assets/images/video_placeholder.png",
+    "alt": "Video placeholder",
+    "keywords": [
+      "axia explainer video",
+      "human needs psychology",
+      "mental energy system",
+      "psychological blueprint"
+    ]
+  },
+  {
+    "id": "survival-icon",
+    "image_location": "../assets/images/survival_icon_cr.png",
+    "alt": "Water, shield, and a loaf of bread",
+    "keywords": [
+      "survival needs icon",
+      "basic human needs",
+      "food and safety",
+      "thermodynamic psychology"
+    ]
+  },
+  {
+    "id": "experiential-icon",
+    "image_location": "../assets/images/experiential_icon_cr.png",
+    "alt": "Person enjoying an activity",
+    "keywords": [
+      "experiential needs icon",
+      "joyful activity",
+      "process over product",
+      "mental health needs"
+    ]
+  },
+  {
+    "id": "achievement-icon",
+    "image_location": "../assets/images/achievement_icon_cr.png",
+    "alt": "Trophy and checklist",
+    "keywords": [
+      "achievement needs icon",
+      "goal setting",
+      "productivity psychology",
+      "success mindset"
+    ]
+  },
+  {
+    "id": "need-banner",
+    "image_location": "../assets/images/need_banner.png",
+    "alt": "Steampunk dragonfly beside the text: 'You are what you need. Let’s map out your personal blueprint.'",
+    "keywords": [
+      "steampunk psychology banner",
+      "human needs motivation",
+      "psychological blueprint",
+      "mental fuel system"
+    ]
+  },
+  {
+    "id": "internal-external-image",
+    "image_location": "../assets/images/axia_1_cr.png",
+    "alt": "A diagram of a steampunk propeller labeled with six human need categories",
+    "keywords": [
+      "axia needs diagram",
+      "steampunk psychology chart",
+      "internal vs external needs",
+      "psychological propeller model"
+    ]
+  },
+  {
+    "id": "balancing-image",
+    "image_location": "../assets/images/flowy_dudes_cr.png",
+    "alt": "Two individuals being balanced with themselves",
+    "keywords": [
+      "self balance visual",
+      "internal external energy",
+      "axity balance",
+      "thermodynamic psychology"
+    ]
+  },
+  {
+    "id": "gravity-image",
+    "image_location": "../assets/images/light_and_dark_gravity_cr.png",
+    "alt": "A person jumping from the dark to light side'",
+    "keywords": [
+      "psychological gravity",
+      "light and dark energy",
+      "mental physics",
+      "behavioral attraction"
+    ]
+  }
+]

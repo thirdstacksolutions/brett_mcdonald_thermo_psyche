@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Thermodynamic Psychology - How the mind works."
+      content="Explore AXIA, the blueprint of human needs in Thermodynamic Psychology. Learn how the mind uses energy to fulfill survival, achievement, and experiential needs through internal and external systems."
     />
     <meta
       name="keywords"
-      content="Thermodynamic Psychology, mind, psychology, thermodynamics, human needs, mental health, Brett McDonald"
+      content="AXIA, human needs, Thermodynamic Psychology, psychological blueprint, internal needs, external needs, mental health, self-esteem, cognitive balance, energy and behavior, psychological energy, Brett McDonald"
     />
     <meta name="author" content="Brett McDonald" />
-    <title>Axia</title>
+    <title>Axia: Blueprint of Human Needs | Thermodynamic Psychology</title>
     <link
       rel="preload"
       href="../assets/fonts/Cinzel-Regular.woff2"
@@ -31,10 +31,10 @@
     <link rel="stylesheet" href="../assets/fonts/fonts.css" />
     <link rel="preload" href="../assets/index.css" as="style" />
     <link rel="stylesheet" href="../assets/index.css" />
+    <link rel="icon" type="image/png" href="../assets/images/gear_icon.png" />
   </head>
 
   <body>
-    <!-- <div class="content-container"> -->
     <nav class="navbar content-container">
       <div class="navbar-header">
         <h1 class="navbar-title">Thermodynamic Psychology</h1>
@@ -84,11 +84,77 @@
           </p>
         </article>
         <section class="axia-intro-video">
-          <img
-            class="introduction-video"
-            src="../assets/images/video_placeholder.png"
-            alt="Video placeholder"
-          />
+          <div class="video-wrapper">
+            <video
+              id="axiaVideo"
+              class="introduction-video"
+              playsinline
+              loading="lazy"
+              preload="metadata"
+              width="100%"
+              aria-label="An animated overview of the AXIA framework for human needs"
+              title="AXIA Framework Introduction Video"
+            >
+              <source
+                src="../assets/video/Axia_1920x1080.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay" id="videoOverlay">
+              <button
+                id="videoPlayBtn"
+                class="video-play-btn"
+                aria-label="Play video"
+              >
+                <img
+                  src="../assets/images/icons/play.svg"
+                  alt="Play"
+                  class="icon-svg"
+                />
+              </button>
+            </div>
+
+            <div class="video-replay-overlay" id="videoReplay" hidden>
+              <button
+                id="videoReplayBtn"
+                class="video-replay-btn"
+                aria-label="Replay video"
+              >
+                <img
+                  src="../assets/images/icons/replay.svg"
+                  alt="Replay"
+                  class="icon-svg"
+                />
+              </button>
+            </div>
+            <div class="video-controls" hidden>
+              <button
+                id="muteToggle"
+                class="mute-button"
+                aria-label="Mute video"
+                aria-pressed="false"
+              >
+                <img
+                  src="../assets/images/icons/speaker-on.svg"
+                  alt="Mute"
+                  class="icon-svg"
+                />
+              </button>
+              <button
+                id="playPauseToggle"
+                class="pause-button"
+                aria-label="Pause video"
+                aria-pressed="false"
+              >
+                <img
+                  src="../assets/images/icons/pause.svg"
+                  alt="Pause"
+                  class="icon-svg"
+                />
+              </button>
+            </div>
+          </div>
         </section>
       </section>
       <!-- What Do We Need? Section -->
@@ -98,7 +164,7 @@
           <section class="need-image survival-image">
             <img
               src="../assets/images/survival_icon_cr.png"
-              alt="water, shield, and a loaf of bread"
+              alt="Water, shield, and a loaf of bread"
             />
           </section>
           <article class="need-text achievement-text">
@@ -112,7 +178,7 @@
           <section class="need-image experiential-image">
             <img
               src="../assets/images/experiential_icon_cr.png"
-              alt="person enjoying an activity"
+              alt="Person enjoying an activity"
             />
           </section>
           <article class="need-text survival-text">
@@ -126,7 +192,7 @@
           <section class="need-image achievement-image">
             <img
               src="../assets/images/achievement_icon_cr.png"
-              alt="trophy and checklist"
+              alt="Trophy and checklist"
             />
           </section>
 
@@ -139,15 +205,13 @@
           </article>
         </section>
       </section>
-      <!-- </div> -->
       <!-- Banner -->
       <section class="banner">
         <img
           src="../assets/images/need_banner.png"
-          alt="A color palet, farris wheel, and the word EXPERIENTIAL"
+          alt="Steampunk dragonfly beside the text: 'You are what you need. Let’s map out your personal blueprint.'"
         />
       </section>
-      <!-- <div class="content-container"> -->
       <!-- Needs Are Internal And External -->
       <section class="needs content-container">
         <h2 class="internal-external-title">Needs are Internal and External</h2>
@@ -177,7 +241,7 @@
           <section class="internal-external-image">
             <img
               src="../assets/images/axia_1_cr.png"
-              alt="A color palet, farris wheel, and the word EXPERIENTIAL"
+              alt="A diagram of a steampunk propeller labeled with six human need categories"
             />
           </section>
         </section>
@@ -322,10 +386,10 @@
         </aside>
       </section>
     </main>
-    <!-- </div> -->
     <footer class="footer-image">
       <img src="../assets/images/footer_opacity_cr.png" alt="" />
     </footer>
     <script src="../assets/index.js"></script>
+    <script src="../assets/video.js"></script>
   </body>
 </html>

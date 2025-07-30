@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Thermodynamic Psychology - How the mind works."
+      content="Explore the Mental Combustion Engine—a four-stroke model that explains how the mind transforms energy into thought, emotion, and behavior. A core concept of Thermodynamic Psychology by Dr. Brett McDonald."
     />
     <meta
       name="keywords"
-      content="Thermodynamic Psychology, mind, psychology, thermodynamics, human needs, mental health, Brett McDonald"
+      content="Mental Combustion, Thermodynamic Psychology, psychological engine, four stroke mind model, how the mind works, Brett McDonald, mental fuel, behavior mechanism, thermodynamics in psychology, human needs, mental health, cognitive energy, psychological blueprint"
     />
     <meta name="author" content="Brett McDonald" />
-    <title>Engine</title>
+    <title>Mental Combustion Engine | Thermodynamic Psychology</title>
     <link
       rel="preload"
       href="../assets/fonts/Cinzel-Regular.woff2"
@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="../assets/fonts/fonts.css" />
     <link rel="preload" href="../assets/index.css" as="style" />
     <link rel="stylesheet" href="../assets/index.css" />
+    <link rel="icon" type="image/png" href="../assets/images/gear_icon.png" />
   </head>
 
   <body>
@@ -115,10 +116,77 @@
             <img src="../assets/images/mental_combustion_engine.png" />
           </section>
           <section class="mental-combustion-video">
-            <img
-              class="introduction-video"
-              src="../assets/images/video_placeholder.png"
-            />
+            <div class="video-wrapper">
+              <video
+                id="axiaVideo"
+                class="introduction-video"
+                playsinline
+                loading="lazy"
+                preload="metadata"
+                width="100%"
+                aria-label="An animated overview of the AXIA framework for human needs"
+                title="AXIA Framework Introduction Video"
+              >
+                <source
+                  src="../assets/video/Axia_1920x1080.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <div class="video-overlay" id="videoOverlay">
+                <button
+                  id="videoPlayBtn"
+                  class="video-play-btn"
+                  aria-label="Play video"
+                >
+                  <img
+                    src="../assets/images/icons/play.svg"
+                    alt="Play"
+                    class="icon-svg"
+                  />
+                </button>
+              </div>
+
+              <div class="video-replay-overlay" id="videoReplay" hidden>
+                <button
+                  id="videoReplayBtn"
+                  class="video-replay-btn"
+                  aria-label="Replay video"
+                >
+                  <img
+                    src="../assets/images/icons/replay.svg"
+                    alt="Replay"
+                    class="icon-svg"
+                  />
+                </button>
+              </div>
+              <div class="video-controls">
+                <button
+                  id="muteToggle"
+                  class="mute-button"
+                  aria-label="Mute video"
+                  aria-pressed="false"
+                >
+                  <img
+                    src="../assets/images/icons/speaker-on.svg"
+                    alt="Mute"
+                    class="icon-svg"
+                  />
+                </button>
+                <button
+                  id="playPauseToggle"
+                  class="pause-button"
+                  aria-label="Pause video"
+                  aria-pressed="false"
+                >
+                  <img
+                    src="../assets/images/icons/pause.svg"
+                    alt="Pause"
+                    class="icon-svg"
+                  />
+                </button>
+              </div>
+            </div>
           </section>
           <section class="mental-combustion-text">
             <p>
@@ -299,5 +367,6 @@
       <img src="../assets/images/footer_opacity_cr.png" alt="" />
     </footer>
     <script src="../assets/index.js"></script>
+    <script src="../assets/video.js"></script>
   </body>
 </html>
