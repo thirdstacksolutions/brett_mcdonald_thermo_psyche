@@ -60,10 +60,10 @@
             <a href="#top" class="current">Home</a>
           </li>
           <li>
-            <a href="/engine/">Engine</a>
+            <a href="./engine/index.html">Engine</a>
           </li>
           <li>
-            <a href="/axia/">Axia</a>
+            <a href="./axia/index.html">Axia</a>
           </li>
         </ul>
       </div>
@@ -89,12 +89,30 @@
               Your browser does not support the video tag.
             </video>
             <div class="video-overlay" id="videoOverlay">
-              <button id="videoPlayBtn" class="video-play-btn">▶ Play</button>
+              <button
+                id="videoPlayBtn"
+                class="video-play-btn"
+                aria-label="Play video"
+              >
+                <img
+                  src="/assets/images/icons/play.svg"
+                  alt="Play"
+                  class="icon-svg"
+                />
+              </button>
             </div>
 
             <div class="video-replay-overlay" id="videoReplay" hidden>
-              <button id="videoReplayBtn" class="video-replay-btn">
-                🔁 Replay
+              <button
+                id="videoReplayBtn"
+                class="video-replay-btn"
+                aria-label="Replay video"
+              >
+                <img
+                  src="/assets/images/icons/replay.svg"
+                  alt="Replay"
+                  class="icon-svg"
+                />
               </button>
             </div>
             <div class="video-controls" hidden>
@@ -104,7 +122,11 @@
                 aria-label="Mute video"
                 aria-pressed="false"
               >
-                🔈
+                <img
+                  src="/assets/images/icons/speaker-on.svg"
+                  alt="Mute"
+                  class="icon-svg"
+                />
               </button>
               <button
                 id="playPauseToggle"
@@ -112,7 +134,11 @@
                 aria-label="Pause video"
                 aria-pressed="false"
               >
-                ⏸
+                <img
+                  src="/assets/images/icons/pause.svg"
+                  alt="Pause"
+                  class="icon-svg"
+                />
               </button>
             </div>
           </div>
@@ -203,7 +229,7 @@
               src="./assets/images/mental_combustion_home.png"
               alt="Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output."
             />
-            <a href="./engine/">
+            <a href="./engine/index.html">
               <button class="steampunk-button">The Engine</button>
             </a>
           </div>
@@ -213,7 +239,7 @@
               alt="A diagram of a steampunk propeller labeled with six human need categories"
             />
 
-            <a href="./axia/">
+            <a href="./axia/index.html">
               <button class="steampunk-button">The AXIA</button>
             </a>
           </div>
@@ -453,6 +479,7 @@
     <footer class="footer-image">
       <img src="./assets/images/footer_opacity_cr.png" alt="" />
     </footer>
+    <script src="./assets/page_functions.js"></script>
     <script src="./assets/index.js"></script>
     <script src="./assets/video.js"></script>
     `

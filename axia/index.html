@@ -102,11 +102,30 @@
               Your browser does not support the video tag.
             </video>
             <div class="video-overlay" id="videoOverlay">
-              <button id="videoPlayBtn" class="video-play-btn">▶ Play</button>
+              <button
+                id="videoPlayBtn"
+                class="video-play-btn"
+                aria-label="Play video"
+              >
+                <img
+                  src="../assets/images/icons/play.svg"
+                  alt="Play"
+                  class="icon-svg"
+                />
+              </button>
             </div>
+
             <div class="video-replay-overlay" id="videoReplay" hidden>
-              <button id="videoReplayBtn" class="video-replay-btn">
-                🔁 Replay
+              <button
+                id="videoReplayBtn"
+                class="video-replay-btn"
+                aria-label="Replay video"
+              >
+                <img
+                  src="../assets/images/icons/replay.svg"
+                  alt="Replay"
+                  class="icon-svg"
+                />
               </button>
             </div>
             <div class="video-controls" hidden>
@@ -116,7 +135,11 @@
                 aria-label="Mute video"
                 aria-pressed="false"
               >
-                🔈
+                <img
+                  src="../assets/images/icons/speaker-on.svg"
+                  alt="Mute"
+                  class="icon-svg"
+                />
               </button>
               <button
                 id="playPauseToggle"
@@ -124,7 +147,11 @@
                 aria-label="Pause video"
                 aria-pressed="false"
               >
-                ⏸
+                <img
+                  src="../assets/images/icons/pause.svg"
+                  alt="Pause"
+                  class="icon-svg"
+                />
               </button>
             </div>
           </div>

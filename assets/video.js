@@ -6,6 +6,8 @@
 const video = document.getElementById('axiaVideo');
 const muteToggle = document.getElementById('muteToggle');
 const playPauseToggle = document.getElementById('playPauseToggle');
+const muteIcon = muteToggle.querySelector('img');
+const playPauseIcon = playPauseToggle.querySelector('img');
 const playBtn = document.getElementById('videoPlayBtn');
 const replayBtn = document.getElementById('videoReplayBtn');
 const overlay = document.getElementById('videoOverlay');
@@ -32,13 +34,17 @@ replayBtn.addEventListener('click', () => {
   video.currentTime = 0;
   video.play();
   replayOverlay.hidden = true;
-  controls.hidden = true;
+  controls.hidden = false;
 });
 
 muteToggle.addEventListener('click', () => {
   video.muted = !video.muted;
-  muteToggle.textContent = video.muted ? '🔇' : '🔈';
-  muteToggle.setAttribute('aria-pressed', String(!video.muted));
+
+  muteIcon.src = video.muted
+    ? '/assets/images/icons/speaker-off.svg'
+    : '/assets/images/icons/speaker-on.svg';
+
+  muteToggle.setAttribute('aria-pressed', String(video.muted));
   muteToggle.setAttribute(
     'aria-label',
     video.muted ? 'Unmute video' : 'Mute video'
@@ -46,14 +52,16 @@ muteToggle.addEventListener('click', () => {
 });
 
 playPauseToggle.addEventListener('click', () => {
-  if (video.paused) {
+  const isPaused = video.paused;
+
+  if (isPaused) {
     video.play();
-    playPauseToggle.textContent = '⏸';
+    playPauseIcon.src = '/assets/images/icons/pause.svg';
     playPauseToggle.setAttribute('aria-label', 'Pause video');
     playPauseToggle.setAttribute('aria-pressed', 'false');
   } else {
     video.pause();
-    playPauseToggle.textContent = '▶️';
+    playPauseIcon.src = '/assets/images/icons/play.svg';
     playPauseToggle.setAttribute('aria-label', 'Play video');
     playPauseToggle.setAttribute('aria-pressed', 'true');
   }
