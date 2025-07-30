@@ -116,33 +116,50 @@
             <img src="../assets/images/mental_combustion_engine.png" />
           </section>
           <section class="mental-combustion-video">
-            <div class="video-overlay" id="videoOverlay">
-              <button
-                id="videoPlayBtn"
-                class="video-play-btn"
-                aria-label="Play video"
+            <div class="video-wrapper">
+              <video
+                id="axiaVideo"
+                class="introduction-video"
+                playsinline
+                loading="lazy"
+                preload="metadata"
+                width="100%"
+                aria-label="An animated overview of the AXIA framework for human needs"
+                title="AXIA Framework Introduction Video"
               >
-                <img
-                  src="../assets/images/icons/play.svg"
-                  alt="Play"
-                  class="icon-svg"
+                <source
+                  src="../assets/video/Axia_1920x1080.mp4"
+                  type="video/mp4"
                 />
-              </button>
-            </div>
+                Your browser does not support the video tag.
+              </video>
+              <div class="video-overlay" id="videoOverlay">
+                <button
+                  id="videoPlayBtn"
+                  class="video-play-btn"
+                  aria-label="Play video"
+                >
+                  <img
+                    src="../assets/images/icons/play.svg"
+                    alt="Play"
+                    class="icon-svg"
+                  />
+                </button>
+              </div>
 
-            <div class="video-replay-overlay" id="videoReplay" hidden>
-              <button
-                id="videoReplayBtn"
-                class="video-replay-btn"
-                aria-label="Replay video"
-              >
-                <img
-                  src="../assets/images/icons/replay.svg"
-                  alt="Replay"
-                  class="icon-svg"
-                />
-              </button>
-            </div>
+              <div class="video-replay-overlay" id="videoReplay" hidden>
+                <button
+                  id="videoReplayBtn"
+                  class="video-replay-btn"
+                  aria-label="Replay video"
+                >
+                  <img
+                    src="../assets/images/icons/replay.svg"
+                    alt="Replay"
+                    class="icon-svg"
+                  />
+                </button>
+              </div>
               <div class="video-controls">
                 <button
                   id="muteToggle"
