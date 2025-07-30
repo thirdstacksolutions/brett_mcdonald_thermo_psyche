@@ -122,10 +122,43 @@
             <img src="../assets/images/mental_combustion_engine.png" />
           </section>
           <section class="mental-combustion-video">
-            <img
+            <div class="video-wrapper">
+              <video
+              id="axiaVideo"
               class="introduction-video"
-              src="../assets/images/video_placeholder.png"
-            />
+              autoplay
+              playsinline
+              loading="lazy"
+              preload="metadata"
+              width="100%"
+              poster="../assets/images/video_placeholder.png"
+              aria-label="An animated overview of the AXIA framework for human needs"
+              title="AXIA Framework Introduction Video"
+            >
+                <source
+                  src="../assets/video/Axia_1920x1080.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <div class="video-controls">
+                <button
+                  id="muteToggle"
+                  class="mute-button"
+                  aria-label="Mute video"
+                  aria-pressed="false"
+                >
+                  🔈
+                </button>
+                <button
+                  id="playPauseToggle"
+                  class="pause-button"
+                  aria-label="Pause video"
+                  aria-pressed="false"
+                >
+                  ⏸
+                </button>
+              </div>
           </section>
           <section class="mental-combustion-text">
             <p>
@@ -319,5 +352,34 @@
     </footer>
     <script src="../assets/page_functions.js"></script>
     <script src="../assets/index.js"></script>
+    <script>
+      const video = document.getElementById('axiaVideo');
+const muteToggle = document.getElementById('muteToggle');
+const playPauseToggle = document.getElementById('playPauseToggle');
+
+muteToggle.addEventListener('click', () => {
+  video.muted = !video.muted;
+  muteToggle.textContent = video.muted ? '🔇' : '🔈';
+  muteToggle.setAttribute('aria-pressed', String(!video.muted));
+  muteToggle.setAttribute(
+    'aria-label',
+    video.muted ? 'Unmute video' : 'Mute video'
+  );
+});
+
+playPauseToggle.addEventListener('click', () => {
+  if (video.paused) {
+    video.play();
+    playPauseToggle.textContent = '⏸';
+    playPauseToggle.setAttribute('aria-label', 'Pause video');
+    playPauseToggle.setAttribute('aria-pressed', 'false');
+  } else {
+    video.pause();
+    playPauseToggle.textContent = '▶️';
+    playPauseToggle.setAttribute('aria-label', 'Play video');
+    playPauseToggle.setAttribute('aria-pressed', 'true');
+  }
+});
+    </script>
   </body>
 </html>
