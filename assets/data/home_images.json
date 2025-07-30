@@ -1,63 +1,137 @@
 [
-    {
-      "id": "home-video-placeholder",
-      "image_location": "./assets/images/video_placeholder.png",
-      "alt": "Video placeholder"
-    },
-    {
-      "id": "gear-men",
-      "image_location": "./assets/images/cogs_cr.png",
-      "alt": "Four men stand on the inside edges of a square, each turning a chain of gears connected to a large central gear."
-    },
-    {
-      "id": "mental-combustion-home",
-      "image_location": "./assets/images/mental_combustion_home.png",
-      "alt": "Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output."
-    },
-    {
-      "id": "axia-diagram",
-      "image_location": "./assets/images/axia_gold_wide_cr.png",
-      "alt": "A diagram of a steampunk propeller labeled with six human need categories"
-    },
-    {
-      "id": "mind-machine-banner",
-      "image_location": "./assets/images/mind_machine_banner.png",
-      "alt": "Text on the left and a steampunk human head with gears on the right. The text reads: 'Your mind is a machine. You just weren’t given the manual...'"
-    },
-    {
-      "id": "brett-portrait",
-      "image_location": "./assets/images/BrettMcDonald2023-27.avif",
-      "alt": "A photo of Dr. Brett McDonald"
-    },
-    {
-      "id": "good-alice",
-      "image_location": "./assets/images/good_alice_cr_sm.png",
-      "alt": "A woman with steampunk accessories stands holding two books in front of her."
-    },
-    {
-      "id": "blocks-toy",
-      "image_location": "./assets/images/blocks_toy_cr.png",
-      "alt": "A bucket toy with different shaped blocks but only round holes"
-    },
-    {
-      "id": "mouse-therapy",
-      "image_location": "./assets/images/mouse_therapy_cr.png",
-      "alt": "A worn image of a mouse therapist talking to a mouse client"
-    },
-    {
-      "id": "book-cover",
-      "image_location": "./assets/images/brett_book.jpg",
-      "alt": "An image of the cover of Thermodynamic Psychology"
-    },
-    {
-      "id": "ebook-cover",
-      "image_location": "./assets/images/ebook.png",
-      "alt": "An image of a phone and tablet showing the cover of Unlocking the Mind"
-    },
-    {
-      "id": "footer-image",
-      "image_location": "./assets/images/footer_opacity_cr.png",
-      "alt": ""
-    }
-  ]
-  
+  {
+    "id": "home-video-placeholder",
+    "image_location": "./assets/images/video_placeholder.png",
+    "alt": "Video placeholder",
+    "keywords": [
+      "video",
+      "thermodynamic psychology",
+      "mental combustion",
+      "home page"
+    ]
+  },
+  {
+    "id": "gear-men",
+    "image_location": "./assets/images/cogs_cr.png",
+    "alt": "Four men stand on the inside edges of a square, each turning a chain of gears connected to a large central gear.",
+    "keywords": [
+      "thermodynamic psychology",
+      "energy systems",
+      "gears",
+      "metaphor",
+      "teamwork"
+    ]
+  },
+  {
+    "id": "mental-combustion-home",
+    "image_location": "./assets/images/mental_combustion_home.png",
+    "alt": "Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output.",
+    "keywords": [
+      "mental combustion",
+      "engine diagram",
+      "psychology model",
+      "input process output"
+    ]
+  },
+  {
+    "id": "axia-diagram",
+    "image_location": "./assets/images/axia_gold_wide_cr.png",
+    "alt": "A diagram of a steampunk propeller labeled with six human need categories",
+    "keywords": [
+      "AXIA",
+      "human needs",
+      "psychology",
+      "thermodynamic psychology",
+      "diagram"
+    ]
+  },
+  {
+    "id": "mind-machine-banner",
+    "image_location": "./assets/images/mind_machine_banner.png",
+    "alt": "Text on the left and a steampunk human head with gears on the right. The text reads: 'Your mind is a machine. You just weren’t given the manual...'",
+    "keywords": [
+      "mind machine",
+      "psychology metaphor",
+      "mental model",
+      "steampunk head",
+      "your mind is a machine"
+    ]
+  },
+  {
+    "id": "brett-portrait",
+    "image_location": "./assets/images/BrettMcDonald2023-27.avif",
+    "alt": "A photo of Dr. Brett McDonald",
+    "keywords": [
+      "Brett McDonald",
+      "psychologist",
+      "author photo",
+      "thermodynamic psychology",
+      "founder portrait"
+    ]
+  },
+  {
+    "id": "good-alice",
+    "image_location": "./assets/images/good_alice_cr_sm.png",
+    "alt": "A woman with steampunk accessories stands holding two books in front of her.",
+    "keywords": [
+      "Good Alice",
+      "steampunk character",
+      "psychology metaphor",
+      "thermodynamic psychology",
+      "graduate school metaphor"
+    ]
+  },
+  {
+    "id": "blocks-toy",
+    "image_location": "./assets/images/blocks_toy_cr.png",
+    "alt": "A bucket toy with different shaped blocks but only round holes",
+    "keywords": [
+      "psychology metaphor",
+      "round hole square peg",
+      "blocks toy",
+      "therapeutic model",
+      "cognitive dissonance"
+    ]
+  },
+  {
+    "id": "mouse-therapy",
+    "image_location": "./assets/images/mouse_therapy_cr.png",
+    "alt": "A worn image of a mouse therapist talking to a mouse client",
+    "keywords": [
+      "mouse therapy",
+      "animal metaphor",
+      "mental health illustration",
+      "counseling",
+      "humor in therapy"
+    ]
+  },
+  {
+    "id": "book-cover",
+    "image_location": "./assets/images/brett_book.jpg",
+    "alt": "An image of the cover of Thermodynamic Psychology",
+    "keywords": [
+      "Thermodynamic Psychology",
+      "book cover",
+      "mental health book",
+      "psychology model",
+      "Brett McDonald book"
+    ]
+  },
+  {
+    "id": "ebook-cover",
+    "image_location": "./assets/images/ebook.png",
+    "alt": "An image of a phone and tablet showing the cover of Unlocking the Mind",
+    "keywords": [
+      "Unlocking the Mind",
+      "ebook",
+      "self-help psychology",
+      "mental health digital book",
+      "free ebook"
+    ]
+  },
+  {
+    "id": "footer-image",
+    "image_location": "./assets/images/footer_opacity_cr.png",
+    "alt": ""
+  }
+]
