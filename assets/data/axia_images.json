@@ -12,7 +12,7 @@
   },
   {
     "id": "survival-icon",
-    "image_location": "../assets/images/survival_icon_cr.png",
+    "image_location": "../assets/images/survival_icon_cr.webp",
     "alt": "Water, shield, and a loaf of bread",
     "keywords": [
       "survival needs icon",
@@ -23,7 +23,7 @@
   },
   {
     "id": "experiential-icon",
-    "image_location": "../assets/images/experiential_icon_cr.png",
+    "image_location": "../assets/images/experiential_icon_cr.webp",
     "alt": "Person enjoying an activity",
     "keywords": [
       "experiential needs icon",
@@ -34,7 +34,7 @@
   },
   {
     "id": "achievement-icon",
-    "image_location": "../assets/images/achievement_icon_cr.png",
+    "image_location": "../assets/images/achievement_icon_cr.webp",
     "alt": "Trophy and checklist",
     "keywords": [
       "achievement needs icon",
@@ -45,7 +45,7 @@
   },
   {
     "id": "need-banner",
-    "image_location": "../assets/images/need_banner.png",
+    "image_location": "../assets/images/needs_banner.webp",
     "alt": "Steampunk dragonfly beside the text: 'You are what you need. Let’s map out your personal blueprint.'",
     "keywords": [
       "steampunk psychology banner",
@@ -56,7 +56,7 @@
   },
   {
     "id": "internal-external-image",
-    "image_location": "../assets/images/axia_1_cr.png",
+    "image_location": "../assets/images/axia_1_cr.webp",
     "alt": "A diagram of a steampunk propeller labeled with six human need categories",
     "keywords": [
       "axia needs diagram",
@@ -67,7 +67,7 @@
   },
   {
     "id": "balancing-image",
-    "image_location": "../assets/images/flowy_dudes_cr.png",
+    "image_location": "../assets/images/flowy_dudes.webp",
     "alt": "Two individuals being balanced with themselves",
     "keywords": [
       "self balance visual",
@@ -78,7 +78,7 @@
   },
   {
     "id": "gravity-image",
-    "image_location": "../assets/images/light_and_dark_gravity_cr.png",
+    "image_location": "../assets/images/light_and_dark_gravity.webp",
     "alt": "A person jumping from the dark to light side'",
     "keywords": [
       "psychological gravity",

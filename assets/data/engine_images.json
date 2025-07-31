@@ -1,7 +1,7 @@
 [
   {
     "id": "engine-hero",
-    "image_location": "../assets/images/mental_combustion_engine.png",
+    "image_location": "../assets/images/mental_combustion_engine.webp",
     "alt": "Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output.",
     "keywords": [
       "mental combustion",
@@ -25,7 +25,7 @@
   },
   {
     "id": "engine-banner",
-    "image_location": "../assets/images/gears_banner_cr.png",
+    "image_location": "../assets/images/gears_banner.webp",
     "alt": "An open door reveals glowing, bronze-colored steampunk gears turning in the darkness. On the left side, large serif text reads: This is where the gears start turning.",
     "keywords": [
       "steampunk gears",
@@ -39,7 +39,7 @@
   },
   {
     "id": "engine-mower",
-    "image_location": "../assets/images/steampunk_lawn_mower_cr.png",
+    "image_location": "../assets/images/steampunk_lawn_mower.webp",
     "alt": "A steampunk lawn mower with gears and pipes",
     "keywords": [
       "steampunk lawn mower",
@@ -58,7 +58,7 @@
       "book cover",
       "Brett McDonald",
       "psychology and physics",
-      "mental combustion", 
+      "mental combustion",
       "self-help psychology",
       "cognitive model"
     ]
@@ -72,7 +72,7 @@
       "psychology PDF",
       "mental health resource",
       "digital book cover",
-      "Brett McDonald", 
+      "Brett McDonald",
       "self-help psychology",
       "cognitive model"
     ]
