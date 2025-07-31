@@ -12,7 +12,7 @@
   },
   {
     "id": "gear-men",
-    "image_location": "./assets/images/cogs_cr.png",
+    "image_location": "./assets/images/cogs_cr.webp",
     "alt": "Four men stand on the inside edges of a square, each turning a chain of gears connected to a large central gear.",
     "keywords": [
       "thermodynamic psychology",
@@ -24,7 +24,7 @@
   },
   {
     "id": "mental-combustion-home",
-    "image_location": "./assets/images/mental_combustion_home.png",
+    "image_location": "./assets/images/mental_combustion_home.webp",
     "alt": "Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output.",
     "keywords": [
       "mental combustion",
@@ -35,7 +35,7 @@
   },
   {
     "id": "axia-diagram",
-    "image_location": "./assets/images/axia_gold_wide_cr.png",
+    "image_location": "./assets/images/axia_gold_wide_cr.webp",
     "alt": "A diagram of a steampunk propeller labeled with six human need categories",
     "keywords": [
       "AXIA",
@@ -47,7 +47,7 @@
   },
   {
     "id": "mind-machine-banner",
-    "image_location": "./assets/images/mind_machine_banner.png",
+    "image_location": "./assets/images/mind_machine_banner.webp",
     "alt": "Text on the left and a steampunk human head with gears on the right. The text reads: 'Your mind is a machine. You just weren’t given the manual...'",
     "keywords": [
       "mind machine",
@@ -71,7 +71,7 @@
   },
   {
     "id": "good-alice",
-    "image_location": "./assets/images/good_alice_cr_sm.png",
+    "image_location": "./assets/images/good_alice_cr_sm.webp",
     "alt": "A woman with steampunk accessories stands holding two books in front of her.",
     "keywords": [
       "Good Alice",
@@ -83,7 +83,7 @@
   },
   {
     "id": "blocks-toy",
-    "image_location": "./assets/images/blocks_toy_cr.png",
+    "image_location": "./assets/images/blocks_toy_cr.webp",
     "alt": "A bucket toy with different shaped blocks but only round holes",
     "keywords": [
       "psychology metaphor",
@@ -95,7 +95,7 @@
   },
   {
     "id": "mouse-therapy",
-    "image_location": "./assets/images/mouse_therapy_cr.png",
+    "image_location": "./assets/images/mouse_therapy_cr.webp",
     "alt": "A worn image of a mouse therapist talking to a mouse client",
     "keywords": [
       "mouse therapy",
@@ -131,7 +131,7 @@
   },
   {
     "id": "footer-image",
-    "image_location": "./assets/images/footer_opacity_cr.png",
+    "image_location": "./assets/images/footer_opacity.webp",
     "alt": ""
   }
 ]
