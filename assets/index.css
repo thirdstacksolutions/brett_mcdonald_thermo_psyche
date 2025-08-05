@@ -1010,7 +1010,6 @@ a {
   .mental-combustion-image img,
   .mental-combustion-video video {
     width: 100%;
-    /* max-width: 700px; */
     height: auto;
   }
 
@@ -1028,7 +1027,6 @@ a {
 
   .internal-external-image img {
     width: 100%;
-    /* max-width: 700px; */
     height: auto;
   }
 
@@ -1052,10 +1050,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  /* .content-container,
-  .navbar {
-    padding: 0 clamp(1rem, 0.444rem + 2.222vw, 1.5rem);
-  } */
+
   .banner {
     margin: 2rem 0;
   }
@@ -1331,10 +1326,6 @@ a {
 .video-replay-overlay[hidden],
 .video-controls[hidden] {
   display: none;
-}
-
-video {
-  /* border: 3px solid #0b5050; */
 }
 
 /* Mobile styles */
