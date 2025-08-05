@@ -168,6 +168,7 @@ a {
 .mental-combustion-image,
 .mental-combustion-video,
 .game-grid-image,
+.axia-intro-video,
 .internal-external-image,
 .balancing-image,
 .energy-gravity-image,
@@ -313,10 +314,12 @@ a {
   grid-column: 1;
   grid-row: 1;
 }
-.introduction-video img {
-  width: 100%;
-  height: auto;
+
+.introduction-video video {
+  border-top: clamp(0.5rem, -0.22rem + 1.356vw, 1rem) solid black;
+  border-bottom: clamp(0.5rem, -0.22rem + 1.356vw, 1rem) solid black;
 }
+
 .introduction-text {
   display: flex;
   flex-direction: column;
@@ -523,15 +526,15 @@ a {
 
 .mental-combustion-image img {
   border: 3px solid #0b5050;
+  height: clamp(15.938rem, -4.141rem + 31.373vw, 20.938rem);
 }
+
 .mental-combustion-video {
   grid-column: 2;
   grid-row: 1;
-}
-
-.mental-combustion-image img,
-.mental-combustion-video img {
-  height: clamp(15.938rem, -4.141rem + 31.373vw, 20.938rem);
+  background-color: black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
 }
 
 .mental-combustion-text {
@@ -546,7 +549,6 @@ a {
 .game-grid {
   display: grid;
   grid-template-columns: auto auto;
-  /* grid-template-rows: auto auto; */
   gap: 2rem;
 }
 
@@ -681,16 +683,12 @@ a {
   margin-bottom: 1rem;
 }
 
-.axia-intro-video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.axia-intro-video video {
+  /* background-color: black; */
+  border-top: clamp(0.5rem, -0.22rem + 1.356vw, 1rem) solid black;
+  border-bottom: clamp(0.5rem, -0.22rem + 1.356vw, 1rem) solid black;
 }
 
-.axia-intro-video img {
-  height: clamp(13.75rem, -6.328rem + 31.373vw, 18.75rem);
-  width: auto;
-}
 /* -------------------------------------------------- */
 /* WHAT DO WE NEED */
 /* -------------------------------------------------- */
@@ -930,82 +928,43 @@ a {
   .brett-bio-grid {
     gap: clamp(1.5rem, -5.87rem + 13.873vw, 3rem);
   }
-}
 
-.learn-more-item .steampunk-button {
-  margin-top: clamp(1.5rem, -0.957rem + 4.624vw, 2rem);
-}
+  .learn-more-item .steampunk-button {
+    margin-top: clamp(1.5rem, -0.957rem + 4.624vw, 2rem);
+  }
 
-.brett-bio-container {
-  padding: clamp(1.5rem, -3.413rem + 9.249vw, 2.5rem)
-    clamp(1.5rem, -5.87rem + 13.873vw, 3rem);
-}
+  .brett-bio-container {
+    padding: clamp(1.5rem, -3.413rem + 9.249vw, 2.5rem)
+      clamp(1.5rem, -5.87rem + 13.873vw, 3rem);
+  }
 
-.brett-bio-grid {
-  padding: clamp(1.5rem, -5.87rem + 13.873vw, 3rem);
-}
-.good-alice-grid,
-.blocks-toy-grid,
-.mouse-therapy-grid,
-.engine-intro-grid,
-.mental-combustion-grid,
-.game-grid,
-.book-corner-grid,
-.axia-intro-grid,
-.what-do-we-need-grid,
-.internal-external-grid,
-.balancing-grid {
-  gap: clamp(1rem, 0.286rem + 1.905vw, 2rem);
-}
+  .brett-bio-grid {
+    padding: clamp(1.5rem, -5.87rem + 13.873vw, 3rem);
+  }
+  .good-alice-grid,
+  .blocks-toy-grid,
+  .mouse-therapy-grid,
+  .engine-intro-grid,
+  .mental-combustion-grid,
+  .game-grid,
+  .book-corner-grid,
+  .axia-intro-grid,
+  .what-do-we-need-grid,
+  .internal-external-grid,
+  .balancing-grid {
+    gap: clamp(1rem, 0.286rem + 1.905vw, 2rem);
+  }
 
-.book-corner hr {
-  margin: clamp(1.5rem, -5.87rem + 13.873vw, 3rem) 0;
-}
-
-/* Mobile styles */
-.mobile-button-title-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mobile-buttons {
-  display: none;
-  flex-grow: 0;
-  background: none;
-  color: #f4f2e7;
-  cursor: pointer;
-  background-image: url(./images/gear_button_texture.png);
-  aspect-ratio: 1 / 1;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-size: clamp(0.8rem, 0.657rem + 0.381vw, 1rem);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 18px;
-}
-.mobile-buttons:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+  .book-corner hr {
+    margin: clamp(1.5rem, -5.87rem + 13.873vw, 3rem) 0;
+  }
 }
 
 @media screen and (max-width: 849px) {
-  /* .content-container,
-  .navbar {
-    padding: 0 4rem;
-  } */
-
   .learn-more-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .learn-more-item img {
-    max-width: 500px;
   }
 
   .lm-img-engine {
@@ -1035,8 +994,6 @@ a {
 
   .mental-combustion-video {
     order: 1;
-    border-bottom: 2px solid #67351c;
-    padding: 1rem 0 2rem;
   }
 
   .mental-combustion-text {
@@ -1045,30 +1002,22 @@ a {
 
   .mental-combustion-image {
     order: 2;
+    padding: 2rem 0 1rem;
     margin-top: 1rem;
+    border-top: 2px solid #67351c;
   }
 
-  .mental-combustion-video img,
-  .mental-combustion-image img {
+  .mental-combustion-image img,
+  .mental-combustion-video video {
     width: 100%;
-    max-width: 500px;
+    /* max-width: 700px; */
     height: auto;
   }
-
-  /* .game-grid-content {
-    height: 820px;
-  } */
 
   .axia-intro-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .axia-intro-video img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
   }
 
   .internal-external-grid {
@@ -1079,7 +1028,7 @@ a {
 
   .internal-external-image img {
     width: 100%;
-    max-width: 500px;
+    /* max-width: 700px; */
     height: auto;
   }
 
@@ -1358,9 +1307,6 @@ a {
 .video-wrapper {
   position: relative;
   width: 100%;
-}
-.video-wrapper {
-  position: relative;
   display: inline-block;
 }
 
@@ -1387,7 +1333,36 @@ a {
   display: none;
 }
 
-#axiaVideo {
-  border-top: 15px solid #0b5050;
-  border-bottom: 15px solid #0b5050;
+video {
+  /* border: 3px solid #0b5050; */
+}
+
+/* Mobile styles */
+.mobile-button-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-buttons {
+  display: none;
+  flex-grow: 0;
+  background: none;
+  color: #f4f2e7;
+  cursor: pointer;
+  background-image: url(./images/gear_button_texture.png);
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: clamp(0.8rem, 0.657rem + 0.381vw, 1rem);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.mobile-buttons:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
