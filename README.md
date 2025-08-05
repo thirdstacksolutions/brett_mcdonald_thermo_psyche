@@ -1,10 +1,16 @@
-# Dev notes
+# Thermodynamic Psychology Website
+
+This is the official static site for Dr. Brett McDonald’s _Thermodynamic Psychology_, built for accessibility, portability, and future CMS integration.
+
+Primary hosting is on **Vercel**, with a GitHub Pages fallback for testing and backup visibility.
+
+---
 
 ## ✨ Code Formatting with Prettier
 
 This project uses **Prettier** to automatically format all code consistently.
 
-### 🛠 Setup Instructions
+### Setup Instructions
 
 1. **Install the Prettier extension for VS Code**
    → [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -21,7 +27,7 @@ This project uses **Prettier** to automatically format all code consistently.
 
 ---
 
-### ⚙️ Prettier Rules (from `.prettierrc`)
+### Prettier Rules (from `.prettierrc`)
 
 - 2 spaces for indentation
 - No tabs
@@ -32,7 +38,7 @@ This project uses **Prettier** to automatically format all code consistently.
 
 ---
 
-### 🚫 Files Ignored by Prettier (`.prettierignore`)
+### Files Ignored by Prettier (`.prettierignore`)
 
 ```txt
 assets/images/
@@ -57,7 +63,7 @@ This project uses **clean relative links** (e.g. `href="engine/"`) instead of ha
 - ✅ Works locally **if using a web server**
 - ❌ Will not work correctly if opened directly with `file://`
 
-### 🚀 To test locally
+### To test locally
 
 Use one of the following:
 
@@ -71,14 +77,33 @@ python3 -m http.server
 
 ---
 
-## CMS Integration
+## 🌐 GitHub Pages Compatibility
+
+This site is deployed to both Vercel (primary) and GitHub Pages (backup/demo).
+Because GitHub Pages serves the site from a subdirectory (`/brett_mcdonald_thermo_psyche/`), all pages include a conditional `<base>` tag in the `<head>`:
+
+```html
+<script>
+  if (window.location.hostname.includes('github.io')) {
+    document.write('<base href="/brett_mcdonald_thermo_psyche/">');
+  }
+</script>
+```
+
+This ensures relative links work properly on GitHub Pages **without breaking anything on Vercel or in local development**.
+
+> **Make sure this `<script>` is included in the `<head>` of every HTML file in the project.**
+
+---
+
+## 🔧 CMS Integration
 
 A scaffold for Netlify CMS has been added to allow future content management integration. This includes:
 
 - `/admin/` – placeholder CMS entry point
 - `/admin/config.yml` – placeholder configuration
 - `/content/` – future location for editable content
-- a backend-ready structure and placeholder configuration using Netlify CMS.
+- a backend-ready structure designed for easy activation using Netlify CMS
 
 While no fields are currently editable, the setup allows seamless activation if content management needs arise.
 
