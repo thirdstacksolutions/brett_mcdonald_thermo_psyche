@@ -38,7 +38,7 @@
     </script>
   </head>
 
-  <body>
+  <body id="top">
     <!-- <div class="content-container"> -->
     <nav class="navbar">
       <div class="navbar-header">
@@ -65,7 +65,7 @@
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="#top" class="current">Engine</a>
+            <a href="#" aria-current="page" class="current">Engine</a>
           </li>
           <li>
             <a href="/axia/">Axia</a>
@@ -118,7 +118,10 @@
 
         <section class="mental-combustion-grid">
           <section class="mental-combustion-image">
-            <img src="../assets/images/mental_combustion_engine.webp" />
+            <img
+              src="../assets/images/mental_combustion_engine.webp"
+              alt="A diagram illustrating the mental combustion engine concept."
+            />
           </section>
           <section class="mental-combustion-video">
             <div class="video-wrapper">
@@ -126,15 +129,11 @@
                 <iframe
                   id="axiaVideo"
                   class="introduction-video"
-                  playsinline
                   loading="lazy"
-                  preload="metadata"
                   width="100%"
-                  aria-label="Brief introduction of Brett McDonald and her theory that the mind is like a combustion engine."
                   title="Mind Machine: Mental Combustion Engine"
                   src="https://player.vimeo.com/video/1108083956?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                  frameborder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  allow="autoplay; encrypted-media"
                   referrerpolicy="strict-origin-when-cross-origin"
                   style="
                     position: absolute;
@@ -143,81 +142,9 @@
                     width: 100%;
                     height: 100%;
                   "
-                >
-                  Your browser does not support the video tag.
-                </iframe>
+                ></iframe>
               </div>
               <script src="https://player.vimeo.com/api/player.js"></script>
-
-              <!-- <video
-                id="axiaVideo"
-                class="mental-combustion-video"
-                playsinline
-                loading="lazy"
-                preload="metadata"
-                width="100%"
-                aria-label="An animated overview of the AXIA framework for human needs"
-                title="Mind Machine: Mental Combustion Engine"
-              >
-                <source
-                  src="../assets/video/mind_machine_video.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-              <div class="video-overlay" id="videoOverlay">
-                <button
-                  id="videoPlayBtn"
-                  class="video-play-btn"
-                  aria-label="Play video"
-                >
-                  <img
-                    src="../assets/images/icons/play.svg"
-                    alt="Play"
-                    class="icon-svg"
-                  />
-                </button>
-              </div>
- 
-              <div class="video-replay-overlay" id="videoReplay" hidden>
-                <button
-                  id="videoReplayBtn"
-                  class="video-replay-btn"
-                  aria-label="Replay video"
-                >
-                  <img
-                    src="../assets/images/icons/replay.svg"
-                    alt="Replay"
-                    class="icon-svg"
-                  />
-                </button>
-              </div>
-              <div class="video-controls">
-                <button
-                  id="muteToggle"
-                  class="mute-button"
-                  aria-label="Mute video"
-                  aria-pressed="false"
-                >
-                  <img
-                    src="../assets/images/icons/speaker-on.svg"
-                    alt="Mute"
-                    class="icon-svg"
-                  />
-                </button>
-                <button
-                  id="playPauseToggle"
-                  class="pause-button"
-                  aria-label="Pause video"
-                  aria-pressed="false"
-                >
-                  <img
-                    src="../assets/images/icons/pause.svg"
-                    alt="Pause"
-                    class="icon-svg"
-                  />
-                </button>
-              </div> -->
             </div>
           </section>
           <section class="mental-combustion-text">
@@ -349,7 +276,7 @@
             <a
               href="https://a.co/d/6t77t7W"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               class="steampunk-button"
             >
               Amazon
