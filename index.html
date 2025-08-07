@@ -77,23 +77,47 @@
       <section class="introduction-grid content-container">
         <section class="introduction-video">
           <div class="video-wrapper">
-            <video
+            <div style="padding: 56.25% 0 0 0; position: relative">
+              <iframe
+                id="axiaVideo"
+                class="introduction-video"
+                playsinline
+                loading="lazy"
+                preload="metadata"
+                width="100%"
+                aria-label="Brief introduction of Brett McDonald and her theory that the mind is like a combustion engine."
+                title="Thermodyanamic Pscyhology Website Introduction Video"
+                src="https://player.vimeo.com/video/1108072598?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+              >
+                Your browser does not support the video tag.
+              </iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+
+            <!-- <video
               id="axiaVideo"
               class="introduction-video"
               playsinline
               loading="lazy"
               preload="metadata"
               width="100%"
-              aria-label="An animated overview of the AXIA framework for human needs"
-              title="AXIA Framework Introduction Video"
+              aria-label="Brief introduction of Brett McDonald and her theory that the mind is like a combustion engine."
+              title="Thermodyanamic Pscyhology Website Introduction Video"
             >
-              <source
-                src="./assets/video/Axia_1920x1080.mp4"
-                type="video/mp4"
-              />
+              
               Your browser does not support the video tag.
-            </video>
-            <div class="video-overlay" id="videoOverlay">
+            </video> -->
+            <!-- <div class="video-overlay" id="videoOverlay">
               <button
                 id="videoPlayBtn"
                 class="video-play-btn"
@@ -105,9 +129,9 @@
                   class="icon-svg"
                 />
               </button>
-            </div>
+            </div> -->
 
-            <div class="video-replay-overlay" id="videoReplay" hidden>
+            <!-- <div class="video-replay-overlay" id="videoReplay" hidden>
               <button
                 id="videoReplayBtn"
                 class="video-replay-btn"
@@ -145,7 +169,7 @@
                   class="icon-svg"
                 />
               </button>
-            </div>
+            </div> -->
           </div>
         </section>
 
@@ -204,11 +228,11 @@
         <h2>Where is this going?</h2>
         <article>
           <p>
-            Think of your mind like a machine built for flight—like a dragonfly
+            Think of your mind like a machine built for flight—like a dragonfly
             with a four-stroke engine at its core. The wings represent the
             different areas of your life where energy must be applied: Survival,
-            Achievement, and Experiential needs, both for yourself and for
-            other people.
+            Achievement, and Experiential needs, both for yourself and for other
+            people.
           </p>
           <p>
             But wings alone don’t create lift—the engine matters. That’s where
@@ -489,3 +513,5 @@
     <script src="./assets/video.js"></script>
   </body>
 </html>
+
+brett_intro_video on Vimeo
