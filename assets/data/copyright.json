@@ -67,10 +67,7 @@
       ]
     },
     "The Noun Project": {
-      "svgs": [
-        "play.svg",
-        "pause.svg",
-        "speaker-on.svg"
-      ]
+      "svgs": ["play.svg", "pause.svg", "speaker-on.svg"]
     }
+  }
 }
