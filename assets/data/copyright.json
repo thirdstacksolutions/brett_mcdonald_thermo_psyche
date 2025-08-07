@@ -2,45 +2,75 @@
   "siteName": "Thermodynamic Psychology",
   "author": "ThirdStack Solutions",
   "copyright": "© 2025 ThirdStack Solutions LLC. All rights reserved.",
-  "licenseURL": "https://yourdomain.com/copyright",
+  "licenseURL": "https://www.thermopsych.com/copyright",
   "by_author": {
-    "ThirdStack Solutions": [
-      "0_engine.webp",
-      "1_fuel.webp",
-      "10_axia.webp",
-      "11_exhaust.webp",
-      "12_valve_overlap.webp",
-      "2_oxidizer.webp",
-      "3_oil.webp",
-      "4_fuel_pump.webp",
-      "5_intake.webp",
-      "6_compression.webp",
-      "7_spark.webp",
-      "8_combustion.webp",
-      "9_output.webp",
-      "achievement_icon_cr.webp",
-      "axia_1_cr.webp",
-      "blocks_toy_cr.webp",
-      "cogs_cr.webp",
-      "copyright_gear.png",
-      "experiential_icon_cr.webp",
-      "flowy_dudes.webp",
-      "footer_opacity.webp",
-      "gear_icon.png",
-      "good_alice_cr_sm.webp",
-      "light_and_dark_gravity.webp",
-      "mind_machine_banner.webp",
-      "mouse_therapy_cr.webp",
-      "needs_banner.webp",
-      "survival_icon_cr.webp",
-      "video_placeholder.png"
-    ],
-    "Brett McDonald": [
-      "BrettMcDonald2023-27.avif",
-      "axia_gold_wide_cr.webp",
-      "brett_book.jpg",
-      "ebook.png",
-      "mental_combustion_home.webp"
-    ]
-  }
+    "ThirdStack Solutions": {
+      "images": [
+        "0_engine.webp",
+        "1_fuel.webp",
+        "10_axia.webp",
+        "11_exhaust.webp",
+        "12_valve_overlap.webp",
+        "2_oxidizer.webp",
+        "3_oil.webp",
+        "4_fuel_pump.webp",
+        "5_intake.webp",
+        "6_compression.webp",
+        "7_spark.webp",
+        "8_combustion.webp",
+        "9_output.webp",
+        "achievement_icon_cr.webp",
+        "axia_1_cr.webp",
+        "blocks_toy_cr.webp",
+        "cogs_cr.webp",
+        "copyright_gear.png",
+        "experiential_icon_cr.webp",
+        "flowy_dudes.webp",
+        "footer_opacity.webp",
+        "gear_icon.png",
+        "good_alice_cr_sm.webp",
+        "light_and_dark_gravity.webp",
+        "mind_machine_banner.webp",
+        "mouse_therapy_cr.webp",
+        "needs_banner.webp",
+        "survival_icon_cr.webp",
+        "video_placeholder.png"
+      ],
+      "videos": [
+        {
+          "title": "Thermodynamic Psychology Introduction",
+          "hosted": "vimeo",
+          "id": "1108072598",
+          "url": "https://vimeo.com/1108072598"
+        },
+        {
+          "title": "Mind Machine: Mental Combustion Engine",
+          "hosted": "vimeo",
+          "id": "1108083956",
+          "url": "https://vimeo.com/1108083956"
+        },
+        {
+          "title": "AXIA Framework Introduction",
+          "hosted": "vimeo",
+          "id": "1108165082",
+          "url": "https://vimeo.com/1108165082"
+        }
+      ]
+    },
+    "Brett McDonald": {
+      "images": [
+        "BrettMcDonald2023-27.avif",
+        "axia_gold_wide_cr.webp",
+        "brett_book.jpg",
+        "ebook.png",
+        "mental_combustion_home.webp"
+      ]
+    },
+    "The Noun Project": {
+      "svgs": [
+        "play.svg",
+        "pause.svg",
+        "speaker-on.svg"
+      ]
+    }
 }
