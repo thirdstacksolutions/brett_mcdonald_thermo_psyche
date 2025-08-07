@@ -3,15 +3,18 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 >
   <url>
-    <loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/index.html</loc>
-      <lastmod>2025-07-29</lastmod>
+    <loc>https://www.thermopsych.com/</loc>
+      <lastmod>2025-08-05</lastmod>
+      <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/engine/index.html</loc>
-      <lastmod>2025-07-29</lastmod>
+    <loc>https://www.thermopsych.com/engine/</loc>
+      <lastmod>2025-08-05</lastmod>
+      <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/axia/index.html</loc>
-      <lastmod>2025-07-29</lastmod>
+    <loc>https://www.thermopsych.com/axia/</loc>
+      <lastmod>2025-08-05</lastmod>
+      <priority>0.8</priority>
   </url>
 </urlset>
