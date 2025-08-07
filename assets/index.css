@@ -31,7 +31,7 @@ body {
 
 img,
 picture,
-video,
+iframe,
 canvas,
 svg {
   display: block;
@@ -72,10 +72,8 @@ main,
 }
 
 img,
-video,
-.video-overlay,
-.video-replay-overlay,
-button {
+iframe,
+.steampunk-button {
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -191,6 +189,9 @@ a {
 }
 
 .steampunk-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 3rem;
   width: 200px;
   background-image: url('./images/book_button_cr.png');
@@ -1257,47 +1258,6 @@ a {
 /* -------------------------------------------------- */
 /* VIDEO ELEMENTS */
 /* -------------------------------------------------- */
-
-.video-controls {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  display: flex;
-  gap: 10px;
-}
-.video-controls button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  padding: 0;
-  line-height: 1;
-  cursor: pointer;
-  border-radius: 5px;
-  height: 2rem;
-  width: 2rem;
-}
-
-.video-controls button .icon-svg {
-  width: 100%;
-  height: 100%;
-}
-
-.video-play-btn,
-.video-replay-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.video-play-btn .icon-svg,
-.video-replay-btn .icon-svg {
-  width: 7rem;
-  height: auto;
-}
 
 .video-wrapper {
   position: relative;
