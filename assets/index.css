@@ -517,7 +517,8 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
   grid-template-rows: auto auto;
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 3rem;
 }
 
 .mental-combustion-image {
@@ -1260,6 +1261,7 @@ a {
   display: block;
   width: 100%;
   height: auto;
+  border: 3px solid #0b5050;
 }
 
 /* Mobile styles */
