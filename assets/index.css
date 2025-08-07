@@ -852,6 +852,7 @@ a {
   margin-left: calc(-50vw + 50%);
   position: relative;
   left: 0;
+  bottom: 0;
 }
 
 .footer-image img {
@@ -1050,7 +1051,6 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-
   .banner {
     margin: 2rem 0;
   }
