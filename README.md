@@ -67,7 +67,7 @@ This project uses **clean relative links** (e.g. `href="engine/"`) instead of ha
 
 Use one of the following:
 
-- **Live Server** in VS Code
+- **https://player.vimeo.com/video/1108318361?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479 Server** in VS Code
   (make sure it's serving from the **project root** — we’ve included a `.vscode/settings.json` file to handle this)
 - Or a quick Python server:
 
