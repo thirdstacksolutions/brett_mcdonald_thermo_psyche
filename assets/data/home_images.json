@@ -1,17 +1,24 @@
 [
   {
-    "id": "home-video-placeholder",
-    "image_location": "./assets/images/video_placeholder.png",
-    "alt": "Video placeholder",
+    "id": "intro-video",
+    "type": "video",
+    "vimeo_id": "1108318361",
+    "video_location": "https://player.vimeo.com/video/1108318361",
+    "alt": "A brief introduction to Thermodynamic Psychology, featuring Dr. Brett McDonald explaining how the mind functions like a combustion engine.",
     "keywords": [
-      "video",
       "thermodynamic psychology",
+      "Brett McDonald",
       "mental combustion",
-      "home page"
+      "psychology theory",
+      "self-help education",
+      "cognitive engine",
+      "four-stroke mind",
+      "psychological model"
     ]
   },
   {
     "id": "gear-men",
+    "type": "image",
     "image_location": "./assets/images/cogs_cr.webp",
     "alt": "Four men stand on the inside edges of a square, each turning a chain of gears connected to a large central gear.",
     "keywords": [
@@ -24,6 +31,7 @@
   },
   {
     "id": "mental-combustion-home",
+    "type": "image",
     "image_location": "./assets/images/mental_combustion_home.webp",
     "alt": "Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output.",
     "keywords": [
@@ -35,6 +43,7 @@
   },
   {
     "id": "axia-diagram",
+    "type": "image",
     "image_location": "./assets/images/axia_gold_wide_cr.webp",
     "alt": "A diagram of a steampunk propeller labeled with six human need categories",
     "keywords": [
@@ -47,6 +56,7 @@
   },
   {
     "id": "mind-machine-banner",
+    "type": "image",
     "image_location": "./assets/images/mind_machine_banner.webp",
     "alt": "Text on the left and a steampunk human head with gears on the right. The text reads: 'Your mind is a machine. You just weren’t given the manual...'",
     "keywords": [
@@ -59,6 +69,7 @@
   },
   {
     "id": "brett-portrait",
+    "type": "image",
     "image_location": "./assets/images/BrettMcDonald2023-27.avif",
     "alt": "A photo of Dr. Brett McDonald",
     "keywords": [
@@ -71,6 +82,7 @@
   },
   {
     "id": "good-alice",
+    "type": "image",
     "image_location": "./assets/images/good_alice_cr_sm.webp",
     "alt": "A woman with steampunk accessories stands holding two books in front of her.",
     "keywords": [
@@ -83,6 +95,7 @@
   },
   {
     "id": "blocks-toy",
+    "type": "image",
     "image_location": "./assets/images/blocks_toy_cr.webp",
     "alt": "A bucket toy with different shaped blocks but only round holes",
     "keywords": [
@@ -95,6 +108,7 @@
   },
   {
     "id": "mouse-therapy",
+    "type": "image",
     "image_location": "./assets/images/mouse_therapy_cr.webp",
     "alt": "A worn image of a mouse therapist talking to a mouse client",
     "keywords": [
@@ -107,6 +121,7 @@
   },
   {
     "id": "book-cover",
+    "type": "image",
     "image_location": "./assets/images/brett_book.jpg",
     "alt": "An image of the cover of Thermodynamic Psychology",
     "keywords": [
@@ -119,6 +134,7 @@
   },
   {
     "id": "ebook-cover",
+    "type": "image",
     "image_location": "./assets/images/ebook.png",
     "alt": "An image of a phone and tablet showing the cover of Unlocking the Mind",
     "keywords": [
@@ -131,6 +147,7 @@
   },
   {
     "id": "footer-image",
+    "type": "image",
     "image_location": "./assets/images/footer_opacity.webp",
     "alt": ""
   }

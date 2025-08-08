@@ -7,10 +7,15 @@
 
   <!-- Home Page -->
   <url>
-    <loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/index.html</loc>
-    <image:image>
-      <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/video_placeholder.png</image:loc>
-    </image:image>
+    <loc>https://www.thermopsych.com/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.thermopsych.com/assets/images/video_placeholder.png</video:thumbnail_loc>
+      <video:title>Thermodynamic Psychology Website Introduction</video:title>
+      <video:description>A brief introduction to Brett McDonald's theory that the mind functions like a four-stroke engine.</video:description>
+      <video:player_loc allow_embed="yes">https://player.vimeo.com/video/1108318361</video:player_loc>
+      <video:duration>39</video:duration>
+      <video:publication_date>2025-08-05</video:publication_date>
+    </video:video>
     <image:image>
       <image:loc>https://yourdomain.com/brett_mcdonald_thermo_psyche/assets/images/cogs_cr.webp</image:loc>
     </image:image>
