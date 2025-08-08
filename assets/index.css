@@ -617,14 +617,46 @@ a {
   transform: rotate(-20deg);
 }
 
+/* Mobile styles */
+.mobile-button-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-buttons {
+  display: none;
+  flex-grow: 0;
+  background: none;
+  color: #f4f2e7;
+  cursor: pointer;
+  background-image: url(./images/gear_button_texture.png);
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: clamp(0.8rem, 0.657rem + 0.381vw, 1rem);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.mobile-buttons:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .game-grid-content {
   display: flex;
   flex-direction: column;
   border: 4px solid #0b5050;
   padding: 1.8rem;
   border-radius: 4px;
-  height: clamp(50rem, 39.286rem + 28.571vw, 56.25rem);
-  background-color: rgba(237, 234, 234, 0.5);
+  /* 950-1200px */
+  /* height: clamp(53.125rem, 41.25rem + 20vw, 56.25rem); */
+  /* 440-1000px */
+  height: clamp(43.75rem, 33.929rem + 35.714vw, 56.25rem);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -652,16 +684,20 @@ a {
 }
 
 .gamification-text-container {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .gamification-text-highlight {
   display: block;
-  margin-top: 1rem;
   font-family: playfair display, serif;
   font-weight: bolder;
   color: #67351c;
   text-align: center;
+  font-size: clamp(1.2rem, 0.217rem + 1.85vw, 1.4rem);
 }
 
 .game-undertext {
@@ -1262,34 +1298,4 @@ a {
   width: 100%;
   height: auto;
   border: 3px solid #0b5050;
-}
-
-/* Mobile styles */
-.mobile-button-title-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mobile-buttons {
-  display: none;
-  flex-grow: 0;
-  background: none;
-  color: #f4f2e7;
-  cursor: pointer;
-  background-image: url(./images/gear_button_texture.png);
-  aspect-ratio: 1 / 1;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-size: clamp(0.8rem, 0.657rem + 0.381vw, 1rem);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 18px;
-}
-.mobile-buttons:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
 }
