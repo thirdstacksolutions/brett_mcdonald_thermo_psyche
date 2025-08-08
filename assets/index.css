@@ -933,14 +933,9 @@ a {
     align-items: center;
   }
 
-  .introduction-video iframe {
-    width: clamp(31.25rem, 17.952rem + 35.461vw, 40.625rem);
-    height: auto;
-    display: block;
-  }
-
   .introduction-video {
     order: 2;
+    width: 100%;
   }
 
   .introduction-text {
@@ -1023,8 +1018,10 @@ a {
     align-items: center;
   }
 
-  .mental-combustion-video {
+  .mental-combustion-video,
+  .axia-intro-video {
     order: 1;
+    width: 100%;
   }
 
   .mental-combustion-text {
