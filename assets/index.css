@@ -656,7 +656,7 @@ a {
   /* 950-1200px */
   /* height: clamp(53.125rem, 41.25rem + 20vw, 56.25rem); */
   /* 440-1000px */
-  height: clamp(43.75rem, 33.929rem + 35.714vw, 56.25rem);
+  height: clamp(37.5rem, 22.768rem + 53.571vw, 56.25rem);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -671,7 +671,8 @@ a {
 .gamification-title {
   text-align: center;
   flex-grow: 1;
-  margin: 0.9rem 0;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
 }
 
 #prevBtn,
@@ -697,7 +698,7 @@ a {
   font-weight: bolder;
   color: #67351c;
   text-align: center;
-  font-size: clamp(1.2rem, 0.217rem + 1.85vw, 1.4rem);
+  font-size: clamp(1.1rem, 0.217rem + 1.85vw, 1.7rem);
 }
 
 .game-undertext {
@@ -1149,8 +1150,15 @@ a {
     margin-top: 1rem;
   }
 
+  .game-grid-image img {
+    max-width: 80%;
+    height: auto;
+  }
+
   .gamification-title {
-    margin: 0.5rem 0.5rem;
+    border-bottom: 0;
+    text-decoration: underline;
+    text-underline-offset: 10px;
   }
 
   .game-grid-content {
@@ -1277,10 +1285,6 @@ a {
     max-width: 175px;
     height: auto;
     margin-bottom: 0;
-  }
-
-  .gamification-title {
-    margin: 0.5rem 0;
   }
 }
 /* -------------------------------------------------- */
