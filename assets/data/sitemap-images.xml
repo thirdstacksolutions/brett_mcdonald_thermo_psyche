@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+>
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.thermopsych.com/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://www.thermopsych.com/assets/images/video_placeholder.png</video:thumbnail_loc>
+      <video:title>Thermodynamic Psychology Website Introduction</video:title>
+      <video:description>A brief introduction to Brett McDonald's theory that the mind functions like a four-stroke engine.</video:description>
+      <video:player_loc allow_embed="yes">https://player.vimeo.com/video/1108318361</video:player_loc>
+      <video:duration>39</video:duration>
+      <video:publication_date>2025-08-05</video:publication_date>
+    </video:video>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/cogs_cr.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/mental_combustion_home.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/axia_gold_wide_cr.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/mind_machine_banner.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/BrettMcDonald2023-27.avif</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/good_alice_cr_sm.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/blocks_toy_cr.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/mouse_therapy_cr.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/brett_book.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/ebook.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/footer_opacity.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/copyright_gear.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/assets/images/gear_icon.png</image:loc>
+    </image:image>
+  </url>
+
+  <!-- Engine Page -->
+  <url>
+    <loc>https://www.thermopsych.com/engine/</loc>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/steampunk_lawn_mower.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/mental_combustion_engine.webp</image:loc>
+    </image:image>
+     <video:video>
+      <video:thumbnail_loc>https://www.thermopsych.com/engine/assets/images/mental_combustion_engine.webp</video:thumbnail_loc>
+      <video:title>Mind Machine: Mental Combustion Engine</video:title>
+      <video:description>An animated video explaining the mental combustion engine model, with Dr. Brett McDonald describing how the mind functions like a four-stroke engine.</video:description>
+      <video:player_loc allow_embed="yes">https://player.vimeo.com/video/1108083956</video:player_loc>
+      <video:duration>65</video:duration>
+      <video:publication_date>2025-08-05</video:publication_date>
+    </video:video>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/gears_banner.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/1_fuel.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/2_oxidizer.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/3_oil.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/4_fuel_pump.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/5_intake.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/6_compression.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/7_spark.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/8_combustion.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/9_output.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/10_axia.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/11_exhaust.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/12_valve_overlap.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/copyright_gear.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/engine/assets/images/gear_icon.png</image:loc>
+    </image:image>
+  </url>
+
+  <!-- AXIA Page (with video) -->
+  <url>
+    <loc>https://www.thermopsych.com/axia/</loc>
+   <video:video>
+      <video:thumbnail_loc>https://www.thermopsych.com/axia/assets/images/video_placeholder.png</video:thumbnail_loc>
+      <video:title>AXIA Framework Introduction</video:title>
+      <video:description>An animated overview of the AXIA framework in Thermodynamic Psychology, explaining how the mind uses energy to fulfill survival, achievement, and experiential needs through internal and external systems.</video:description>
+      <video:player_loc allow_embed="yes">https://player.vimeo.com/video/1108165082</video:player_loc>
+      <video:duration>33</video:duration>
+      <video:publication_date>2025-08-05</video:publication_date>
+    </video:video>
+     <image:image>
+      <image:loc>https://www.thermopsych.com/axia/assets/images/survival_icon_cr.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/axia/assets/images/experiential_icon_cr.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/axia/assets/images/achievement_icon_cr.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/axia/assets/images/needs_banner.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/axia/assets/images/axia_1_cr.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/axia/assets/images/flowy_dudes.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/axia/assets/images/light_and_dark_gravity.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/axia/assets/images/copyright_gear.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.thermopsych.com/axia/assets/images/gear_icon.png</image:loc>
+    </image:image>
+  </url>
+
+</urlset>

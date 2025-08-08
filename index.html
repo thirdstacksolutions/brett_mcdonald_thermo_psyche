@@ -12,7 +12,7 @@
       content="Thermodynamic Psychology, how the mind works, mental combustion, human needs psychology, four stroke mind model, mental energy, Brett McDonald, psychological blueprint, thermodynamics in psychology, mental health science"
     />
     <meta name="author" content="Brett McDonald" />
-    <title>How the Mind Works | Thermodynamic Pscyhology</title>
+    <title>How the Mind Works | Thermodynamic Psychology</title>
     <link
       rel="preload"
       href="./assets/fonts/Cinzel-Regular.woff2"
@@ -31,9 +31,14 @@
     <link rel="preload" href="./assets/index.css" as="style" />
     <link rel="stylesheet" href="./assets/index.css" />
     <link rel="icon" type="image/png" href="./assets/images/gear_icon.png" />
+    <script>
+      if (window.location.hostname.includes('github.io')) {
+        document.write('<base href="/brett_mcdonald_thermo_psyche/">');
+      }
+    </script>
   </head>
 
-  <body>
+  <body id="top">
     <!-- <div class="content-container"> -->
     <nav class="navbar">
       <div class="navbar-header">
@@ -57,13 +62,13 @@
         </div>
         <ul class="navbar-links">
           <li>
-            <a href="#top" class="current">Home</a>
+            <a href="#top" aria-current="page" class="current">Home</a>
           </li>
           <li>
-            <a href="./engine/index.html">Engine</a>
+            <a href="engine/">Engine</a>
           </li>
           <li>
-            <a href="./axia/index.html">Axia</a>
+            <a href="axia/">Axia</a>
           </li>
         </ul>
       </div>
@@ -72,76 +77,18 @@
       <section class="introduction-grid content-container">
         <section class="introduction-video">
           <div class="video-wrapper">
-            <video
+            <iframe
               id="axiaVideo"
               class="introduction-video"
-              playsinline
               loading="lazy"
-              preload="metadata"
               width="100%"
-              aria-label="An animated overview of the AXIA framework for human needs"
-              title="AXIA Framework Introduction Video"
-            >
-              <source
-                src="./assets/video/Axia_1920x1080.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-            <div class="video-overlay" id="videoOverlay">
-              <button
-                id="videoPlayBtn"
-                class="video-play-btn"
-                aria-label="Play video"
-              >
-                <img
-                  src="/assets/images/icons/play.svg"
-                  alt="Play"
-                  class="icon-svg"
-                />
-              </button>
-            </div>
-
-            <div class="video-replay-overlay" id="videoReplay" hidden>
-              <button
-                id="videoReplayBtn"
-                class="video-replay-btn"
-                aria-label="Replay video"
-              >
-                <img
-                  src="/assets/images/icons/replay.svg"
-                  alt="Replay"
-                  class="icon-svg"
-                />
-              </button>
-            </div>
-            <div class="video-controls" hidden>
-              <button
-                id="muteToggle"
-                class="mute-button"
-                aria-label="Mute video"
-                aria-pressed="false"
-              >
-                <img
-                  src="/assets/images/icons/speaker-on.svg"
-                  alt="Mute"
-                  class="icon-svg"
-                />
-              </button>
-              <button
-                id="playPauseToggle"
-                class="pause-button"
-                aria-label="Pause video"
-                aria-pressed="false"
-              >
-                <img
-                  src="/assets/images/icons/pause.svg"
-                  alt="Pause"
-                  class="icon-svg"
-                />
-              </button>
-            </div>
+              title="Thermodynamic Psychology Website Introduction Video"
+              src="https://player.vimeo.com/video/1108318361?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              allow="autoplay; encrypted-media"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
         </section>
 
         <article class="introduction-text">
@@ -167,9 +114,7 @@
           </p>
         </aside>
       </section>
-      <!-- </div> -->
 
-      <!-- <div class="content-container"> -->
       <section class="gear-men-grid content-container">
         <article class="gear-men-text">
           <p>
@@ -183,9 +128,10 @@
           <p>
             You might not realize it, but this unassuming little law is, by
             orders of magnitude, the most powerful force in human life. It
-            shapes how we think, behave, operate, and live from the time we are
-            born to the time we die, and we usually don’t give it more than a
-            glancing thought.
+            shapes how we think, behave, operate, and
+            https://player.vimeo.com/video/1108318361?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+            from the time we are born to the time we die, and we usually don’t
+            give it more than a glancing thought.
           </p>
         </article>
         <section class="gear-men-image">
@@ -199,11 +145,11 @@
         <h2>Where is this going?</h2>
         <article>
           <p>
-            Think of your mind like a machine built for flight—like a dragonfly
+            Think of your mind like a machine built for flight—like a dragonfly
             with a four-stroke engine at its core. The wings represent the
             different areas of your life where energy must be applied: Survival,
-            Achievement, and Experiential needs, both for yourself and for
-            other people.
+            Achievement, and Experiential needs, both for yourself and for other
+            people.
           </p>
           <p>
             But wings alone don’t create lift—the engine matters. That’s where
@@ -229,8 +175,8 @@
               src="./assets/images/mental_combustion_home.webp"
               alt="Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output."
             />
-            <a href="./engine/index.html">
-              <button class="steampunk-button">The Engine</button>
+            <a href="./engine/index.html" class="steampunk-button">
+              The Engine
             </a>
           </div>
           <div class="learn-more-item lm-img-axia">
@@ -239,9 +185,7 @@
               alt="A diagram of a steampunk propeller labeled with six human need categories"
             />
 
-            <a href="./axia/index.html">
-              <button class="steampunk-button">The AXIA</button>
-            </a>
+            <a href="./axia/index.html" class="steampunk-button">The AXIA</a>
           </div>
 
           <div class="learn-more-item lm-text-engine">
@@ -361,15 +305,17 @@
             <section class="blocks-toy-text">
               <p>
                 When I got out into the real world to practice traditional
-                approaches on live people though, the shine began wearing off
-                like lipstick in a kissing booth. With each passing year of my
-                therapy practice, I grew more and more fed up with constantly
-                trying to fit square, or rectangle, or triangle, or oblong pegs
-                into round holes of my clients (that came out a little awkward,
-                but you get the message). As much as I wanted to steadfastly
-                ahere to and apply the tried and true gold standard
-                evidence-based treatments, I couldn’t overlook the fact that the
-                proverbial emperor was at most wearing a mankini.
+                approaches on
+                https://player.vimeo.com/video/1108318361?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+                people though, the shine began wearing off like lipstick in a
+                kissing booth. With each passing year of my therapy practice, I
+                grew more and more fed up with constantly trying to fit square,
+                or rectangle, or triangle, or oblong pegs into round holes of my
+                clients (that came out a little awkward, but you get the
+                message). As much as I wanted to steadfastly ahere to and apply
+                the tried and true gold standard evidence-based treatments, I
+                couldn’t overlook the fact that the proverbial emperor was at
+                most wearing a mankini.
               </p>
             </section>
           </section>
@@ -431,8 +377,13 @@
               the mind is a machine, operating under the laws of physics.
             </p>
             <p class="cta-label">Buy it on</p>
-            <a href="https://a.co/d/6t77t7W" target="_blank" rel="noopener">
-              <button class="steampunk-button">Amazon</button>
+            <a
+              href="https://a.co/d/6t77t7W"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="steampunk-button"
+            >
+              Amazon
             </a>
           </section>
           <section class="book-corner-image">
@@ -448,7 +399,7 @@
           <section class="book-corner-image">
             <img
               class="e-book-cover"
-              src="./assets//images/ebook.png"
+              src="./assets/images/ebook.png"
               alt="an image of a phone and tablet showing the cover of Unlocking the Mind"
             />
           </section>
@@ -462,8 +413,12 @@
               science.
             </p>
             <p class="cta-label">Start Reading</p>
-            <a href="./assets/Unlocking_The_Mind.pdf" download>
-              <button class="steampunk-button">Download</button>
+            <a
+              href="./assets/Unlocking_The_Mind.pdf"
+              download
+              class="steampunk-button"
+            >
+              Download
             </a>
           </section>
         </section>
@@ -481,7 +436,5 @@
     </footer>
     <script src="./assets/page_functions.js"></script>
     <script src="./assets/index.js"></script>
-    <script src="./assets/video.js"></script>
-    `
   </body>
 </html>

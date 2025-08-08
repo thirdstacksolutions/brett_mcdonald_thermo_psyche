@@ -31,9 +31,14 @@
     <link rel="preload" href="../assets/index.css" as="style" />
     <link rel="stylesheet" href="../assets/index.css" />
     <link rel="icon" type="image/png" href="../assets/images/gear_icon.png" />
+    <script>
+      if (window.location.hostname.includes('github.io')) {
+        document.write('<base href="/brett_mcdonald_thermo_psyche/">');
+      }
+    </script>
   </head>
 
-  <body>
+  <body id="top">
     <!-- <div class="content-container"> -->
     <nav class="navbar">
       <div class="navbar-header">
@@ -60,7 +65,7 @@
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="#top" class="current">Engine</a>
+            <a href="#top" aria-current="page" class="current">Engine</a>
           </li>
           <li>
             <a href="/axia/">Axia</a>
@@ -102,7 +107,7 @@
             get a handle on our heads, we’re going to find ourselves stacked up
             in wheelbarrows by some guy shouting “Bring out your dead!” and I
             don’t like wheelbarrows or corpses, or being a corpse in a
-            wheelbarrow. 
+            wheelbarrow.
           </p>
         </section>
       </section>
@@ -113,79 +118,33 @@
 
         <section class="mental-combustion-grid">
           <section class="mental-combustion-image">
-            <img src="../assets/images/mental_combustion_engine.webp" />
+            <img
+              src="../assets/images/mental_combustion_engine.webp"
+              alt="A diagram illustrating the mental combustion engine concept."
+            />
           </section>
           <section class="mental-combustion-video">
             <div class="video-wrapper">
-              <video
-                id="axiaVideo"
-                class="introduction-video"
-                playsinline
-                loading="lazy"
-                preload="metadata"
-                width="100%"
-                aria-label="An animated overview of the AXIA framework for human needs"
-                title="AXIA Framework Introduction Video"
-              >
-                <source
-                  src="../assets/video/Axia_1920x1080.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-              <div class="video-overlay" id="videoOverlay">
-                <button
-                  id="videoPlayBtn"
-                  class="video-play-btn"
-                  aria-label="Play video"
-                >
-                  <img
-                    src="../assets/images/icons/play.svg"
-                    alt="Play"
-                    class="icon-svg"
-                  />
-                </button>
+              <div style="padding: 56.25% 0 0 0; position: relative">
+                <iframe
+                  id="axiaVideo"
+                  class="introduction-video"
+                  loading="lazy"
+                  width="100%"
+                  title="Mind Machine: Mental Combustion Engine"
+                  src="https://player.vimeo.com/video/1108083956?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  allow="autoplay; encrypted-media"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                ></iframe>
               </div>
-
-              <div class="video-replay-overlay" id="videoReplay" hidden>
-                <button
-                  id="videoReplayBtn"
-                  class="video-replay-btn"
-                  aria-label="Replay video"
-                >
-                  <img
-                    src="../assets/images/icons/replay.svg"
-                    alt="Replay"
-                    class="icon-svg"
-                  />
-                </button>
-              </div>
-              <div class="video-controls">
-                <button
-                  id="muteToggle"
-                  class="mute-button"
-                  aria-label="Mute video"
-                  aria-pressed="false"
-                >
-                  <img
-                    src="../assets/images/icons/speaker-on.svg"
-                    alt="Mute"
-                    class="icon-svg"
-                  />
-                </button>
-                <button
-                  id="playPauseToggle"
-                  class="pause-button"
-                  aria-label="Pause video"
-                  aria-pressed="false"
-                >
-                  <img
-                    src="../assets/images/icons/pause.svg"
-                    alt="Pause"
-                    class="icon-svg"
-                  />
-                </button>
-              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
           </section>
           <section class="mental-combustion-text">
@@ -279,10 +238,10 @@
                 move. Every choice, feeling, and insight comes from a
                 four-stroke process beneath the surface. These gears vital to
                 keeping your psychological engine running.
-                <span class="gamification-text-highlight">
-                  Select a cog to explore what drives you.
-                </span>
               </p>
+              <span class="gamification-text-highlight">
+                Select a cog to explore what drives you.
+              </span>
             </section>
             <!-- </section> -->
           </section>
@@ -318,8 +277,9 @@
               href="https://a.co/d/6t77t7W"
               target="_blank"
               rel="noopener noreferrer"
+              class="steampunk-button"
             >
-              <button class="steampunk-button">Amazon</button>
+              Amazon
             </a>
           </section>
           <section class="book-corner-image">
@@ -349,8 +309,12 @@
               science.
             </p>
             <p class="cta-label">Start Reading</p>
-            <a href="../assets/Unlocking_The_Mind.pdf" download>
-              <button class="steampunk-button">Download</button>
+            <a
+              href="../assets/Unlocking_The_Mind.pdf"
+              download
+              class="steampunk-button"
+            >
+              Download
             </a>
           </section>
         </section>
@@ -367,6 +331,5 @@
       <img src="../assets/images/footer_opacity.webp" alt="" />
     </footer>
     <script src="../assets/index.js"></script>
-    <script src="../assets/video.js"></script>
   </body>
 </html>

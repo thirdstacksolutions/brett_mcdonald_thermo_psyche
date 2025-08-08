@@ -1,8 +1,10 @@
 [
   {
-    "id": "axia-video-placeholder",
-    "image_location": "../assets/images/video_placeholder.png",
-    "alt": "Video placeholder",
+    "id": "axia-video",
+    "type": "video",
+    "vimeo_id": "1108165082",
+    "video_location": "https://player.vimeo.com/video/1108165082",
+    "alt": "AXIA Framework Introduction video, where Dr. Brett McDonald explains the mental energy system and human needs categories in Thermodynamic Psychology.",
     "keywords": [
       "axia explainer video",
       "human needs psychology",

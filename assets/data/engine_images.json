@@ -1,6 +1,7 @@
 [
   {
     "id": "engine-hero",
+    "type": "image",
     "image_location": "../assets/images/mental_combustion_engine.webp",
     "alt": "Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output.",
     "keywords": [
@@ -13,18 +14,27 @@
     ]
   },
   {
-    "id": "engine-video-placeholder",
-    "image_location": "../assets/images/video_placeholder.png",
-    "alt": "Video placeholder for mental combustion video",
+    "id": "engine-video",
+    "type": "video",
+    "vimeo_id": "1108083956",
+    "video_location": "https://player.vimeo.com/video/1108083956",
+    "alt": "An animated video explaining the mental combustion engine model, with Dr. Brett McDonald describing how the mind functions like a four-stroke engine.",
     "keywords": [
       "mental combustion video",
+      "four-stroke mind model",
+      "Brett McDonald",
       "thermodynamic psychology",
-      "placeholder image",
-      "pyschology explainer preview"
+      "explainer video",
+      "mind machine",
+      "cognitive process animation",
+      "psychology and physics",
+      "mental health education",
+      "psychological blueprint"
     ]
   },
   {
     "id": "engine-banner",
+    "type": "image",
     "image_location": "../assets/images/gears_banner.webp",
     "alt": "An open door reveals glowing, bronze-colored steampunk gears turning in the darkness. On the left side, large serif text reads: This is where the gears start turning.",
     "keywords": [
@@ -39,6 +49,7 @@
   },
   {
     "id": "engine-mower",
+    "type": "image",
     "image_location": "../assets/images/steampunk_lawn_mower.webp",
     "alt": "A steampunk lawn mower with gears and pipes",
     "keywords": [
@@ -51,6 +62,7 @@
   },
   {
     "id": "engine-book",
+    "type": "image",
     "image_location": "../assets/images/brett_book.jpg",
     "alt": "Book cover of Thermodynamic Psychology",
     "keywords": [
@@ -65,6 +77,7 @@
   },
   {
     "id": "engine-ebook",
+    "type": "image",
     "image_location": "../assets/images/ebook.png",
     "alt": "A phone and tablet showing the cover of Unlocking the Mind",
     "keywords": [
