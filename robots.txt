@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourdomain.com/brett_mcdonald_thermo_psyche/sitemap.xml
-Sitemap: https://yourdomain.com/brett_mcdonald_thermo_psyche/sitemap-images.xml
+Sitemap: https://www.thermopsych.com/sitemap.xml
+Sitemap: https://www.thermopsych.com/sitemap-images.xml
