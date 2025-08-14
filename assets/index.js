@@ -1,14 +1,10 @@
 // Gamification section
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Select all list items in the gamification section
   const buttons = document.querySelectorAll('.game-buttons li');
   const titleElement = document.querySelector('.gamification-title');
   const textElement = document.querySelector('.gamification-text');
   const imageElement = document.querySelector('.game-grid-image img');
-  const textHighlightElement = document.querySelector(
-    '.gamification-text-highlight'
-  );
   const containerElement = document.querySelector('.game-grid-content');
 
   const prevBtn = document.getElementById('prevBtn');
@@ -19,13 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentIndex = -1;
   let gamificationData = {};
 
-  console.log(buttons);
-
-  // Fetch JSON data
   fetch('../assets/gamification.json')
     .then((response) => response.json())
     .then((data) => {
-      // Store JSON data for easy access
       gamificationData = data.reduce((acc, item) => {
         acc[item.id] = item;
         return acc;
@@ -35,21 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       buttons.forEach((button) => {
         button.addEventListener('click', () => {
-          // Remove gamificaiton-current class from all buttons and add gamification-inactive class
           buttons.forEach((btn) => {
             btn.classList.remove('gamification-current');
             btn.classList.add('gamification-inactive');
           });
 
-          // Add gamification-current class to the clicked button
           button.classList.remove('gamification-inactive');
           button.classList.add('gamification-current');
 
-          // Update content based on button's id
           const id = button.id;
           const item = gamificationData[id];
 
-          // If item and button has gamification-current class, update the content
           if (item && button.classList.contains('gamification-current')) {
             titleElement.textContent = item.title;
             textElement.textContent = item.description;
@@ -73,10 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.disabled =
       currentIndex === Object.keys(gamificationData).length - 1;
 
-    if (currentIndex >= 0) {
-      textHighlightElement.style.display = 'none';
-    }
-
     const currentItem =
       gamificationData[Object.keys(gamificationData)[currentIndex]];
     if (currentItem) {
@@ -88,7 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const setUpMobileListeners = () => {
-    // Navigation buttons
     prevBtn.addEventListener('click', () => {
       if (currentIndex > 0) {
         currentIndex--;
@@ -103,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Swipe functionality
     containerElement.addEventListener('touchstart', (e) => {
       touchStartX = e.changedTouches[0].screenX;
     });
@@ -155,6 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Prevent right-click context menu on images and video elements
+// and on buttons with background images
 document.addEventListener('contextmenu', function (e) {
   const tag = e.target.tagName;
   const isMedia = tag === 'IMG' || tag === 'VIDEO';
