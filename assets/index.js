@@ -6,9 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const titleElement = document.querySelector('.gamification-title');
   const textElement = document.querySelector('.gamification-text');
   const imageElement = document.querySelector('.game-grid-image img');
-  const textHighlightElement = document.querySelector(
-    '.gamification-text-highlight'
-  );
   const containerElement = document.querySelector('.game-grid-content');
 
   const prevBtn = document.getElementById('prevBtn');
@@ -72,10 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
     prevBtn.disabled = currentIndex === 0;
     nextBtn.disabled =
       currentIndex === Object.keys(gamificationData).length - 1;
-
-    if (currentIndex >= 0) {
-      textHighlightElement.style.display = 'none';
-    }
 
     const currentItem =
       gamificationData[Object.keys(gamificationData)[currentIndex]];
