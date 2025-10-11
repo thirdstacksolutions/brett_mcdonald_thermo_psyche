@@ -4,89 +4,108 @@
     "type": "video",
     "vimeo_id": "1109041096",
     "video_location": "https://player.vimeo.com/video/1109041096",
-    "alt": "AXIA Framework Introduction video, where Dr. Brett McDonald explains the mental energy system and human needs categories in Thermodynamic Psychology.",
+    "alt": "AXIA Framework introduction video featuring Dr. Brett McDonald explaining the Thermodynamic Psychology human needs system and how mental energy drives motivation and balance.",
     "keywords": [
-      "axia explainer video",
+      "AXIA framework video",
+      "Thermodynamic Psychology",
+      "Brett McDonald",
       "human needs psychology",
       "mental energy system",
-      "psychological blueprint"
+      "psychological blueprint",
+      "motivation and balance",
+      "applied psychology education",
+      "science of human behavior"
     ]
   },
   {
     "id": "survival-icon",
     "image_location": "../assets/images/survival_icon_cr.webp",
-    "alt": "Water, shield, and a loaf of bread",
+    "alt": "Icon with water, a shield, and a loaf of bread symbolizing basic survival needs in Thermodynamic Psychology.",
     "keywords": [
       "survival needs icon",
       "basic human needs",
-      "food and safety",
-      "thermodynamic psychology"
+      "food safety and protection",
+      "Thermodynamic Psychology",
+      "physiological and safety needs",
+      "human motivation model"
     ]
   },
   {
     "id": "experiential-icon",
     "image_location": "../assets/images/experiential_icon_cr.webp",
-    "alt": "Person enjoying an activity",
+    "alt": "Icon of a person enjoying an activity, representing experiential needs such as joy, creativity, and meaning.",
     "keywords": [
       "experiential needs icon",
-      "joyful activity",
-      "process over product",
-      "mental health needs"
+      "joy and purpose psychology",
+      "creative self-expression",
+      "emotional fulfillment",
+      "mental health and experience",
+      "human needs motivation"
     ]
   },
   {
     "id": "achievement-icon",
     "image_location": "../assets/images/achievement_icon_cr.webp",
-    "alt": "Trophy and checklist",
+    "alt": "Icon showing a trophy and checklist representing achievement needs, goal setting, and productivity.",
     "keywords": [
       "achievement needs icon",
-      "goal setting",
-      "productivity psychology",
-      "success mindset"
+      "goal setting psychology",
+      "success mindset",
+      "productivity motivation",
+      "self-efficacy",
+      "achievement and reward system"
     ]
   },
   {
     "id": "need-banner",
     "image_location": "../assets/images/needs_banner.webp",
-    "alt": "Steampunk dragonfly beside the text: 'You are what you need. Let’s map out your personal blueprint.'",
+    "alt": "Banner image featuring a steampunk dragonfly beside text that reads: 'You are what you need. Let’s map out your personal blueprint,' representing the AXIA model.",
     "keywords": [
       "steampunk psychology banner",
-      "human needs motivation",
-      "psychological blueprint",
-      "mental fuel system"
+      "AXIA framework motivation",
+      "human needs blueprint",
+      "Thermodynamic Psychology",
+      "mental fuel system",
+      "motivational psychology model"
     ]
   },
   {
     "id": "internal-external-image",
     "image_location": "../assets/images/axia_1_cr.webp",
-    "alt": "A diagram of a steampunk propeller labeled with six human need categories",
+    "alt": "AXIA diagram showing a steampunk propeller labeled with six categories of human needs, representing internal and external energy systems.",
     "keywords": [
-      "axia needs diagram",
-      "steampunk psychology chart",
+      "AXIA human needs diagram",
+      "Thermodynamic Psychology model",
       "internal vs external needs",
-      "psychological propeller model"
+      "psychological propeller chart",
+      "motivational energy system",
+      "cognitive balance model"
     ]
   },
   {
     "id": "balancing-image",
     "image_location": "../assets/images/flowy_dudes.webp",
-    "alt": "Two individuals being balanced with themselves",
+    "alt": "Artistic image of two figures balanced with themselves, representing harmony between internal and external energy needs.",
     "keywords": [
-      "self balance visual",
-      "internal external energy",
-      "axity balance",
-      "thermodynamic psychology"
+      "self balance visualization",
+      "internal external equilibrium",
+      "AXIA balance",
+      "Thermodynamic Psychology art",
+      "energy harmony concept",
+      "psychological balance"
     ]
   },
   {
     "id": "gravity-image",
     "image_location": "../assets/images/light_and_dark_gravity.webp",
-    "alt": "A person jumping from the dark to light side'",
+    "alt": "A symbolic image showing a person leaping from shadow into light, illustrating psychological gravity and energy transformation.",
     "keywords": [
       "psychological gravity",
       "light and dark energy",
       "mental physics",
-      "behavioral attraction"
+      "behavioral attraction and motivation",
+      "energy transformation in psychology",
+      "Thermodynamic Psychology metaphor"
     ]
   }
 ]
