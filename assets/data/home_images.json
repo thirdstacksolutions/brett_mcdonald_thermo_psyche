@@ -4,151 +4,160 @@
     "type": "video",
     "vimeo_id": "1108318361",
     "video_location": "https://player.vimeo.com/video/1108318361",
-    "alt": "A brief introduction to Thermodynamic Psychology, featuring Dr. Brett McDonald explaining how the mind functions like a combustion engine.",
+    "alt": "Introductory video for Thermodynamic Psychology featuring Dr. Brett McDonald explaining how the human mind functions like a four-stroke combustion engine driven by energy and need.",
     "keywords": [
-      "thermodynamic psychology",
+      "Thermodynamic Psychology introduction",
       "Brett McDonald",
-      "mental combustion",
-      "psychology theory",
-      "self-help education",
-      "cognitive engine",
-      "four-stroke mind",
-      "psychological model"
+      "mental combustion engine",
+      "four-stroke mind model",
+      "psychological energy system",
+      "cognitive science education",
+      "mind and behavior framework",
+      "applied psychology video",
+      "how the mind works"
     ]
   },
   {
     "id": "gear-men",
     "type": "image",
     "image_location": "./assets/images/cogs_cr.webp",
-    "alt": "Four men stand on the inside edges of a square, each turning a chain of gears connected to a large central gear.",
+    "alt": "Four men stand on the inside edges of a square, each turning a chain of steampunk gears connected to a large central gear, representing the mechanics of human thought and collaboration.",
     "keywords": [
-      "thermodynamic psychology",
-      "energy systems",
-      "gears",
-      "metaphor",
-      "teamwork"
+      "Thermodynamic Psychology imagery",
+      "energy systems in psychology",
+      "mental gears",
+      "mechanical mind metaphor",
+      "teamwork and cognition",
+      "psychological energy model"
     ]
   },
   {
     "id": "mental-combustion-home",
     "type": "image",
     "image_location": "./assets/images/mental_combustion_home.webp",
-    "alt": "Diagram of twelve engine components labeled as the mental combustion cycle, grouped by input, process, and output.",
+    "alt": "Diagram showing the Mental Combustion Engine from Thermodynamic Psychology, illustrating twelve cognitive components grouped by input, process, and output.",
     "keywords": [
-      "mental combustion",
-      "engine diagram",
-      "psychology model",
-      "input process output"
+      "mental combustion engine",
+      "psychological engine model",
+      "mind and energy system",
+      "input process output diagram",
+      "Thermodynamic Psychology",
+      "behavioral mechanics",
+      "cognitive framework"
     ]
   },
   {
     "id": "axia-diagram",
     "type": "image",
     "image_location": "./assets/images/axia_gold_wide_cr.webp",
-    "alt": "A diagram of a steampunk propeller labeled with six human need categories",
+    "alt": "AXIA model diagram from Thermodynamic Psychology showing six categories of human needs represented by a golden steampunk propeller.",
     "keywords": [
-      "AXIA",
-      "human needs",
-      "psychology",
-      "thermodynamic psychology",
-      "diagram"
+      "AXIA human needs model",
+      "Thermodynamic Psychology diagram",
+      "psychological needs framework",
+      "motivational psychology",
+      "human behavior energy system",
+      "applied psychology model"
     ]
   },
   {
     "id": "mind-machine-banner",
     "type": "image",
     "image_location": "./assets/images/mind_machine_banner.webp",
-    "alt": "Text on the left and a steampunk human head with gears on the right. The text reads: 'Your mind is a machine. You just weren’t given the manual...'",
+    "alt": "Banner with text describing the mind as a machine and a steampunk human head filled with gears, symbolizing how psychology and physics intersect in Thermodynamic Psychology.",
     "keywords": [
       "mind machine",
-      "psychology metaphor",
-      "mental model",
-      "steampunk head",
-      "your mind is a machine"
+      "psychology and physics",
+      "mental model banner",
+      "Thermodynamic Psychology concept",
+      "cognitive mechanics",
+      "self-awareness framework"
     ]
   },
   {
     "id": "brett-portrait",
     "type": "image",
     "image_location": "./assets/images/BrettMcDonald2023-27.avif",
-    "alt": "A photo of Dr. Brett McDonald",
+    "alt": "Portrait of Dr. Brett McDonald, author and creator of Thermodynamic Psychology.",
     "keywords": [
-      "Brett McDonald",
-      "psychologist",
-      "author photo",
-      "thermodynamic psychology",
-      "founder portrait"
+      "Brett McDonald portrait",
+      "Thermodynamic Psychology author",
+      "psychologist photo",
+      "cognitive science educator",
+      "author of Thermodynamic Psychology"
     ]
   },
   {
     "id": "good-alice",
     "type": "image",
     "image_location": "./assets/images/good_alice_cr_sm.webp",
-    "alt": "A woman with steampunk accessories stands holding two books in front of her.",
+    "alt": "A steampunk-styled woman holding two books, representing 'Good Alice'—a metaphor from Brett McDonald's writing on traditional psychology and curiosity.",
     "keywords": [
-      "Good Alice",
-      "steampunk character",
-      "psychology metaphor",
-      "thermodynamic psychology",
-      "graduate school metaphor"
+      "Good Alice psychology metaphor",
+      "Thermodynamic Psychology story imagery",
+      "steampunk character symbolism",
+      "graduate school psychology metaphor",
+      "creative psychology education"
     ]
   },
   {
     "id": "blocks-toy",
     "type": "image",
     "image_location": "./assets/images/blocks_toy_cr.webp",
-    "alt": "A bucket toy with different shaped blocks but only round holes",
+    "alt": "Children’s bucket toy with differently shaped blocks and only round holes, used as a metaphor for fitting human experience into rigid psychological models.",
     "keywords": [
       "psychology metaphor",
-      "round hole square peg",
-      "blocks toy",
-      "therapeutic model",
-      "cognitive dissonance"
+      "square peg round hole concept",
+      "cognitive dissonance imagery",
+      "Thermodynamic Psychology symbolism",
+      "therapy model critique"
     ]
   },
   {
     "id": "mouse-therapy",
     "type": "image",
     "image_location": "./assets/images/mouse_therapy_cr.webp",
-    "alt": "A worn image of a mouse therapist talking to a mouse client",
+    "alt": "Illustration of a mouse therapist talking to a mouse client, representing humor and self-reflection in therapy and mental health.",
     "keywords": [
-      "mouse therapy",
-      "animal metaphor",
-      "mental health illustration",
-      "counseling",
-      "humor in therapy"
+      "mouse therapy illustration",
+      "psychology humor art",
+      "mental health reflection",
+      "Thermodynamic Psychology visual metaphor",
+      "counseling and insight"
     ]
   },
   {
     "id": "book-cover",
     "type": "image",
     "image_location": "./assets/images/brett_book.jpg",
-    "alt": "An image of the cover of Thermodynamic Psychology",
+    "alt": "Book cover of Thermodynamic Psychology by Dr. Brett McDonald, explaining how energy drives thought, emotion, and behavior.",
     "keywords": [
-      "Thermodynamic Psychology",
-      "book cover",
-      "mental health book",
-      "psychology model",
-      "Brett McDonald book"
+      "Thermodynamic Psychology book",
+      "Brett McDonald author",
+      "mental energy and behavior",
+      "psychology and physics",
+      "applied cognitive model",
+      "science of the mind"
     ]
   },
   {
     "id": "ebook-cover",
     "type": "image",
     "image_location": "./assets/images/ebook.png",
-    "alt": "An image of a phone and tablet showing the cover of Unlocking the Mind",
+    "alt": "Ebook cover of Unlocking the Mind by Brett McDonald shown on a tablet and phone, exploring the physics behind human thought and emotion.",
     "keywords": [
-      "Unlocking the Mind",
-      "ebook",
-      "self-help psychology",
-      "mental health digital book",
-      "free ebook"
+      "Unlocking the Mind ebook",
+      "Brett McDonald digital book",
+      "self-help psychology resource",
+      "mental energy education",
+      "free psychology PDF",
+      "applied mind science"
     ]
   },
   {
     "id": "footer-image",
     "type": "image",
     "image_location": "./assets/images/footer_opacity.webp",
-    "alt": ""
+    "alt": "Footer background image of soft mechanical gears in bronze tones from Thermodynamic Psychology."
   }
 ]

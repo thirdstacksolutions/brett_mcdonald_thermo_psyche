@@ -2,21 +2,23 @@
   "navbar": {
     "logo": {
       "image_location": "../assets/images/copyright_gear.png",
-      "alt": "Cog copyright 2025",
+      "alt": "Cog logo with copyright symbol representing Thermodynamic Psychology branding, 2025.",
       "keywords": [
-        "thermodynamic psychology logo",
-        "copyright gear icon",
-        "mental energy branding",
-        "steampunk psychology brand"
+        "Thermodynamic Psychology logo",
+        "copyright gear symbol",
+        "mental energy brand identity",
+        "steampunk psychology logo",
+        "Brett McDonald brand mark"
       ]
     },
     "gear_icon": {
       "image_location": "../assets/images/gear_icon.png",
-      "alt": "Three gear icon",
+      "alt": "Three interconnected gears symbolizing the mechanical mind model of Thermodynamic Psychology.",
       "keywords": [
         "gear icon psychology",
-        "mental mechanics symbol",
-        "thermodynamic engine mind",
+        "mechanical mind symbol",
+        "Thermodynamic Psychology icon",
+        "cognitive engine representation",
         "steampunk gear visualization"
       ]
     }
@@ -25,32 +27,42 @@
     "main_book": {
       "title": "Thermodynamic Psychology",
       "image_location": "../assets/images/brett_book.jpg",
-      "alt": "Cover of Thermodynamic Psychology",
+      "alt": "Book cover of Thermodynamic Psychology by Dr. Brett McDonald, exploring how energy drives thought, emotion, and behavior.",
       "link": "https://a.co/d/6t77t7W",
       "keywords": [
         "Thermodynamic Psychology book",
-        "how the mind works",
         "Brett McDonald author",
-        "mental energy theory"
+        "psychology and physics",
+        "mental energy theory",
+        "how the mind works",
+        "applied psychology science"
       ]
     },
     "ebook": {
       "title": "Unlocking the Mind",
       "image_location": "../assets/images/ebook.png",
-      "alt": "eBook cover shown on tablet and phone",
+      "alt": "Cover of Unlocking the Mind by Brett McDonald shown on a tablet and phone, offering a physics-based explanation of psychology.",
       "file_download": "../assets/Unlocking_The_Mind.pdf",
       "keywords": [
         "Unlocking the Mind ebook",
-        "mental physics guide",
-        "psychology explained scientifically",
-        "mind mechanics PDF"
+        "Brett McDonald digital book",
+        "mental physics explained",
+        "self-help psychology PDF",
+        "mind mechanics guide",
+        "applied cognitive science"
       ]
     }
   },
   "footer": {
     "image": {
       "image_location": "../assets/images/footer_opacity.webp",
-      "alt": ""
+      "alt": "Subtle bronze and gold gear background used in the Thermodynamic Psychology footer banner.",
+      "keywords": [
+        "Thermodynamic Psychology footer background",
+        "steampunk gear texture",
+        "bronze metallic pattern",
+        "site branding visual"
+      ]
     }
   }
 }
